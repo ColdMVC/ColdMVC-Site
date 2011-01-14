@@ -1,0 +1,8 @@
+<tabs>
+	<tab name="Home" action="index" />
+	<tab name="Download" />
+	<tab name="Documentation" controller="documentation" action="index" />
+	<tab name="Plugins" />
+	<tab name="Discussion" />
+	<tab name="Contact" controller="contact" action="index" />
+</tabs>

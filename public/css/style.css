@@ -1,0 +1,159 @@
+html,
+body {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	color: #222;
+}
+
+input,
+select,
+textarea {
+	font-size: 1em;	
+}
+
+input[type='text'],
+input[type='password'],
+textarea,
+select {
+	border: 1px solid #d2d2d2;
+	padding: 4px;
+}
+
+input[type='text']:focus,
+input[type='password']:focus,
+textarea:focus,
+select:focus {
+	border: 1px solid #8fbaff;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	color: #4183c4;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#top {
+	height: 60px;
+	background: #4183c4;
+	background: gradient(linear, left top, left bottom, from(#4183c4), to(#47608f));
+	background: -moz-linear-gradient(top, #4183c4, #47608f);
+	background: -webkit-gradient(linear, left top, left bottom, from(#4183c4), to(#47608f));
+}
+
+#top div.container {
+	position: relative;
+}
+
+#logo a {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: #fff;
+	font-size: 2.5em;
+	font-weight: bold;
+	text-shadow: #333 1px 1px 1px;
+	text-decoration: none;
+}
+
+div#tabs ul {
+	position: absolute;
+	top: 6px;
+	right: 0;
+}
+
+div#tabs ul li {
+	display: inline;
+	float: left;
+}
+
+div#tabs ul li a {
+	display: block;
+	padding: 0 12px;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	line-height: 3em;
+	font-size: 1em;
+	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+}
+
+div#tabs ul li a:hover {
+	color: #d1dbef;
+}
+
+#header {
+	font-size: 1.2em;
+	padding: 8px;
+	color: #3f3f3f;
+	background: #e5cc9f;
+	background: gradient(linear, left bottom, right top, from(#e5cc9f), to(#e5dabb));
+	background: -moz-linear-gradient(left bottom, #e5cc9f, #e5dabb);
+	background: -webkit-gradient(linear, left bottom, right top, from(#e5cc9f), to(#e5dabb));
+	text-shadow: rgba(255, 255, 255, 0.3) 1px 1px 1px;
+	border-bottom: 1px solid #ceb78f;
+}
+
+#content,
+#sidebar {
+	margin: 20px 0;
+}
+
+#content h1 {
+	font-size: 1.3em;
+	color: #3f3f3f;
+	text-shadow: 1px 1px 0 #ddd;
+	font-weight: bold;
+}
+
+#content p {
+	margin: 15px 0;
+}
+
+#content pre {
+	border-top: 1px solid rgba(0, 0, 0, 0.02);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.02);
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	padding: 15px;
+	line-height: 1em;
+	/*
+	background-color: #efefef;
+	border: 1px solid #ddd;
+	*/
+	
+	background-color: #eff4ff;
+	background: gradient(linear, left bottom, right top, from(#dfeaff), to(#eff4ff));
+	background: -moz-linear-gradient(left bottom, #dfeaff, #eff4ff);
+	background: -webkit-gradient(linear, left bottom, right top, from(#dfeaff), to(#eff4ff));
+	border-left: 3px solid #cfdeff;
+}
+
+#sidebar_container {
+	border-left: 3px solid #95B4EF;
+	padding-left: 10px;
+	margin-left: 20px;
+}
+
+#sidebar_container h3 {
+	font-weight: bold;
+	color: #444;
+}
+
+#recent_discussions li {
+	list-style-type: circle;
+	margin-left: 20px;
+	margin-bottom: 5px;
+}
+
+#footer {
+	margin-top: 40px;
+	padding: 10px 0;
+	border-top: 1px solid #e4e4e4;
+	background: #fff;
+	background: gradient(linear, left top, left bottom, from(#eee), to(#fff));
+	background: -moz-linear-gradient(top, #eee, #fff);
+	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+}
