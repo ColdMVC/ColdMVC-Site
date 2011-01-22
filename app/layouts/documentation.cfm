@@ -1,6 +1,3 @@
-<cfset $.page.title("ColdMVC Documentation") />
-<cfset $.page.header("Documentation") />
-
 <cfoutput>
 <c:layout>
 	<div class="container">

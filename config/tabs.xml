@@ -1,8 +1,14 @@
 <tabs>
 	<tab name="Home" action="index" />
 	<tab name="Download" />
-	<tab name="Documentation" controller="documentation" action="index" />
+	<tab name="Documentation" controller="documentation" action="index">
+		<tabs>
+			<tab name="Chapters" controller="chapter" action="index" />
+			<tab name="Annotations" controller="annotation" action="index" />
+			<tab name="Tags" controller="tag" action="index" />
+		</tabs>
+	</tab>
 	<tab name="Plugins" />
-	<tab name="Discussion" />
+	<tab name="Discussion" controller="discussion" action="index" />
 	<tab name="Contact" controller="contact" action="index" />
 </tabs>

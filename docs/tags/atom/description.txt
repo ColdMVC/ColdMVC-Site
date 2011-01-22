@@ -1,0 +1,3 @@
+Creates a link to an [Atom] [1] feed.
+
+[1]: http://en.wikipedia.org/wiki/Atom_%28standard%29

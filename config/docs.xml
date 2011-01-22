@@ -15,6 +15,44 @@
 			<page id="viewHelper" /> 
 		</pages>
 	</section>
+	<section id="chapters">
+		<pages>
+			<page id="Introduction" />
+			<page id="Installation" />
+			<page id="MVC" />
+			<page id="Hibernate" />
+			<page id="Coldspring" />
+			<page id="Hello World" />
+			<page id="Directory Structure" />
+			<page id="Config Variables" />
+			<page id="Environments" />
+			<page id="Controllers" />
+			<page id="Routing Requests" />
+			<page id="Params" />
+			<page id="Flash" />
+			<page id="Models" />
+			<page id="Views" /> 
+			<page id="Layouts" />
+			<page id="Tags" />
+			<page id="Helpers" />
+			<page id="View Helpers" />
+			<page id="Link To Pages" />
+			<page id="Redirecting Requests" />
+			<page id="Form Binding" />
+			<page id="Form Fields" />
+			<page id="Formats" />
+			<page id="Services" />
+			<page id="Plugins" />
+			<page id="Implicit Event Handlers" />
+			<page id="Annotations" />
+			<page id="Events" />
+			<page id="Assets" />
+			<page id="Ajax" />
+			<page id="Mappings" />
+			<page id="Debug" />
+			<page id="Reload Application" />
+		</pages>
+	</section>
 	<section id="helpers">
 		<pages>
 			<page id="application" />

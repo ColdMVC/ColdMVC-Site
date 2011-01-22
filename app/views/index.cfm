@@ -1,3 +1,5 @@
+<cfset $.page.header("A Convention Based Framework for ColdFusion") />
+
 <cfoutput>
 <div class="span-24">
 	<div class="intro">

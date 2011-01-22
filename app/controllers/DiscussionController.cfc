@@ -1,0 +1,7 @@
+/**
+ * @accessors true
+ * @singleton
+ */
+component {
+
+}

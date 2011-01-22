@@ -17,7 +17,23 @@ component {
 	}
 
 	public any function title() {
-		return getOrSet("title", arguments);
+
+		if (!structIsEmpty(arguments)) {
+
+			var title = get("title");
+
+			if (title == "") {
+				title = arguments[1];
+			}
+			else {
+				title = title & ": " & arguments[1];
+			}
+
+			set("title", title);
+
+		}
+
+		return get("title");
 	}
 
 }

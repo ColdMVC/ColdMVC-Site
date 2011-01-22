@@ -1,0 +1,4 @@
+| Parameter | Required | Default           | Description                 |
+|-----------|----------|-------------------|-----------------------------|
+| title     | false    |                   | The title of the Atom feed. |
+| url       | false    | #linkTo("/atom")# | The URL to the Atom feed.   |

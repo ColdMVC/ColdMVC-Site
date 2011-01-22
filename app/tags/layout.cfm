@@ -1,4 +1,12 @@
-<cfif thisTag.executionMode eq "end">
+<cfif thisTag.executionMode eq "start">
+
+	<c:breadcrumbs result="breadcrumbs" />
+	<cfset page = $.factory.get("tabManager").getTab() />
+
+	<cfset $.page.title("ColdMVC " & page) />
+	<cfset $.page.header(breadcrumbs) />
+
+<cfelse>
 <cfoutput>
 <cfsavecontent variable="thisTag.generatedContent">
 	<c:doctype />
@@ -15,6 +23,7 @@
 			<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" type="text/css" />
 			<c:style name="style.css" />
 			<c:script name="jquery-1.4.4.min.js" />
+			<c:script name="application.js" />
 		</head>
 		<body>
 			<div id="top">
