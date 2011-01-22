@@ -1,16 +1,13 @@
 <c:markdown>
 # This is a post title
 
-<c:lorem_ipsum />
+[Reference Guide] [1]
 
-	function show() {
+[Tags] [2]
 
-		params.post = _Post.get(params.id);
+[Annotations] [3]
 
-	}
-
-There's an example of some code.
-
-<c:lorem_ipsum />
-
+[1]: /chapters
+[2]: /tags
+[3]: /annotations
 </c:markdown>

@@ -183,6 +183,10 @@ dl.list dd {
 	padding-bottom: 10px;
 }
 
+#content dl.list dd p {
+	margin: 0;
+}
+
 div.parameters table {
 	margin: 15px 0;
 	background-color: #ddd;
