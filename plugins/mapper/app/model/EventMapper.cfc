@@ -1,9 +1,11 @@
 /**
  * @accessors true
+ * @initMethod setup
  * @singleton
  */
 component {
 
+	property fileSystemFacade;
 	property pluginManager;
 
 	public EventMapper function init() {
@@ -14,7 +16,7 @@ component {
 
 	}
 
-	public void function setPluginManager(required any pluginManager) {
+	public void function setup() {
 
 		var plugins = pluginManager.getPlugins();
 		var path = "/config/mappings.xml";
@@ -39,11 +41,11 @@ component {
 
 	private void function loadXML(required string filePath) {
 
-		if (!fileExists(filePath)) {
+		if (!fileSystemFacade.fileExists(filePath)) {
 			filePath = expandPath(filePath);
 		}
 
-		if (fileExists(filePath)) {
+		if (fileSystemFacade.fileExists(filePath)) {
 
 			var xml = xmlParse(fileRead(filePath));
 			var i = "";

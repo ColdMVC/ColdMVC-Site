@@ -6,6 +6,7 @@ component {
 
 	property configPath;
 	property eventMapper;
+	property fileSystemFacade;
 
 	public any function init() {
 
@@ -230,7 +231,7 @@ component {
 
 	private void function loadConfig() {
 
-		if (!fileExistS(variables.configPath)) {
+		if (!fileSystemFacade.fileExistS(variables.configPath)) {
 			variables.configPath = expandPath(variables.configPath);
 		}
 
