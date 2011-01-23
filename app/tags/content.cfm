@@ -4,6 +4,8 @@
 	<cfset attributes.text = thisTag.generatedContent />
 </cfif>
 
+<cfset attributes.text = trim(attributes.text) />
+
 <cfif attributes.text neq "">
 
 	<cfoutput>

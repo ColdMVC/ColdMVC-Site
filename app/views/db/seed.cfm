@@ -1,6 +1,5 @@
 <cfset modelFactory = $.factory.get("modelFactory") />
 <cfset markdownProcessor = $.factory.get("markdownProcessor") />
-<cfset urlPath =  />
 <cfset xml = fileRead(expandPath("/config/docs.xml")) />
 
 <cfquery>

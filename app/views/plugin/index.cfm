@@ -1,9 +1,7 @@
 <c:markdown>
 # Need something extra?
 
-If you have a plugin that you'd like to share, let us know by sending an email to <coldmvc@gmail.com>.
-
-For more information on plugins, check out the chapter on plugins in the [Reference Guide] [1].
+Plugins are a great way of extending the functionality of the framework without modifying the core files. For more information on plugins, check out the chapter on plugins in the [Reference Guide] [1].
 
 [1]: /chapters/plugins
 </c:markdown>
@@ -16,3 +14,7 @@ For more information on plugins, check out the chapter on plugins in the [Refere
 	</c:each>
 </dl>
 </cfoutput>
+
+<c:markdown>
+If you have a plugin that you'd like to share, let us know by sending an email to <coldmvc@gmail.com>.
+</c:markdown>

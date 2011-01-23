@@ -1,7 +1,7 @@
 <c:markdown>
 # What are you waiting for?
 
-ColdMVC is available to download on [GitHub] [1].
+ColdMVC is available to download on [GitHub] [1]. Go get it while it's hot!
 
 [1]: https://github.com/tonynelson19/ColdMVC  "tonynelson19/ColdMVC - GitHub"
 </c:markdown>

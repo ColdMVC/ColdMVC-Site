@@ -1,11 +1,7 @@
-<h1>Contact Us</h1>
-<c:form action="send">
-	<c:fieldset label="Send us your thoughts">
-		<c:input name="name" label="Your name" />
-		<c:input name="email" label="Your email address" instructions="Will not be displayed or published" />
-		<c:textarea name="message" />
-	</c:fieldset>
-	<c:buttons>
-		<c:submit label="Submit" />
-	</c:buttons>
-</c:form>
+<c:markdown>
+# Want to get ahold of somebody?
+
+The easiest way to contact us is by sending an email to <coldmvc@gmail.com> or sending a tweet to [@ColdMVC] [1].
+
+[1]: http://twitter.com/ColdMVC "@ColdMVC"
+</c:markdown>
