@@ -1,22 +1,24 @@
-<c:page_header text="A Convention Based Framework for ColdFusion" />
+<c:page_header text="&nbsp;" />
 
 <cfoutput>
-<div class="span-24">
-	<div class="intro">
-		<h1>This is some text</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div id="home">
+	<div class="span-24">
+		<div class="intro">
+			<h1>A Convention-Based MVC Framework for ColdFusion</h1>
+			<p>ColdMVC combines the elegance of modern frameworks with the ease of use of ColdFusion.</p>
+		</div>
 	</div>
-</div>
-<div class="span-8">
-	<h3>Simple</h3>
-	<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-</div>
-<div class="span-8">
-	<h3>Powerful</h3>
-	<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-</div>
-<div class="span-8 last">
-	<h3>Flexible</h3>
-	<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<div class="span-8">
+		<h2>Simple</h2>
+		<p>Modern conventions allow you to rapidly create web applications with less code.</p>
+	</div>
+	<div class="span-8">
+		<h2>Powerful</h2>
+		<p>Take advantage of dependency injection and object relational mapping to build powerful applications.</p>
+	</div>
+	<div class="span-8 last">
+		<h2>Flexible</h2>
+		<p>Easily extend your applications with custom tags, helpers, and plugins.</p>
+	</div>
 </div>
 </cfoutput>
