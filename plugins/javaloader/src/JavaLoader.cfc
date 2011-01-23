@@ -37,6 +37,9 @@ Purpose:    Utlitity class for loading Java Classes
 			//arguments.parentClassLoader = createObject("java", "java.lang.Thread").currentThread().getContextClassLoader();
 			//can't use above, as doesn't work in some... things
 
+			writeDump('here');
+			abort;
+
 			arguments.parentClassLoader = getPageContext().getClass().getClassLoader();
 
 			//arguments.parentClassLoader = createObject("java", "java.lang.ClassLoader").getSystemClassLoader();

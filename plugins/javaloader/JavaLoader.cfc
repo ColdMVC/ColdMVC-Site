@@ -5,7 +5,7 @@ component {
 
 	public any function init() {
 
-		variables.javaLoader = new src.JavaLoader([], true);
+		javaLoader = new src.JavaLoader([], false);
 
 		return this;
 
