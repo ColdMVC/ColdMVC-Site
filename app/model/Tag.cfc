@@ -10,5 +10,6 @@ component {
 	property parameters;
 	property example;
 	property slug;
+	property url;
 
 }

@@ -60,6 +60,9 @@
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
 		</property>
+		<property name="url" type="string">
+			<column name="URL" length="200" />
+		</property>
 	</class>
 	<class entity-name="Plugin" lazy="true" name="cfc:root.app.model.Plugin" table="Plugin">
 		<id name="id" type="int">
@@ -110,6 +113,9 @@
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
+		</property>
+		<property name="url" type="string">
+			<column name="URL" length="200" />
 		</property>
 	</class>
 </hibernate-mapping>

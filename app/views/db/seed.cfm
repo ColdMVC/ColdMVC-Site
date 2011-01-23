@@ -288,7 +288,8 @@
 			name = name,
 			description = getContent(d, "description"),
 			example = getContent(d, "example"),
-			slug = slug
+			slug = slug,
+			url = "https://github.com/tonynelson19/ColdMVC/blob/master/app/helpers/" & name & ".cfc"
 		}) />
 
 		<cfset helper.save(false) />
@@ -367,7 +368,8 @@
 			description = getContent(d, "description"),
 			example = getContent(d, "example"),
 			parameters = getContent(d, "parameters"),
-			slug = slug
+			slug = slug,
+			url = "https://github.com/tonynelson19/ColdMVC/blob/master/app/tags/" & name & ".cfm"
 		}) />
 
 		<cfset tag.save(false) />

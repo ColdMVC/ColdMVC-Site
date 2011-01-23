@@ -9,5 +9,6 @@ component {
 	property description;
 	property example;
 	property slug;
+	property url;
 
 }
