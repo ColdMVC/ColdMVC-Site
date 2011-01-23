@@ -72,7 +72,7 @@ a:hover {
 
 div#tabs ul {
 	position: absolute;
-	top: 12px;
+	top: 22px;
 	right: 0;
 }
 
@@ -87,13 +87,20 @@ div#tabs ul li a {
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
-	line-height: 3em;
+	line-height: 2em;
 	font-size: 1em;
 	text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 }
 
 div#tabs ul li a:hover {
 	color: #d1dbef;
+}
+
+div#tabs ul li.active a {
+	background-color: rgba(255, 255, 255, 0.07);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 }
 
 #header {
@@ -226,7 +233,7 @@ div.wizard_navigation div.wizard_next {
 }
 
 #sidebar_container {
-	border-left: 3px solid #95b4ef;
+	border-left: 3px solid #8EACCF;
 	padding-left: 10px;
 	margin-left: 20px;
 }
