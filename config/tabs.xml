@@ -4,7 +4,7 @@
 	<tab name="Documentation" controller="documentation" action="index">
 		<tabs>
 			<tab name="Annotations" controller="annotation" action="index" />
-			<tab name="Chapters" controller="chapter" action="index" />
+			<tab name="Reference Guide" controller="chapter" action="index" />
 			<tab name="Helpers" controller="helper" action="index" />
 			<tab name="Tags" controller="tag" action="index" />
 		</tabs>

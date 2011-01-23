@@ -9,7 +9,7 @@ If you still can't find what you're looking for, check out the [plugins] [5] or 
 
 If you're still lost and feeling ambitious, feel free to peruse the [source code] [7]. It's all open source!
 
-[1]: /chapters "Reference Guide"
+[1]: /guide "Reference Guide"
 [2]: /tags "Tags"
 [3]: /helpers "Helpers"
 [4]: /annotations "Annotations"

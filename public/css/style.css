@@ -250,6 +250,8 @@ div.wizard_navigation div.wizard_next {
 }
 
 #footer {
+	color: #666;
+	font-size: .7em;
 	margin-top: 40px;
 	padding: 10px 0;
 	border-top: 1px solid #e4e4e4;
@@ -257,4 +259,23 @@ div.wizard_navigation div.wizard_next {
 	background: gradient(linear, left top, left bottom, from(#eee), to(#fff));
 	background: -moz-linear-gradient(top, #eee, #fff);
 	background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+}
+
+#footer div.container {
+	position: relative;	
+}
+
+#footer ul {
+	position: absolute;
+	right: 0;
+	display: inline;
+}
+
+#footer ul li {
+	display: inline;
+	padding: 0 5px;
+}
+
+#footer ul li a {
+	color: #666;
 }

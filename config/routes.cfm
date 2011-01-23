@@ -1,4 +1,4 @@
-<cfloop list="annotation,chapter,helper,plugin,tag" index="i">
+<cfloop list="annotation,helper,plugin,tag" index="i">
 
 	<cfset add("/#i#s/:slug", {
 		defaults = {
@@ -17,3 +17,19 @@
 	}) />
 
 </cfloop>
+
+<cfset add("/guide/:slug", {
+	defaults = {
+		controller = "chapter",
+		action = "show"
+	},
+	model = "chapter",
+	generates = "/guide/:id.slug()"
+}) />
+
+<cfset add("/guide", {
+	required = {
+		controller = "chapter",
+		action = "index"
+	}
+}) />

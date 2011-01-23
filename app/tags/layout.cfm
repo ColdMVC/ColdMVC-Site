@@ -42,7 +42,8 @@
 			#thisTag.generatedContent#
 			<div id="footer">
 				<div class="container">
-					Footer
+					&copy; #year(now())# Tony Nelson
+					<c:tabs />
 				</div>
 			</div>
 		</body>

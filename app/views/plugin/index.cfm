@@ -3,7 +3,7 @@
 
 Plugins are a great way of extending the functionality of the framework without modifying the core files. For more information on plugins, check out the chapter on plugins in the [Reference Guide] [1].
 
-[1]: /chapters/plugins
+[1]: /guide/plugins
 </c:markdown>
 
 <cfoutput>
