@@ -1,4 +1,4 @@
-<cfloop list="annotation,chapter,tag" index="i">
+<cfloop list="annotation,chapter,helper,plugin,tag" index="i">
 
 	<cfset add("/#i#s/:slug", {
 		defaults = {
@@ -17,12 +17,3 @@
 	}) />
 
 </cfloop>
-
-<cfset add("/:action", {
-	defaults = {
-		controller = "site"
-	},
-	requirements = {
-		action = "(home|download|plugins)"
-	}
-}) />

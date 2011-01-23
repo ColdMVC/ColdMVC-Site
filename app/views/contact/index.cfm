@@ -1,4 +1,3 @@
-
 <h1>Contact Us</h1>
 <c:form action="send">
 	<c:fieldset label="Send us your thoughts">

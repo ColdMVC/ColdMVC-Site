@@ -1,18 +1,28 @@
 <cfset modelFactory = $.factory.get("modelFactory") />
 <cfset markdownProcessor = $.factory.get("markdownProcessor") />
 <cfset urlPath = $.config.get("urlPath") />
+<cfset xml = fileRead(expandPath("/config/docs.xml")) />
 
 <cfquery>
 	truncate table annotation
 	truncate table chapter
+	truncate table helper
+	truncate table plugin
 	truncate table tag
 </cfquery>
+
+<cffunction name="getFileName">
+	<cfargument name="path" />
+
+	<cfreturn listFirst(listLast(path, "\"), ".") />
+
+</cffunction>
 
 <cffunction name="getContent">
 	<cfargument name="directory" />
 	<cfargument name="file" />
 
-	<cfset var path = arguments.directory & arguments.file />
+	<cfset var path = arguments.directory & arguments.file & ".txt" />
 
 	<cfif not fileExists(path)>
 		<cfset fileWrite(path, "") />
@@ -189,38 +199,27 @@
 
 <!--- annotations --->
 <cfset _Annotation = modelFactory.get("Annotation") />
-<cfset annotationArray = _Annotation.list() />
-<cfset annotations = $.array.toStruct(annotationArray, "name") />
-<cfset xml = fileRead(expandPath("/config/docs.xml")) />
+<cfset annotations = $.array.toStruct(_Annotation.list(), "name") />
 <cfset annotationXML = xmlSearch(xml, "sections/section[@id='annotations']/pages/page") />
 
 <cfloop from="1" to="#arrayLen(annotationXML)#" index="i">
 
 	<cfset name = annotationXML[i].xmlAttributes.id />
+	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/annotations/#name#/")>
+	<cfset d = expandPath("/coldsite/docs/annotations/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/annotations/#name#.txt") />
-
-	<cfif fileExists(f)>
-		<cfset fileDelete(f) />
-	</cfif>
-
-	<cfset description = getContent(d, "description.txt") />
-	<cfset example = getContent(d, "example.txt") />
-
 	<cfif not structKeyExists(annotations, name)>
 
 		<cfset annotation = _Annotation.new({
 			name = name,
-			description = description,
-			example = example,
-			slug = $.string.slugify(name),
-			order = i
+			description = getContent(d, "description"),
+			example = getContent(d, "example"),
+			slug = slug
 		}) />
 
 		<cfset annotation.save(false) />
@@ -231,37 +230,27 @@
 
 <!--- chapters --->
 <cfset _Chapter = modelFactory.get("Chapter") />
-<cfset chapterArray = _Chapter.list() />
-<cfset chapters = $.array.toStruct(chapterArray, "name") />
-<cfset xml = fileRead(expandPath("/config/docs.xml")) />
+<cfset chapters = $.array.toStruct(_Chapter.list(), "name") />
 <cfset chapterXML = xmlSearch(xml, "sections/section[@id='chapters']/pages/page") />
 
 <cfloop from="1" to="#arrayLen(chapterXML)#" index="i">
 
 	<cfset name = chapterXML[i].xmlAttributes.id />
+	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/chapters/#name#/")>
+	<cfset d = expandPath("/coldsite/docs/chapters/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/chapters/#name#.txt") />
-
-	<cfif fileExists(f)>
-		<cfset fileDelete(f) />
-	</cfif>
-
-	<cfset description = getContent(d, "description.txt") />
-	<cfset content = getContent(d, "content.txt") />
-
 	<cfif not structKeyExists(chapters, name)>
 
 		<cfset chapter = _Chapter.new({
 			name = name,
-			description = description,
-			content = content,
-			slug = $.string.slugify(name),
+			description = getContent(d, "description"),
+			content = getContent(d, "content"),
+			slug = slug,
 			order = i
 		}) />
 
@@ -271,18 +260,95 @@
 
 </cfloop>
 
+<!--- helpers --->
+<cfset _Helper = modelFactory.get("Helper") />
+<cfset helpers = $.array.toStruct(_Helper.list(), "name") />
+<cfset helperArray = directoryList(expandPath("/coldmvc/app/helpers")) />
+
+<cfloop from="1" to="#arrayLen(helperArray)#" index="i">
+
+	<cfset name = getFileName(helperArray[i]) />
+	<cfset slug = $.string.slugify(name) />
+
+	<cfset d = expandPath("/coldsite/docs/helpers/#slug#/")>
+
+	<cfif not directoryExists(d)>
+		<cfset directoryCreate(d) />
+	</cfif>
+
+	<cfset f = expandPath("/coldsite/docs/helpers/#name#.txt") />
+
+	<cfif fileExists(f)>
+		<cfset fileDelete(f) />
+	</cfif>
+
+	<cfif not structKeyExists(helpers, name)>
+
+		<cfset helper = _Helper.new({
+			name = name,
+			description = getContent(d, "description"),
+			example = getContent(d, "example"),
+			slug = slug
+		}) />
+
+		<cfset helper.save(false) />
+
+	</cfif>
+
+</cfloop>
+
+<!--- plugins --->
+<cfset _Plugin = modelFactory.get("Plugin") />
+<cfset plugins = $.array.toStruct(_Plugin.list(), "name") />
+<cfset pluginXML = xmlSearch(xml, "sections/section[@id='plugins']/pages/page") />
+
+<cfloop from="1" to="#arrayLen(pluginXML)#" index="i">
+
+	<cfset name = pluginXML[i].xmlAttributes.id />
+	<cfset slug = $.string.slugify(name) />
+
+	<cfset d = expandPath("/coldsite/docs/plugins/#slug#/")>
+
+	<cfif not directoryExists(d)>
+		<cfset directoryCreate(d) />
+	</cfif>
+
+	<cfset f = expandPath("/coldsite/docs/plugins/#name#.txt") />
+
+	<cfif fileExists(f)>
+		<cfset fileDelete(f) />
+	</cfif>
+
+	<cfif not structKeyExists(plugins, name)>
+
+		<cfset plugin = _Plugin.new({
+			name = name,
+			description = getContent(d, "description"),
+			author = getContent(d, "author"),
+			version = getContent(d, "version"),
+			content = getContent(d, "content"),
+			example = getContent(d, "example"),
+			url = getContent(d, "url"),
+			slug = slug
+		}) />
+
+		<cfset plugin.save(false) />
+
+	</cfif>
+
+</cfloop>
+
 <!--- tags --->
 <cfset _Tag = modelFactory.get("Tag") />
-<cfset tagArray = _Tag.list() />
-<cfset tags = $.array.toStruct(tagArray, "name") />
-<cfset xml = fileRead(expandPath("/config/docs.xml")) />
-<cfset tagXML = xmlSearch(xml, "sections/section[@id='tags']/pages/page") />
+<cfset tags = $.array.toStruct(_Tag.list(), "name") />
+<cfset tagArray = directoryList(expandPath("/coldmvc/app/tags")) />
 
-<cfloop from="1" to="#arrayLen(tagXML)#" index="i">
+<cfloop from="1" to="#arrayLen(tagArray)#" index="i">
 
-	<cfset name = tagXML[i].xmlAttributes.id />
+	<cfset name = getFileName(tagArray[i]) />
+	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/tags/#name#/")>
+	<cfset d = expandPath("/coldsite/docs/tags/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
@@ -294,19 +360,14 @@
 		<cfset fileDelete(f) />
 	</cfif>
 
-	<cfset description = getContent(d, "description.txt") />
-	<cfset parameters = getContent(d, "parameters.txt") />
-	<cfset example = getContent(d, "example.txt") />
-
 	<cfif not structKeyExists(tags, name)>
 
 		<cfset tag = _Tag.new({
 			name = name,
-			description = description,
-			example = example,
-			parameters = parameters,
-			slug = $.string.slugify(name),
-			order = i
+			description = getContent(d, "description"),
+			example = getContent(d, "example"),
+			parameters = getContent(d, "parameters"),
+			slug = slug
 		}) />
 
 		<cfset tag.save(false) />

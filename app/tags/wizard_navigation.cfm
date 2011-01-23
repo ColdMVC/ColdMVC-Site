@@ -20,7 +20,7 @@
 				</cfif>
 
 				<div class="wizard_#lcase(i)#">
-					<a href="#attributes['#i#_url']#" title="#attributes['#i#_text']#"><cfif i eq "previous">&laquo; </cfif>#attributes['#i#_text']#<cfif i eq "next"> &raquo;</cfif></a>
+					<a href="#attributes['#i#_url']#" title="#attributes['#i#_text']#"><cfif i eq "previous">&laquo; Previous: <cfelse>Next: </cfif>#attributes['#i#_text']#<cfif i eq "next"> &raquo;</cfif></a>
 				</div>
 			<cfelse>
 				<div class="wizard_#i#"></div>

@@ -1,6 +1,6 @@
 /**
  * @accessors true
- * @extends coldmvc.Controller
+ * @singleton
  */
 component {
 

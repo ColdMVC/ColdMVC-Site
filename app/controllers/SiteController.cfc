@@ -1,14 +1,7 @@
 /**
- * @extends coldmvc.Controller
+ * @singleton
  * @directory /
  */
 component {
-
-	/**
-	 * @layout discussion
-	 */
-	function discussion() {
-
-	}
 
 }

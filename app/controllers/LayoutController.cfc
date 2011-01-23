@@ -6,6 +6,8 @@ component {
 
 	property _Annotation;
 	property _Chapter;
+	property _Helper;
+	property _Plugin;
 	property _Tag;
 
 	function pre() {
@@ -17,14 +19,14 @@ component {
 	function annotation() {
 
 		addSidebar("annotation/sidebar");
-		params.annotations = _Annotation.list();
+		params.annotations = _Annotation.list({sort="name", order="asc"});
 
 	}
 
 	function chapter() {
 
 		addSidebar("chapter/sidebar");
-		params.chapters = _Chapter.list();
+		params.chapters = _Chapter.list({sort="order", order="asc"});
 
 	}
 
@@ -51,10 +53,24 @@ component {
 
 	}
 
+	function helper() {
+
+		addSidebar("helper/sidebar");
+		params.helpers = _Helper.list({sort="name", order="asc"});
+
+	}
+
+	function plugin() {
+
+		addSidebar("plugin/sidebar");
+		params.plugins = _Plugin.list({sort="name", order="asc"});
+
+	}
+
 	function tag() {
 
 		addSidebar("tag/sidebar");
-		params.tags = _Tag.list();
+		params.tags = _Tag.list({sort="name", order="asc"});
 
 	}
 

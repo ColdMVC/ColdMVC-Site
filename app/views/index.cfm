@@ -1,4 +1,4 @@
-<cfset $.page.header("A Convention Based Framework for ColdFusion") />
+<c:page_header text="A Convention Based Framework for ColdFusion" />
 
 <cfoutput>
 <div class="span-24">

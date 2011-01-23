@@ -18,11 +18,8 @@
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
 		</property>
-		<property name="order" type="integer">
-			<column name="`Order`" />
-		</property>
 	</class>
-	<class entity-name="Chapter" lazy="true" name="cfc:coldsite.app.model.Chapter" table="Chapter">
+	<class entity-name="Chapter" lazy="true" name="cfc:root.app.model.Chapter" table="Chapter">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -43,7 +40,7 @@
 			<column name="`Order`" />
 		</property>
 	</class>
-	<class entity-name="Tag" lazy="true" name="cfc:coldsite.app.model.Tag" table="Tag">
+	<class entity-name="Helper" lazy="true" name="cfc:root.app.model.Helper" table="Helper">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -63,8 +60,56 @@
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
 		</property>
-		<property name="order" type="integer">
-			<column name="`Order`" />
+	</class>
+	<class entity-name="Plugin" lazy="true" name="cfc:root.app.model.Plugin" table="Plugin">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="name" type="string">
+			<column name="Name" length="100" />
+		</property>
+		<property name="author" type="string">
+			<column name="Author" length="100" />
+		</property>
+		<property name="version" type="string">
+			<column name="Version" length="10" />
+		</property>
+		<property name="description" type="string">
+			<column name="Description" length="4000" />
+		</property>
+		<property name="content" type="string">
+			<column name="Content" length="4000" />
+		</property>
+		<property name="example" type="string">
+			<column name="Example" length="4000" />
+		</property>
+		<property name="url" type="string">
+			<column name="URL" length="200" />
+		</property>
+		<property name="slug" type="string">
+			<column name="Slug" length="50" />
+		</property>
+	</class>
+	<class entity-name="Tag" lazy="true" name="cfc:root.app.model.Tag" table="Tag">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="name" type="string">
+			<column name="Name" length="50" />
+		</property>
+		<property name="description" type="string">
+			<column name="Description" length="4000" />
+		</property>
+		<property name="Parameters" type="string">
+			<column name="Parameters" length="4000" />
+		</property>
+		<property name="example" type="string">
+			<column name="Example" length="4000" />
+		</property>
+		<property name="slug" type="string">
+			<column name="Slug" length="50" />
 		</property>
 	</class>
 </hibernate-mapping>

@@ -11,7 +11,7 @@ component {
 	 */
 	function index() {
 
-		params.annotations = _Annotation.list();
+		params.annotations = _Annotation.list({sort="name", order="asc"});
 
 	}
 

@@ -53,106 +53,20 @@
 			<page id="Reload Application" />
 		</pages>
 	</section>
-	<section id="helpers">
+	<section id="plugins">
 		<pages>
-			<page id="application" />
-			<page id="array" />
-			<page id="asset" />
-			<page id="bind" />
-			<page id="cgi" />
-			<page id="config" />
-			<page id="cookie" />
-			<page id="data" />
-			<page id="database" />
-			<page id="date" />
-			<page id="debug" />
-			<page id="event" />
-			<page id="factory" />
-			<page id="flash" />
-			<page id="form" />
-			<page id="html" />
-			<page id="link" />
-			<page id="list" />
-			<page id="loop" />
-			<page id="paging" />
-			<page id="params" />
-			<page id="query" />
-			<page id="querystring" />
-			<page id="request" />
-			<page id="server" />
-			<page id="session" />
-			<page id="string" />
-			<page id="struct" />
-			<page id="url" />
-			<page id="user" />
-			<page id="valid" />
-			<page id="xml" />
-		</pages>
-	</section>
-	<section id="orm">
-		<pages>
-			<page id="add" />
-			<page id="addTo" />
-			<page id="count" />
-			<page id="countBy" />
-			<page id="countWhere" />
-			<page id="delete" />
-			<page id="exists" />
-			<page id="findAllBy" />
-			<page id="findAllWhere" />
-			<page id="findAllWith" />
-			<page id="findBy" />
-			<page id="findWhere" />
-			<page id="get" />
-			<page id="getAll" />
-			<page id="has" />
-			<page id="list" />
-			<page id="new" />
-			<page id="populate" />
-			<page id="save" />
-			<page id="_get" />
-			<page id="_set" /> 
-		</pages>
-	</section>
-	<section id="tags">
-		<pages>
-			<page id="atom" />
-			<page id="button" />
-			<page id="buttons" />
-			<page id="checkbox" />
-			<page id="content_type" />
-			<page id="date" />
-			<page id="doctype" />
-			<page id="each" />
-			<page id="email" />
-			<page id="favicon" />
-			<page id="field" />
-			<page id="fieldset" />
-			<page id="flash" />
-			<page id="form" />
-			<page id="hidden" />
-			<page id="html" />
-			<page id="image" />
-			<page id="include" />
-			<page id="input" />
-			<page id="number" />
-			<page id="paging" />
-			<page id="password" />
-			<page id="radio" />
-			<page id="render" />
-			<page id="rss" />
-			<page id="script" />
-			<page id="search" />
-			<page id="select" />
-			<page id="style" />
-			<page id="submit" />
-			<page id="table" />
-			<page id="text" />
-			<page id="textarea" />
-			<page id="time" />
-			<page id="tr" />
-			<page id="upload" />
-			<page id="url" /> 
+			<page id="Mapper" />
+			<page id="Tabs" />
+			<page id="Breadcrumbs" />
+			<page id="Markdown" />
+			<page id="LessCSS" />
+			<page id="Assets" />
+			<page id="Samples" />
+			<page id="Cells" />
+			<page id="Serializer" />
+			<page id="Security" />
+			<page id="Validation" />
+			<page id="JavaLoader" />
 		</pages>
 	</section>
 </sections>
