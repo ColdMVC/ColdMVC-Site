@@ -119,6 +119,7 @@ div#tabs ul li a:hover {
 #content,
 #sidebar {
 	margin: 20px 0;
+	min-height: 300px;
 }
 
 #content h1 {
