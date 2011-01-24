@@ -20,12 +20,12 @@
 			<page id="Introduction" />
 			<page id="Installation" />
 			<page id="MVC" />
-			<page id="Hibernate" />
-			<page id="Coldspring" />
 			<page id="Hello World" />
 			<page id="Directory Structure" />
 			<page id="Config Variables" />
 			<page id="Environments" />
+			<page id="Hibernate" />
+			<page id="Coldspring" />
 			<page id="Controllers" />
 			<page id="Routing Requests" />
 			<page id="Params" />

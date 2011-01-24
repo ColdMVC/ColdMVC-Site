@@ -168,6 +168,7 @@ div#tabs ul li.active a {
 
 #home h2 {
 	color: #47608f;
+	border-bottom: 2px solid #8EACCF;
 }
 
 dl.list dt {
@@ -179,7 +180,7 @@ dl.list dt a {
 }
 
 dl.list dd {
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ddd;
 	font-style: italic;
 	padding-bottom: 10px;
 }
@@ -233,7 +234,7 @@ div.wizard_navigation div.wizard_next {
 }
 
 #sidebar_container {
-	border-left: 3px solid #8EACCF;
+	border-left: 2px solid #8EACCF;
 	padding-left: 10px;
 	margin-left: 20px;
 }
