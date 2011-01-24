@@ -1,0 +1,34 @@
+Controllers are referenced in the framework by their name, which is typically an underscore-ized name of the component without the _Controller_ suffix. For example, _FooController.cfc_ would be referenced as the _foo_ controller, while _FooBarController.cfc_ would be referenced as the _foo_bar_ controller. While this convention works in most cases, you can use _@controller_ to change the name of a controller.
+
+In the following example, the _BookController_ is aliased as _mybook_, so that requests made to _/mybook/list_ will execute _BookController.list()_.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+ 	 * @controller mybook
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+		
+		function list() {
+		
+			params.books = _Book.list();
+		
+		}
+		
+		function save() {
+
+			var book = _Book.get(params.id);
+			populate(params.book);
+			book.save();
+			
+			flash.message = "Book saved successfully";
+
+			redirect({controller="mybook", action="list"});
+	
+		}
+
+	}
