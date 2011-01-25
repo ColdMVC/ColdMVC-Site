@@ -1,0 +1,12 @@
+In the following example, the model for the _BookController_ will be set to _FictionalBook_, allowing the inherited methods inside _coldmvc.Controller_ to use the _FictionalBook_ model rather than the default _Book_ model.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @extends coldmvc.Controller
+ 	 * @model FictionalBook
+	 */
+	component {
+
+	}

@@ -1,0 +1,22 @@
+In the following example, the _show_ action can output its params in either _html_ or _json_ format.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+
+		/**
+		 * @formats html, json
+		 */
+		function show() {
+
+			params.book = _Book.get(params.id);
+
+		}
+
+	}

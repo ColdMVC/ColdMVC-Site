@@ -1,5 +1,3 @@
-By default, a controller's views are located inside a directory with the same name as the controller. For example, a _FooController_ would normally have its views located inside _/views/foo/_. You can change the location for a controller's views by using the _@directory_ annotation.  
-
 In the following example, requests made to the _BookController_ will render views located inside _/views/admin/books/_, rather than the default _/views/book/_ location.
 
 **BookController.cfc**

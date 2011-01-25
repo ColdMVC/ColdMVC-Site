@@ -1,6 +1,4 @@
-You can specify an _@ajaxLayout_ on both the component and on functions. If an _@ajaxLayout_ annotation is not specified on a function, it will use the _@ajaxLayout_ specified on the component if one has been defined. If an _@ajaxLayout_ is not specified anywhere, no layout will be rendered for the request.
-
-In the following example, Ajax requests made to _/book/list will_ use the _simple_ layout, while Ajax requests made to _/book/show_ will use the _modal_ layout.
+In the following example, Ajax requests made to _/book/list_ will_ use the _simple_ layout, while Ajax requests made to _/book/show_ will use the _modal_ layout.
 
 **BookController.cfc**
 

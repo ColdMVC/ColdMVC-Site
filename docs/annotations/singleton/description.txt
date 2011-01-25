@@ -1,0 +1,1 @@
+Marks a component as a singleton object and allows it to be automatically registered with the bean factory.

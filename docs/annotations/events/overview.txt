@@ -1,0 +1,6 @@
+You can add event listeners to any function inside singleton components by using the _@events_ annotation. The value of the annotation can be a regular expression that matches any of the various events that are triggered during the life of a request.
+
+For more information, see the [chapter on events] [1] in the [reference guide] [2].
+
+[1]: /guide/events "Events"
+[2]: /guide "Reference Guide"

@@ -1,0 +1,1 @@
+Sets the view to be rendered for an action on a controller.

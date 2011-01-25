@@ -1,0 +1,6 @@
+By using the _@viewHelper_ annotation, you can expose methods on both helpers and singleton beans to views using an alias.
+
+For more information, see the [chapter on view helpers] [1] in the [reference guide] [2].
+
+[1]: /guide/viewhelpers "View Helpers"
+[2]: /guide "Reference Guide"

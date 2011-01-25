@@ -1,0 +1,6 @@
+By default, an action will automatically render a view located at _/views/{controller}/{action}.cfm_. For example, a request to _/book/list_ would invoke _BookController.list()_ and render a view located at _/views/book/list.cfm_. You can change the view that is rendered for an action by using the _@view_ annotation.
+
+For more information, see the [chapter on views] [1] in the [reference guide] [2].
+
+[1]: /guide/views "Views"
+[2]: /guide "Reference Guide"

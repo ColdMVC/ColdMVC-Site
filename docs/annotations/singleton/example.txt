@@ -1,0 +1,17 @@
+In the following example, the _SecurityService_ is registered as a singleton bean in the bean factory by using the _@singleton_ annotation.
+
+**SecurityService.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		function authenticateUser(required string userName, required string password) {
+
+			... authentication logic here ...
+
+		}
+
+	}

@@ -1,0 +1,6 @@
+You can specify an _@ajaxLayout_ on both the component and on functions. If an _@ajaxLayout_ annotation is not specified on a function, it will use the _@ajaxLayout_ specified on the component if one has been defined. If an _@ajaxLayout_ annotation is not specified anywhere in the controller, no layout will be rendered for the request.
+
+For more information, see the [chapter on layouts] [1] in the [reference guide] [2].
+
+[1]: /guide/layouts "Layouts"
+[2]: /guide "Reference Guide"

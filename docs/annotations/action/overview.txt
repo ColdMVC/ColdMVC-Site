@@ -1,0 +1,1 @@
+If a request is routed to a controller without specifying the action, the default action will be executed. You can set the default action for a controller by using the _@action_ annotation. If an _@action_ annotation specified, the default action will be _index_.

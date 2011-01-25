@@ -1,0 +1,22 @@
+In the following example, the _paperback_ action in the _BookController_ will render the view located at _/views/book/list.cfm_ rather than the default location of _/views/book/paperback.cfm_
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+		
+		/**
+ 		 * @view book/list.cfm
+		 * /
+		function paperback() {
+
+			params.books = _Book.findAllByType("Paperback");
+
+		}
+
+	}

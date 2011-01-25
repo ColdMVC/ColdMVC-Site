@@ -1,0 +1,29 @@
+In the following example, requests made to _/book/list_ will_ use the _full_ layout, while requests made to _/book/show_ will use the _book_ layout.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+ 	 * @layout full
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+	
+		function list() {
+
+			params.books = _Book.list();
+	
+		}
+		
+		/**
+		 * @layout book
+		 * /
+		function show() {
+
+			params.book = _Book.get(params.id);
+	
+		}
+
+	}

@@ -1,0 +1,16 @@
+In the following example, the _asset_ helper exposes its _linkToImage_ method to views as _linkToImage_.
+
+**asset.cfc**
+	
+	component {
+
+		/**	
+		 * @viewHelper renderImage
+		 */
+		public string function renderImage(required string name) {
+
+			return '<img src="#linkToImage(name)#" alt="" />';
+
+		}
+
+	}
