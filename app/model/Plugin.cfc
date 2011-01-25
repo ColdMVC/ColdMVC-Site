@@ -9,7 +9,7 @@ component {
 	property author;
 	property version;
 	property description;
-	property content;
+	property overview;
 	property example;
 	property url;
 	property slug;

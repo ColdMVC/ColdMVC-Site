@@ -12,6 +12,9 @@
 		<property name="description" type="string">
 			<column name="Description" length="4000" />
 		</property>
+		<property name="overview" type="string">
+			<column name="Overview" length="4000" />
+		</property>
 		<property name="example" type="string">
 			<column name="Example" length="4000" />
 		</property>
@@ -51,6 +54,9 @@
 		<property name="description" type="string">
 			<column name="Description" length="4000" />
 		</property>
+		<property name="overview" type="string">
+			<column name="Overview" length="4000" />
+		</property>
 		<property name="Parameters" type="string">
 			<column name="Parameters" length="4000" />
 		</property>
@@ -81,8 +87,8 @@
 		<property name="description" type="string">
 			<column name="Description" length="4000" />
 		</property>
-		<property name="content" type="string">
-			<column name="Content" length="4000" />
+		<property name="overview" type="string">
+			<column name="Overview" length="4000" />
 		</property>
 		<property name="example" type="string">
 			<column name="Example" length="4000" />
@@ -104,6 +110,9 @@
 		</property>
 		<property name="description" type="string">
 			<column name="Description" length="4000" />
+		</property>
+		<property name="overview" type="string">
+			<column name="Overview" length="4000" />
 		</property>
 		<property name="Parameters" type="string">
 			<column name="Parameters" length="4000" />

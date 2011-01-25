@@ -60,6 +60,7 @@
 			name = name,
 			description = getContent(d, "description"),
 			example = getContent(d, "example"),
+			overview = getContent(d, "overview"),
 			slug = slug
 		}) />
 
@@ -129,6 +130,7 @@
 			name = name,
 			description = getContent(d, "description"),
 			example = getContent(d, "example"),
+			overview = getContent(d, "overview"),
 			slug = slug,
 			url = "https://github.com/tonynelson19/ColdMVC/blob/master/app/helpers/" & name & ".cfc"
 		}) />
@@ -155,7 +157,7 @@
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/plugins/#name#.txt") />
+	<cfset f = expandPath("/coldsite/docs/plugins/#slug#/content.txt") />
 
 	<cfif fileExists(f)>
 		<cfset fileDelete(f) />
@@ -168,7 +170,7 @@
 			description = getContent(d, "description"),
 			author = getContent(d, "author"),
 			version = getContent(d, "version"),
-			content = getContent(d, "content"),
+			overview = getContent(d, "overview"),
 			example = getContent(d, "example"),
 			url = getContent(d, "url"),
 			slug = slug
@@ -208,6 +210,7 @@
 			name = name,
 			description = getContent(d, "description"),
 			example = getContent(d, "example"),
+			overview = getContent(d, "overview"),
 			parameters = getContent(d, "parameters"),
 			slug = slug,
 			url = "https://github.com/tonynelson19/ColdMVC/blob/master/app/tags/" & name & ".cfm"
