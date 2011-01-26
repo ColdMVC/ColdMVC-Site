@@ -2,5 +2,5 @@ By using the _@viewHelper_ annotation, you can expose methods on both helpers an
 
 For more information, see the [chapter on view helpers] [1] in the [reference guide] [2].
 
-[1]: /guide/viewhelpers "View Helpers"
+[1]: /guide/view-helpers "View Helpers"
 [2]: /guide "Reference Guide"
