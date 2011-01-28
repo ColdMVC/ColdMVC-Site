@@ -1,0 +1,6 @@
+| Name        | Required | Type    | Default | Description                                |
+|-------------|----------|---------|---------|--------------------------------------------|
+| cellspacing | false    | numeric | 0       | The cell spacing of the table.             |
+| class       | false    | string  | list    | The class for the table.                   |
+| label       | false    | string  |         | The label to be displayed above the table. |
+| width       | false    | string  | 100%    | The width of the table.                    |

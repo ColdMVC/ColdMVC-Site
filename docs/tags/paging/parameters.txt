@@ -1,0 +1,4 @@
+| Name       | Required | Type   | Default | Description                                                        |
+|------------|----------|--------|---------|--------------------------------------------------------------------|
+| parameters | false    | string |         | A querystring of parameters to use when building pagination links. |
+| records    | true     | any    |         | The records that are being paginated.                              |

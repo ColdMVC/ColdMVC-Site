@@ -1,0 +1,3 @@
+| Name | Required | Type   | Default                | Description         |
+|------|----------|--------|------------------------|---------------------|
+| view | false    | string | #coldmvc.event.view()# | The view to render. |

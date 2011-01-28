@@ -1,0 +1,23 @@
+| Name         | Required | Type    | Default           | Description                                |
+|--------------|----------|---------|-------------------|--------------------------------------------|
+| class        | false    | string  |                   | The class for the input.                   |
+| disabled     | false    | boolean | false             | If the input is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the input.                       |
+| instructions | false    | string  |                   | The instructions for the input.            |
+| label        | false    | string  | ${humanized name} | The label for the input.                   |
+| name         | true     | string  |                   | The name of the input.                     |
+| onblur       | false    | string  |                   | The onblur event for the input.            |
+| onchange     | false    | string  |                   | The onchange event for the input.          |
+| onclick      | false    | string  |                   | The onclick event for the input.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the input.        |
+| onfocus      | false    | string  |                   | The onfocus event for the input.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the input.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the input.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the input.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the input.          |
+| readonly     | false    | boolean | false             | If the input is read only.                 |
+| style        | false    | string  |                   | The style for the input.                   |
+| title        | false    | string  | ${label}          | The title for the input.                   |
+| value        | false    | string  |                   | The value of the input.                    |
+| visible      | false    | boolean | true              | If the input is visible.                   |
+| wrapper      | false    | boolean | true              | If the input should be wrapped in a label. |

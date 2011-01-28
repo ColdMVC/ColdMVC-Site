@@ -1,0 +1,4 @@
+| Name    | Required | Type   | Default | Description                                          |
+|---------|----------|--------|---------|------------------------------------------------------|
+| default | false    | string | &nbsp;  | The default value to be displayed for empty strings. |
+| value   | false    | string |         | The value of the string to be display.               |

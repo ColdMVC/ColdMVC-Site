@@ -1,0 +1,5 @@
+| Name  | Required | Type   | Default | Description                    |
+|-------|----------|--------|---------|--------------------------------|
+| id    | false    | string | ${name} | The id of the hidden field.    |
+| name  | true     | string |         | The name of the hidden field.  |
+| value | false    | string |         | The value of the hidden field. |

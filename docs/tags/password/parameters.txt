@@ -1,0 +1,23 @@
+| Name         | Required | Type    | Default           | Description                                   |
+|--------------|----------|---------|-------------------|-----------------------------------------------|
+| class        | false    | string  |                   | The class for the password.                   |
+| disabled     | false    | boolean | false             | If the password is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the password.                       |
+| instructions | false    | string  |                   | The instructions for the password.            |
+| label        | false    | string  | ${humanized name} | The label for the password.                   |
+| name         | true     | string  |                   | The name of the password.                     |
+| onblur       | false    | string  |                   | The onblur event for the password.            |
+| onchange     | false    | string  |                   | The onchange event for the password.          |
+| onclick      | false    | string  |                   | The onclick event for the password.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the password.        |
+| onfocus      | false    | string  |                   | The onfocus event for the password.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the password.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the password.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the password.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the password.          |
+| readonly     | false    | boolean | false             | If the password is read only.                 |
+| style        | false    | string  |                   | The style for the password.                   |
+| title        | false    | string  | ${label}          | The title for the password.                   |
+| value        | false    | string  |                   | The value of the password.                    |
+| visible      | false    | boolean | true              | If the password is visible.                   |
+| wrapper      | false    | boolean | true              | If the password should be wrapped in a label. |

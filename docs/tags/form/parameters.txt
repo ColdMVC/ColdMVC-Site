@@ -1,0 +1,18 @@
+| Name       | Required | Type    | Default | Description                              |
+|------------|----------|---------|---------|------------------------------------------|
+| bind       | false    | string  |         | The name of a param to bind the form to. |
+| class      | false    | string  |         | The class for the form.                  |
+| id         | false    | string  | ${name} | The id of the form.                      |
+| method     | false    | string  | post    | The method of the form ("post", "get").  |
+| name       | false    | string  | form    | The name of the form.                    |
+| onblur     | false    | string  |         | The onblur event for the form.           |
+| onchange   | false    | string  |         | The onchange event for the form.         |
+| onclick    | false    | string  |         | The onclick event for the form.          |
+| ondblclick | false    | string  |         | The ondblclick event for the form.       |
+| onfocus    | false    | string  |         | The onfocus event for the form.          |
+| onkeydown  | false    | string  |         | The onkeydown event for the form.        |
+| onkeypress | false    | string  |         | The onkeypress event for the form.       |
+| onkeyup    | false    | string  |         | The onkeyup event for the form.          |
+| onsubmit   | false    | string  |         | The onsubmit event for the form.         |
+| readonly   | false    | boolean | false   | If the form is read only.                |
+| url        | false    | string  |         | The URL for the form.                    |

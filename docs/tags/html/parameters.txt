@@ -1,0 +1,5 @@
+| Name    | Required | Type   | Default                      | Description                                |
+|---------|----------|--------|------------------------------|--------------------------------------------|
+| lang    | false    | string | en-US                        | Specifies a language code for the content. |
+| xmllang | false    | string | en-US                        | Specifies a language code for the content. |
+| xmlns   | false    | string | http://www.w3.org/1999/xhtml | Specifies the namespace to use.            |

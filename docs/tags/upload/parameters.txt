@@ -1,0 +1,23 @@
+| Name         | Required | Type    | Default           | Description                                 |
+|--------------|----------|---------|-------------------|---------------------------------------------|
+| class        | false    | string  |                   | The class for the upload.                   |
+| disabled     | false    | boolean | false             | If the upload is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the upload.                       |
+| instructions | false    | string  |                   | The instructions for the upload.            |
+| label        | false    | string  | ${humanized name} | The label for the upload.                   |
+| name         | true     | string  |                   | The name of the upload.                     |
+| onblur       | false    | string  |                   | The onblur event for the upload.            |
+| onchange     | false    | string  |                   | The onchange event for the upload.          |
+| onclick      | false    | string  |                   | The onclick event for the upload.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the upload.        |
+| onfocus      | false    | string  |                   | The onfocus event for the upload.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the upload.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the upload.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the upload.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the upload.          |
+| readonly     | false    | boolean | false             | If the upload is read only.                 |
+| style        | false    | string  |                   | The style for the upload.                   |
+| title        | false    | string  | ${label}          | The title for the upload.                   |
+| value        | false    | string  |                   | The value of the upload.                    |
+| visible      | false    | boolean | true              | If the upload is visible.                   |
+| wrapper      | false    | boolean | true              | If the upload should be wrapped in a label. |

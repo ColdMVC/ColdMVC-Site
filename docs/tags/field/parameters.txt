@@ -1,0 +1,10 @@
+| Name         | Required | Type    | Default           | Description                                                                         |
+|--------------|----------|---------|-------------------|-------------------------------------------------------------------------------------|
+| class        | false    | string  |                   | The class for the field.                                                            |
+| field        | false    | string  |                   | The content of the field. If not specified, the tag will use its generated content. |
+| id           | false    | string  | ${name}           | The id of the field.                                                                |
+| instructions | false    | string  |                   | The instructions for the field.                                                     |
+| label        | false    | string  | ${humanized name} | The label for the field.                                                            |
+| name         | true     | string  |                   | The name of the field.                                                              |
+| visible      | false    | boolean | true              | If the field is visible.                                                            |
+| wrapper      | false    | boolean | true              | If the field should be wrapped in a label.                                          |

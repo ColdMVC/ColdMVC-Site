@@ -1,0 +1,23 @@
+| Name         | Required | Type    | Default           | Description                                 |
+|--------------|----------|---------|-------------------|---------------------------------------------|
+| class        | false    | string  |                   | The class for the number.                   |
+| disabled     | false    | boolean | false             | If the number is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the number.                       |
+| instructions | false    | string  |                   | The instructions for the number.            |
+| label        | false    | string  | ${humanized name} | The label for the number.                   |
+| name         | true     | string  |                   | The name of the number.                     |
+| onblur       | false    | string  |                   | The onblur event for the number.            |
+| onchange     | false    | string  |                   | The onchange event for the number.          |
+| onclick      | false    | string  |                   | The onclick event for the number.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the number.        |
+| onfocus      | false    | string  |                   | The onfocus event for the number.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the number.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the number.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the number.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the number.          |
+| readonly     | false    | boolean | false             | If the number is read only.                 |
+| style        | false    | string  |                   | The style for the number.                   |
+| title        | false    | string  | ${label}          | The title for the number.                   |
+| value        | false    | string  |                   | The value of the number.                    |
+| visible      | false    | boolean | true              | If the number is visible.                   |
+| wrapper      | false    | boolean | true              | If the number should be wrapped in a label. |

@@ -1,0 +1,3 @@
+| Name | Required | Type   | Default                      | Description             |
+|------|----------|--------|------------------------------|-------------------------|
+| url  | false    | string | #linkToImage("favicon.ico")# | The URL of the favicon. |

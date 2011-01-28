@@ -1,0 +1,23 @@
+| Name         | Required | Type    | Default           | Description                                      |
+|--------------|----------|---------|-------------------|--------------------------------------------------|
+| class        | false    | string  |                   | The class for the email field.                   |
+| disabled     | false    | boolean | false             | If the email field is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the email field.                       |
+| instructions | false    | string  |                   | The instructions for the email field.            |
+| label        | false    | string  | ${humanized name} | The label for the email field.                   |
+| name         | true     | string  |                   | The name of the email field.                     |
+| onblur       | false    | string  |                   | The onblur event for the email field.            |
+| onchange     | false    | string  |                   | The onchange event for the email field.          |
+| onclick      | false    | string  |                   | The onclick event for the email field.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the email field.        |
+| onfocus      | false    | string  |                   | The onfocus event for the email field.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the email field.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the email field.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the email field.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the email field.          |
+| readonly     | false    | boolean | false             | If the email field is read only.                 |
+| style        | false    | string  |                   | The style for the email field.                   |
+| title        | false    | string  | ${label}          | The title for the email field.                   |
+| value        | false    | string  |                   | The value of the email field.                    |
+| visible      | false    | boolean | true              | If the email field is visible.                   |
+| wrapper      | false    | boolean | true              | If the email field should be wrapped in a label. |

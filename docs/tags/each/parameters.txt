@@ -1,0 +1,12 @@
+| Name      | Required | Type    | Default | Description                                                               |
+|-----------|----------|---------|---------|---------------------------------------------------------------------------|
+| class     | false    | string  |         | The variable name to set for the iterating class value ("first", "last"). |
+| count     | false    | string  |         | The variable name to set for total number of items in the collection.     |
+| delimiter | false    | string  | ,       | The delimiter to use when iterating over a list.                          |
+| do        | false    | string  | it      | The variable name to set for the current item in the collection.          |
+| end       | false    | numeric |         | The index position to end at when iterating the collection.               |
+| in        | true     | any     |         | The collection to iterate.                                                |
+| index     | false    | string  |         | The variable name to set for the current index in the collection.         |
+| key       | false    | string  |         | The variable name to set for the current key in the collection.           |
+| max       | false    | numeric |         | The maximum number of items to iterate in the collection.                 |
+| start     | false    | numeric | 1       | The index position to start at when iterating the collection.             |

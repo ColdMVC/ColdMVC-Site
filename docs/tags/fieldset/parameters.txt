@@ -1,0 +1,4 @@
+| Name  | Required | Type   | Default           | Description                                                       |
+|-------|----------|--------|-------------------|-------------------------------------------------------------------|
+| label | false    | string | ${humanized name} | The label for the fieldset. Will be places inside a <legend> tag. |
+| name  | false    | string |                   | The name of the fieldset. Only used to generate a possible label. |

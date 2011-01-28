@@ -1,0 +1,4 @@
+| Name      | Required | Type   | Default | Description                                          |
+|-----------|----------|--------|---------|------------------------------------------------------|
+| condition | false    | string |         | A conditional comment to wrap around the script tag. |
+| name      | false    | string |         | The name of the script file.                         |

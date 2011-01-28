@@ -1,0 +1,5 @@
+| Name      | Required | Type   | Default | Description                                         |
+|-----------|----------|--------|---------|-----------------------------------------------------|
+| condition | false    | string |         | A conditional comment to wrap around the style tag. |
+| media     | false    | string | all     | The media type for the stylesheet.                  |
+| name      | false    | string |         | The name of the stylesheet.                         |

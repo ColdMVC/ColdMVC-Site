@@ -1,0 +1,5 @@
+| Name  | Required | Type   | Default | Description                       |
+|-------|----------|--------|---------|-----------------------------------|
+| class | false    | string | flash   | The class of the wrapping div.    |
+| id    | false    | string |         | The id of the wrapping div.       |
+| key   | false    | string | message | The key of the param to look for. |

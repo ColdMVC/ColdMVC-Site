@@ -1,0 +1,24 @@
+| Name         | Required | Type    | Default           | Description                                        |
+|--------------|----------|---------|-------------------|----------------------------------------------------|
+| class        | false    | string  |                   | The class for the button.                          |
+| disabled     | false    | boolean | false             | If the button is disabled.                         |
+| id           | false    | string  | ${name}           | The id of the button.                              |
+| instructions | false    | string  |                   | The instructions for the button.                   |
+| label        | false    | string  | ${humanized name} | The label for the button.                          |
+| name         | true     | string  |                   | The name of the button.                            |
+| onblur       | false    | string  |                   | The onblur event for the button.                   |
+| onchange     | false    | string  |                   | The onchange event for the button.                 |
+| onclick      | false    | string  |                   | The onclick event for the button.                  |
+| ondblclick   | false    | string  |                   | The ondblclick event for the button.               |
+| onfocus      | false    | string  |                   | The onfocus event for the button.                  |
+| onkeydown    | false    | string  |                   | The onkeydown event for the button.                |
+| onkeypress   | false    | string  |                   | The onkeypress event for the button.               |
+| onkeyup      | false    | string  |                   | The onkeyup event for the button.                  |
+| onsubmit     | false    | string  |                   | The onsubmit event for the button.                 |
+| readonly     | false    | boolean | false             | If the button is read only.                        |
+| style        | false    | string  |                   | The style for the button.                          |
+| title        | false    | string  | ${label}          | The title for the button.                          |
+| url          | true     | string  |                   | The URL to redirect to when the button is clicked. |
+| value        | false    | string  |                   | The value of the button.                           |
+| visible      | false    | boolean | true              | If the button is visible.                          |
+| wrapper      | false    | boolean | true              | If the button should be wrapped in a label.        |
