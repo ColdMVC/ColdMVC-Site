@@ -16,6 +16,7 @@
 | onkeypress   | false    | string  |                   | The onkeypress event for the textarea.        |
 | onkeyup      | false    | string  |                   | The onkeyup event for the textarea.           |
 | onsubmit     | false    | string  |                   | The onsubmit event for the textarea.          |
+| placeholder  | false    | string  |                   | The placeholder text for the textarea.        |
 | readonly     | false    | boolean | false             | If the textarea is read only.                 |
 | rows         | false    | numeric |                   | The number of rows for the textarea.          |
 | style        | false    | string  |                   | The style for the textarea.                   |

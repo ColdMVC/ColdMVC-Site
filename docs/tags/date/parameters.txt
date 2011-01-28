@@ -15,6 +15,7 @@
 | onkeypress   | false    | string  |                   | The onkeypress event for the date field.        |
 | onkeyup      | false    | string  |                   | The onkeyup event for the date field.           |
 | onsubmit     | false    | string  |                   | The onsubmit event for the date field.          |
+| placeholder  | false    | string  |                   | The placeholder text for the date field.        |
 | readonly     | false    | boolean | false             | If the date field is read only.                 |
 | style        | false    | string  |                   | The style for the date field.                   |
 | title        | false    | string  | ${label}          | The title for the date field.                   |
