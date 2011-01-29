@@ -49,7 +49,9 @@
 					#$.page.header()#
 				</div>
 			</div>
-			#thisTag.generatedContent#
+			<div class="container">
+				#thisTag.generatedContent#
+			</div>
 			<div id="footer">
 				<div class="container">
 					&copy; #year(now())# Tony Nelson
