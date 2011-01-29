@@ -253,6 +253,10 @@ div.wizard_navigation div.wizard_next {
 	color: #444;
 }
 
+#sidebar_container p {
+	margin: 15px 0;
+}
+
 #recent_discussions li {
 	list-style-type: circle;
 	margin-left: 20px;

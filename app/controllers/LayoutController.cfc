@@ -14,6 +14,27 @@ component {
 
 		params.sidebars = [];
 
+		var event = $.event.key();
+
+		switch(event) {
+
+			case "plugin.index": {
+				addSidebar("plugin/blurb");
+				break;
+			}
+
+			case "tag.index": {
+				addSidebar("tag/blurb");
+				break;
+			}
+
+			case "helper.index": {
+				addSidebar("helper/blurb");
+				break;
+			}
+
+		}
+
 	}
 
 	function annotation() {

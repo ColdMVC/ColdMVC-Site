@@ -3,16 +3,26 @@
 	<c:breadcrumbs result="breadcrumbs" />
 	<cfset page = $.factory.get("tabManager").getTab() />
 
-	<cfset $.page.title("ColdMVC " & page) />
+	<cfset $.page.title(page) />
 	<cfset $.page.header(breadcrumbs) />
 
 <cfelse>
+
+<cfset title = $.page.title() />
+<cfset suffix = "ColdMVC | A Convention-Based MVC Framework for ColdFusion" />
+
+<cfif title neq "" and title neq "Home">
+	<cfset title = title & " - " & suffix />
+<cfelse>
+	<cfset title = suffix />
+</cfif>
+
 <cfoutput>
 <cfsavecontent variable="thisTag.generatedContent">
 	<c:doctype />
 	<c:html>
 		<head>
-			<title>#$.page.title()#</title>
+			<title>#title# </title>
 			<c:content_type />
 			<meta name="keywords" content="ColdMVC, ColdFusion, framework, open-source" />
 			<meta name="description" content="ColdMVC is a convention-based framework for ColdFusion" />
