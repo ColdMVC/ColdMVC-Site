@@ -1,0 +1,3 @@
+Creates a link to an [RSS] [1] feed.
+
+[1]: http://en.wikipedia.org/wiki/RSS

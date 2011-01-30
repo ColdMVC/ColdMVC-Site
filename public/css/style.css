@@ -200,7 +200,7 @@ dl.list dd {
 
 div.parameters table {
 	margin: 15px 0;
-	background-color: #bbb;
+	background-color: #ccc;
 	border-spacing: 1px 1px;
 	width: 100%;
 }
@@ -212,7 +212,7 @@ div.parameters table td {
 }
 
 div.parameters table th {
-	background-color: #dfdfdf;
+	background-color: #eaeaea;
 }
 
 div.parameters table td.empty {

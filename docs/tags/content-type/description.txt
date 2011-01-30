@@ -1,0 +1,3 @@
+Specifies the [Internet media type] [1] for the page.
+
+[1]: http://en.wikipedia.org/wiki/Internet_media_type "Internet media type"

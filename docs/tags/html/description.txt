@@ -1,0 +1,3 @@
+Creates an [html] [1] tag.
+
+[1]: http://www.w3.org/TR/html-markup/html.html

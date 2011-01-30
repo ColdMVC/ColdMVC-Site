@@ -1,0 +1,24 @@
+| Name         | Required | Type    | Default           | Description                                       |
+|--------------|----------|---------|-------------------|---------------------------------------------------|
+| class        | false    | string  |                   | The class for the phone field.                   |
+| disabled     | false    | boolean | false             | If the phone field is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the phone field.                       |
+| instructions | false    | string  |                   | The instructions for the phone field.            |
+| label        | false    | string  | ${humanized name} | The label for the phone field.                   |
+| name         | true     | string  |                   | The name of the phone field.                     |
+| onblur       | false    | string  |                   | The onblur event for the phone field.            |
+| onchange     | false    | string  |                   | The onchange event for the phone field.          |
+| onclick      | false    | string  |                   | The onclick event for the phone field.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the phone field.        |
+| onfocus      | false    | string  |                   | The onfocus event for the phone field.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the phone field.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the phone field.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the phone field.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the phone field.          |
+| placeholder  | false    | string  |                   | The placeholder text for the phone field.        |
+| readonly     | false    | boolean | false             | If the phone field is read only.                 |
+| style        | false    | string  |                   | The style for the phone field.                   |
+| title        | false    | string  | ${label}          | The title for the phone field.                   |
+| value        | false    | string  |                   | The value of the phone field.                    |
+| visible      | false    | boolean | true              | If the phone field is visible.                   |
+| wrapper      | false    | boolean | true              | If the phone field should be wrapped in a label. |

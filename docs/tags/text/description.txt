@@ -1,0 +1,3 @@
+Displays plain text in a [field] [1] wrapper.
+
+[1]: /tags/field "Tag: field"

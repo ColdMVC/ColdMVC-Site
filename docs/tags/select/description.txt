@@ -1,0 +1,3 @@
+Creates a [select] [1] input field.
+
+[1]: http://www.w3.org/TR/html-markup/select.html

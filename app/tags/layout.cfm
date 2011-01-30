@@ -9,12 +9,12 @@
 <cfelse>
 
 <cfset title = $.page.title() />
-<cfset suffix = "ColdMVC | A Convention-Based MVC Framework for ColdFusion" />
+<cfset suffix = " | A Convention-Based MVC Framework for ColdFusion" />
 
 <cfif title neq "" and title neq "Home">
-	<cfset title = title & " - " & suffix />
+	<cfset title = "ColdMVC " & title & suffix />
 <cfelse>
-	<cfset title = suffix />
+	<cfset title = "ColdMVC" & suffix />
 </cfif>
 
 <cfoutput>

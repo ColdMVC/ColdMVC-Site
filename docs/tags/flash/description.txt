@@ -1,0 +1,1 @@
+Shortcut for displaying values set inside _flash.message_.

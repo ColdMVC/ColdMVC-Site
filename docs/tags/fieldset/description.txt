@@ -1,0 +1,3 @@
+Creates a [fieldset] [1] tag.
+
+[1]: http://www.w3.org/TR/html401/interact/forms.html#h-17.10 "7.10 Adding structure to forms: the FIELDSET and LEGEND elements"
