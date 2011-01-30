@@ -1,1 +1,1 @@
-Displays a string with line feed characters replaced with _<br />_ tags.
+Displays a string with line feed characters replaced with _&lt;br /&gt;_ tags.

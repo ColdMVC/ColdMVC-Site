@@ -18,6 +18,16 @@ component {
 
 		switch(event) {
 
+			case "annotation.index": {
+				addSidebar("annotation/blurb");
+				break;
+			}
+
+			case "helper.index": {
+				addSidebar("helper/blurb");
+				break;
+			}
+
 			case "plugin.index": {
 				addSidebar("plugin/blurb");
 				break;
@@ -25,11 +35,6 @@ component {
 
 			case "tag.index": {
 				addSidebar("tag/blurb");
-				break;
-			}
-
-			case "helper.index": {
-				addSidebar("helper/blurb");
 				break;
 			}
 
