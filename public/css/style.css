@@ -29,9 +29,13 @@ li {
 	list-style-type: none;
 }
 
+ol {
+	margin-left: 30px;
+}
+
 ol li {
+	list-style-position: outside;
 	list-style-type: decimal;	
-	list-style-position: inside;
 }
 
 a {
@@ -45,6 +49,10 @@ a:hover {
 
 #top {
 	height: 70px;
+}
+	
+#top,
+#home h2 {
 	background: #4183c4;
 	background: gradient(linear, left top, left bottom, from(#4183c4), to(#47608f));
 	background: -moz-linear-gradient(top, #4183c4, #47608f);
@@ -171,13 +179,17 @@ div#tabs ul li.active a {
 	margin-bottom: 20px;
 }
 
-#home div.intro p {
-	margin: 5px 0 20px;
+#home p {
+	margin: 5px 0 40px;
 }
 
 #home h2 {
-	color: #47608f;
-	border-bottom: 2px solid #8EACCF;
+	color: #fff;
+	border-bottom: 2px solid #bbb;
+	border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-webkit-border-radius: 8px 8px 0 0;
+	padding-left: 8px;
 }
 
 dl.list dt {

@@ -24,8 +24,8 @@
 			<page id="Directory Structure" />
 			<page id="Config Variables" />
 			<page id="Environments" />
-			<page id="Hibernate" />
-			<page id="Coldspring" />
+			<page id="Object Relational Mapping" />
+			<page id="Dependency Injection" />
 			<page id="Controllers" />
 			<page id="Routing Requests" />
 			<page id="Params" />

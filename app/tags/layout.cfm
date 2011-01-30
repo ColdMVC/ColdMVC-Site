@@ -26,6 +26,7 @@
 			<c:content_type />
 			<meta name="keywords" content="ColdMVC, ColdFusion, framework, open-source" />
 			<meta name="description" content="ColdMVC is a convention-based framework for ColdFusion" />
+			<c:favicon />
 			<c:style name="blueprint/reset.css" media="screen, projection" />
 			<c:style name="blueprint/grid.css" media="screen, projection" />
 			<c:style name="blueprint/print.css" media="print" />
