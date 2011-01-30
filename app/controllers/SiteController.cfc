@@ -5,7 +5,7 @@
 component {
 
 	/**
-	 * @events invalidController|invalidAction
+	 * @events invalidController
 	 */
 	function interceptPageNotFound() {
 
