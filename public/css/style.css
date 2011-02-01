@@ -124,7 +124,8 @@ div#tabs ul li.active a {
 }
 
 #header ul li {
-	display: inline;	
+	display: inline;
+	text-shadow: 0.5px 0.5px 0.1px #fff;
 }
 
 #header ul li a {
