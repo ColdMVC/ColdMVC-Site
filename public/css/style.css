@@ -222,6 +222,7 @@ div.parameters table th,
 div.parameters table td {
 	padding: 3px 6px;
 	background-color: #fff;
+	vertical-align: top;
 }
 
 div.parameters table th {
