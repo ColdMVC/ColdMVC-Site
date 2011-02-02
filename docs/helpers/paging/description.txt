@@ -1,0 +1,3 @@
+Helper methods used with the [_paging_] [1] tag.
+
+[1]: /tags/paging "Tag: each"

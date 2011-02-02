@@ -1,0 +1,1 @@
+Facade for working with the _server_ scope.

@@ -9,8 +9,12 @@ component {
 	 */
 	function interceptPageNotFound() {
 
-		$.event.controller("site");
-		$.event.action("pageNotFound");
+		if ($.event.key() != "db.seed") {
+
+			$.event.controller("site");
+			$.event.action("pageNotFound");
+
+		}
 
 	}
 
