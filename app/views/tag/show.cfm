@@ -2,7 +2,6 @@
 
 <cfoutput>
 <h1>#tag.name()#</h1>
-
 <c:content title="Description" text="#tag.description()#" />
 <c:content title="Overview" text="#tag.overview()#" />
 <c:content title="Parameters" text="#tag.parameters()#" />
