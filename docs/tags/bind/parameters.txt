@@ -1,0 +1,3 @@
+| Name | Required | Type    | Default | Description                     |
+|------|----------|---------|---------|---------------------------------|
+| to   | true     | string  |         | The name of a param to bind to. |
