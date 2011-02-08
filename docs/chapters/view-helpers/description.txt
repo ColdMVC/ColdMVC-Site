@@ -1,0 +1,1 @@
+An overview of how to clean up your presentation layer with view helpers.

@@ -23,6 +23,7 @@ component {
 		string = replace(string, "]: /", "]: #urlPath#/", "all");
 
 		string = replaceTables(string);
+		string = replaceDefinitionLists(string);
 
 		return markdownProcessor.markdown(string);
 
@@ -131,7 +132,6 @@ component {
 
 			}
 
-			// in case the loop ending inside a table
 			if (insideTable) {
 
 				arrayAppend(table, "</tbody>");
@@ -144,51 +144,142 @@ component {
 				});
 
 			}
-
-			new = [];
-			start = 1;
-			end = 0;
-
-			for (i = 1; i <= arrayLen(tables); i++) {
-
-				table = tables[i];
-
-				if (table.start > start) {
-
-					for (j = 1; j <= table.start-1; j++) {
-						arrayAppend(new, array[j]);
-					}
-
-				}
-
-				for (j = 1; j <= arrayLen(table.array); j++) {
-					arrayAppend(new, table.array[j]);
-				}
-
-				start = table.end;
-				end = table.end + 1;
-
-			}
-
-			if (end == 0) {
-
-				new = array;
-
-			}
-			else if (end < arrayLen(array)) {
-
-				for (i = end; i <= arrayLen(array); i++) {
-					arrayAppend(new, array[i]);
-				}
-
-			}
-
-			string = arrayToList(new, chr(10));
+			
+			string = rebuildString(string, tables);
 
 		}
 
 		return string;
 
+	}
+	
+	private string function replaceDefinitionLists(required string string) {
+
+		if (find(":", string)) {
+
+			var array = listToArray(string, chr(10));
+			var i = "";
+			var j = "";
+			var line = "";
+			var new = "";
+			var start = "";
+			var end = "";
+			var insideList = false;
+			var lists = [];
+			var list = [];
+			
+			for (i = 1; i <= arrayLen(array); i++) {
+
+				line = array[i];
+
+				if (left(line, 1) == ":") {
+
+					if (!insideList) {
+
+						start = i - 1;
+						list = [];
+						arrayAppend(list, "<dl>");
+
+						insideList = true;
+					
+					}
+					
+					arrayAppend(list, "<dt>#trim(array[i - 1])#</dt>");
+					arrayAppend(list, "<dd>#trim(replace(line, ":", ""))#</dd>");
+
+				}
+				else {
+
+					if (insideList) {
+					
+						if (arrayLen(array) >= i + 2) {
+						
+							if (left(array[i + 1], 1) != ":" && left(array[i + 2], 1) != ":") {
+							
+								arrayAppend(list, "</dl>");
+		
+								arrayAppend(lists, {
+									start = start,
+									end = i - 1,
+									array = list
+								});
+								
+								insideList = false;
+	
+							}
+						
+						}
+
+					}
+				}
+
+			}
+
+			if (insideList) {
+
+				arrayAppend(list, "</dl>");
+
+				arrayAppend(lists, {
+					start = start,
+					end = i - 1,
+					array = list
+				});
+
+			}
+
+			string = rebuildString(string, lists);
+
+		}
+
+		return string;
+
+	}
+
+	private string function rebuildString(required string string, required array items) {
+		
+		var array = listToArray(string, chr(10));
+		var new = [];
+		var start = 1;
+		var end = 0;
+		var i = "";
+		var j = "";
+
+		for (i = 1; i <= arrayLen(items); i++) {
+
+			var item = items[i];
+
+			if (item.start > start) {
+
+				for (j = 1; j <= item.start-1; j++) {
+					arrayAppend(new, array[j]);
+				}
+
+			}
+
+			for (j = 1; j <= arrayLen(item.array); j++) {
+				arrayAppend(new, item.array[j]);
+			}
+
+			start = item.end;
+			end = item.end + 1;
+
+		}
+
+		if (end == 0) {
+
+			new = array;
+
+		}
+		else if (end < arrayLen(array)) {
+
+			for (i = end; i <= arrayLen(array); i++) {
+				arrayAppend(new, array[i]);
+			}
+
+		}
+
+		return arrayToList(new, chr(10));
+		
 	}
 
 }

@@ -160,10 +160,10 @@ div#tabs ul li.active a {
 }
 
 #content pre {
-	background-color: #ffffcf;
+	background-color: #ffffe0;
 	border: 1px solid #ddd;
 	font-family: 'Consolas', 'Courier New', Courier, monospace;
-	line-height: 1em;	
+	line-height: 1.1em;	
 	padding: 15px;
 }
 
@@ -232,6 +232,20 @@ div.parameters table th {
 div.parameters table td.empty {
 	font-style: italic;
 	color: #999;
+}
+
+div#chapter dl {
+	margin-left: 10px;
+}
+
+div#chapter dt {
+	color: #555;
+	font-weight: bold;
+}
+
+div#chapter dd {
+	margin-left: 30px;
+	margin-bottom: 15px;
 }
 
 div.wizard_navigation {

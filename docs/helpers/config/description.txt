@@ -1,1 +1,1 @@
-Helper methods for accessing config variables.
+Helper methods for accessing configuration variables.

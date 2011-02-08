@@ -10,13 +10,13 @@
 			<column name="Name" length="50" />
 		</property>
 		<property name="description" type="string">
-			<column name="Description" length="4000" />
+			<column name="Description" sql-type="varchar(max)" />
 		</property>
 		<property name="overview" type="string">
-			<column name="Overview" length="4000" />
+			<column name="Overview" sql-type="varchar(max)" />
 		</property>
 		<property name="example" type="string">
-			<column name="Example" length="4000" />
+			<column name="Example" sql-type="varchar(max)" />
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
@@ -31,10 +31,10 @@
 			<column name="Name" length="50" />
 		</property>
 		<property name="description" type="string">
-			<column name="Description" length="4000" />
+			<column name="Description" sql-type="varchar(max)" />
 		</property>
 		<property name="content" type="string">
-			<column name="Content" length="4000" />
+			<column name="Content" sql-type="varchar(max)" />
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
@@ -52,16 +52,16 @@
 			<column name="Name" length="50" />
 		</property>
 		<property name="description" type="string">
-			<column name="Description" length="4000" />
+			<column name="Description" sql-type="varchar(max)" />
 		</property>
 		<property name="overview" type="string">
-			<column name="Overview" length="4000" />
+			<column name="Overview" sql-type="varchar(max)" />
 		</property>
 		<property name="Parameters" type="string">
-			<column name="Parameters" length="4000" />
+			<column name="Parameters" sql-type="varchar(max)" />
 		</property>
 		<property name="example" type="string">
-			<column name="Example" length="4000" />
+			<column name="Example" sql-type="varchar(max)" />
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
@@ -85,13 +85,13 @@
 			<column name="Version" length="10" />
 		</property>
 		<property name="description" type="string">
-			<column name="Description" length="4000" />
+			<column name="Description" sql-type="varchar(max)" />
 		</property>
 		<property name="overview" type="string">
-			<column name="Overview" length="4000" />
+			<column name="Overview" sql-type="varchar(max)" />
 		</property>
 		<property name="example" type="string">
-			<column name="Example" length="4000" />
+			<column name="Example" sql-type="varchar(max)" />
 		</property>
 		<property name="url" type="string">
 			<column name="URL" length="200" />
@@ -109,16 +109,16 @@
 			<column name="Name" length="50" />
 		</property>
 		<property name="description" type="string">
-			<column name="Description" length="4000" />
+			<column name="Description" sql-type="varchar(max)" />
 		</property>
 		<property name="overview" type="string">
-			<column name="Overview" length="4000" />
+			<column name="Overview" sql-type="varchar(max)" />
 		</property>
 		<property name="Parameters" type="string">
-			<column name="Parameters" length="4000" />
+			<column name="Parameters" sql-type="varchar(max)" />
 		</property>
 		<property name="example" type="string">
-			<column name="Example" length="4000" />
+			<column name="Example" sql-type="varchar(max)" />
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />

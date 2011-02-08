@@ -1,0 +1,88 @@
+Since ColdMVC is a convention-based framework, it's important that applications follow a similar directory structure in order to take advantage of the framework's conventions. A typical ColdMVC directory structure looks like the following:
+
+	root/
+		app/
+			controllers/
+				LayoutController.cfc
+			layouts/
+				index.cfm
+			model/
+			views/
+		config/
+			coldspring.xml
+			config.ini
+			environment.txt
+			hibernate.hbmxml
+			plugins.cfm
+			routes.cfm
+		public/
+			css/
+			images/
+			js/
+			index.cfm
+		Application.cfc
+
+Here's a brief description of the various files and folders.
+
+root/
+: The root of your project.
+
+root/app/
+: Contains the majority of your ColdMVC application (.cfm and .cfc files).
+
+root/app/controllers/
+: Contains your controllers.
+
+root/app/controllers/LayoutController.cfc
+: Handles putting data into layouts.
+
+root/app/layouts/
+: Contains your layouts.
+
+root/app/layouts/index.cfm
+: The default layout.
+
+root/app/model/
+: Your domain model. Contains any persistent entities and services.
+
+root/app/views/
+: Contains your views.
+
+root/config/
+: Contains your configuration files.
+
+root/config/coldspring.xml
+: Contains any custom ColdSpring bean definitions.
+
+root/config/config.ini
+: Contains your configuration settings.
+
+root/config/environment.txt
+: Contains the name of your current environment, which is used to determine your settings.
+
+root/config/hibernate.hbmxml
+: Contains your Hibernate mappings.
+
+root/config/plugins.cfm
+: Defines any plugins used by your application.
+
+root/config/routes.cfm
+: Defines any custom routes for your application.
+
+root/public/
+: Your application's web root.
+
+root/public/css/
+: Contains any CSS files.
+
+root/public/images/
+: Contains any images.
+
+root/public/js/
+: Contains any JavaScript files.
+
+root/public/index.cfm
+: Your application's front-controller index page. All requests are routed through this file.
+
+Application.cfc
+: Your project's application page. Typically just extends coldmvc.Application. 
