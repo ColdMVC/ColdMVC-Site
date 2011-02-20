@@ -7,7 +7,7 @@
 			<h1>A Convention-Based MVC Framework for ColdFusion</h1>
 			<p>
 				ColdMVC combines the elegance of modern frameworks with the ease of use of ColdFusion into a full stack open-source platform.
-				By leveraging the power of the framework, you'll be able to focus on building application instead of worrying about writing code.
+				By leveraging the power of the framework, you'll be able to focus on building applications instead of worrying about writing code.
 			</p>
 		</div>
 	</div>
