@@ -48,7 +48,7 @@
 	<cfset name = annotationXML[i].xmlAttributes.id />
 	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/annotations/#slug#/")>
+	<cfset d = expandPath("/config/docs/annotations/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
@@ -80,7 +80,7 @@
 	<cfset name = chapterXML[i].xmlAttributes.id />
 	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/chapters/#slug#/")>
+	<cfset d = expandPath("/config/docs/chapters/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
@@ -112,13 +112,13 @@
 	<cfset name = getFileName(helperArray[i]) />
 	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/helpers/#slug#/")>
+	<cfset d = expandPath("/config/docs/helpers/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/helpers/#name#.txt") />
+	<cfset f = expandPath("/config/docs/helpers/#name#.txt") />
 
 	<cfif fileExists(f)>
 		<cfset fileDelete(f) />
@@ -151,13 +151,13 @@
 	<cfset name = pluginXML[i].xmlAttributes.id />
 	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/plugins/#slug#/")>
+	<cfset d = expandPath("/config/docs/plugins/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/plugins/#slug#/content.txt") />
+	<cfset f = expandPath("/config/docs/plugins/#slug#/content.txt") />
 
 	<cfif fileExists(f)>
 		<cfset fileDelete(f) />
@@ -192,13 +192,13 @@
 	<cfset name = getFileName(tagArray[i]) />
 	<cfset slug = $.string.slugify(name) />
 
-	<cfset d = expandPath("/coldsite/docs/tags/#slug#/")>
+	<cfset d = expandPath("/config/docs/tags/#slug#/")>
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/coldsite/docs/tags/#name#.txt") />
+	<cfset f = expandPath("/config/docs/tags/#name#.txt") />
 
 	<cfif fileExists(f)>
 		<cfset fileDelete(f) />

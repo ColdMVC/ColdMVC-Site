@@ -1,7 +1,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 								   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class entity-name="Annotation" lazy="true" name="cfc:coldsite.app.model.Annotation" table="Annotation">
+	<class entity-name="Annotation" lazy="true" name="cfc:app.model.Annotation" table="Annotation">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -22,7 +22,7 @@
 			<column name="Slug" length="50" />
 		</property>
 	</class>
-	<class entity-name="Chapter" lazy="true" name="cfc:root.app.model.Chapter" table="Chapter">
+	<class entity-name="Chapter" lazy="true" name="cfc:app.model.Chapter" table="Chapter">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -43,7 +43,7 @@
 			<column name="`Order`" />
 		</property>
 	</class>
-	<class entity-name="Helper" lazy="true" name="cfc:root.app.model.Helper" table="Helper">
+	<class entity-name="Helper" lazy="true" name="cfc:app.model.Helper" table="Helper">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -70,7 +70,7 @@
 			<column name="URL" length="200" />
 		</property>
 	</class>
-	<class entity-name="Plugin" lazy="true" name="cfc:root.app.model.Plugin" table="Plugin">
+	<class entity-name="Plugin" lazy="true" name="cfc:app.model.Plugin" table="Plugin">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />
@@ -100,7 +100,7 @@
 			<column name="Slug" length="50" />
 		</property>
 	</class>
-	<class entity-name="Tag" lazy="true" name="cfc:root.app.model.Tag" table="Tag">
+	<class entity-name="Tag" lazy="true" name="cfc:app.model.Tag" table="Tag">
 		<id name="id" type="int">
 			<column name="ID" />
 			<generator class="identity" />

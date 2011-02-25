@@ -8,7 +8,7 @@ component {
 
 	function index() {
 
-		var repository = new coldsite.app.model.Repository(config.get("repositoryURL"));
+		var repository = new app.model.Repository(config.get("repositoryURL"));
 		params.commits = repository.getCommits();
 
 	}
