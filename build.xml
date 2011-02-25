@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<project name="coldsite" default="export" basedir=".">
+	
+	<target name="export" description="Export the site">
+		<property name="dir" value="c:\workspace\exports\" />
+		<property name="file" value="coldsite.zip" />
+		<property name="dest" value="${dir}${file}" />
+		<property name="git" value="C:\Program Files (x86)\Git\bin\git.exe" />
+		<mkdir dir="${dir}" />
+		<echo message="Exporting to ${dest}" />
+		<exec executable="${git}">
+			<arg line='archive --output "${dest}" master' />
+		</exec>
+	</target>
+
+</project>

@@ -1,7 +1,8 @@
 # Ignore all dotfiles...
 .*
 
-# except for .gitignore
+# except for .git files
+!.gitattributes
 !.gitignore
 
 settings.xml
