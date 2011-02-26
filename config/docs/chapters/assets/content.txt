@@ -2,7 +2,7 @@ ColdMVC provides an easy way to work with your application's public assets, incl
 
 ## Images
 
-Images will be located inside your application's _/root/public/images/_ directory.
+Images will be located inside your application's _/public/images/_ directory.
 
 There are a few ways to render images. The easiest way is to use the _image_ tag: 
 
@@ -20,7 +20,7 @@ The previous three examples all output equivalent HTML.
 
 ## CSS Files
 
-Cascading stylesheets, or CSS files, will be located inside your application's _/root/public/css/_ directory.
+Cascading stylesheets, or CSS files, will be located inside your application's _/public/css/_ directory.
 
 There are a few ways to render links to CSS files. The easiest way is to use the _style_ tag: 
 
@@ -38,7 +38,7 @@ The previous three examples all output equivalent HTML.
 
 ## JavaScript Files
 
-JavaScript files will be located inside your application's _/root/public/js/_ directory.
+JavaScript files will be located inside your application's _/public/js/_ directory.
 
 There are a few ways to render links to JavaScript files. The easiest way is to use the _script_ tag: 
 

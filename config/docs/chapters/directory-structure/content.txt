@@ -1,87 +1,83 @@
 Since ColdMVC is a convention-based framework, it's important that applications follow a similar directory structure in order to take advantage of the framework's conventions. A typical ColdMVC directory structure looks like the following:
 
-	root/
-		app/
-			controllers/
-				LayoutController.cfc
-			layouts/
-				index.cfm
-			model/
-			views/
-		config/
-			coldspring.xml
-			config.ini
-			environment.txt
-			hibernate.hbmxml
-			plugins.cfm
-			routes.cfm
-		public/
-			css/
-			images/
-			js/
+	app/
+		controllers/
+			LayoutController.cfc
+		layouts/
 			index.cfm
-		Application.cfc
+		model/
+		views/
+	config/
+		coldspring.xml
+		config.ini
+		environment.txt
+		hibernate.hbmxml
+		plugins.cfm
+		routes.cfm
+	public/
+		css/
+		images/
+		js/
+		index.cfm
+	Application.cfc
 
 Here's a brief description of the various files and folders.
 
-root/
-: The root of your project.
-
-root/app/
+/app/
 : Contains the majority of your ColdMVC application (.cfm and .cfc files).
 
-root/app/controllers/
+/app/controllers/
 : Contains your controllers.
 
-root/app/controllers/LayoutController.cfc
+/app/controllers/LayoutController.cfc
 : Handles putting data into layouts.
 
-root/app/layouts/
+/app/layouts/
 : Contains your layouts.
 
-root/app/layouts/index.cfm
+/app/layouts/index.cfm
 : The default layout.
 
-root/app/model/
+/app/model/
 : Your domain model. Contains any persistent entities and services.
 
-root/app/views/
+/app/views/
 : Contains your views.
 
-root/config/
+/config/
 : Contains your configuration files.
 
-root/config/coldspring.xml
+/config/coldspring.xml
 : Contains any custom ColdSpring bean definitions.
 
-root/config/config.ini
+/config/config.ini
 : Contains your configuration settings.
 
-root/config/environment.txt
+/config/environment.txt
 : Contains the name of your current environment, which is used to determine your settings.
 
-root/config/hibernate.hbmxml
+/config/hibernate.hbmxml
 : Contains your Hibernate mappings.
 
-root/config/plugins.cfm
+/config/plugins.cfm
 : Defines any plugins used by your application.
 
-root/config/routes.cfm
+/config/routes.cfm
 : Defines any custom routes for your application.
 
-root/public/
+/public/
 : Your application's web root.
 
-root/public/css/
+/public/css/
 : Contains any CSS files.
 
-root/public/images/
+/public/images/
 : Contains any images.
 
-root/public/js/
+/public/js/
 : Contains any JavaScript files.
 
-root/public/index.cfm
+/public/index.cfm
 : Your application's front-controller index page. All requests are routed through this file.
 
 Application.cfc

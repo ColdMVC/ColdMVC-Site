@@ -18,7 +18,7 @@
 	</div>
 	<div class="span-8">
 		<h2>Simple</h2>
-		<p>Modern proconventions allow you to rapidly create easy-to-follow and maintain web applications without the need for repetitive, boilerplate code.</p>
+		<p>Modern conventions allow you to rapidly create easy-to-follow and maintain web applications without the need for repetitive, boilerplate code.</p>
 	</div>
 	<div class="span-8">
 		<h2>Powerful</h2>

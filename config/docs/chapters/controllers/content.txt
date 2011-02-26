@@ -1,8 +1,8 @@
 Controllers are responding for handling requests, fetching data from the model, and optionally rendering views.
 
-Controllers are located inside your application's _/root/app/controllers/_ directory.
+Controllers are located inside your application's _/app/controllers/_ directory.
 
-In order for a component to be considered a controller, it must be registered with the bean factory as a singleton using the [_@singleton_] [1] annotation and the file must be named using a "Controller" suffix. For example, a user controller would be located at _/root/app/controllers/UserController.cfc_.
+In order for a component to be considered a controller, it must be registered with the bean factory as a singleton using the [_@singleton_] [1] annotation and the file must be named using a "Controller" suffix. For example, a user controller would be located at _/app/controllers/UserController.cfc_.
 
 All public methods on a controller are considered actions.
 

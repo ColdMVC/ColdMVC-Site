@@ -1,4 +1,4 @@
-You can define configuration variables for your application inside an [INI file] [1] located at _/root/config/config.ini_. Each section represents a different environment for your application, with the exception of the _default_ environment, which all other environments inherit settings from.
+You can define configuration variables for your application inside an [INI file] [1] located at _/config/config.ini_. Each section represents a different environment for your application, with the exception of the _default_ environment, which all other environments inherit settings from.
 
 A typical _config.ini_ file for a blogging application might look like the following:
 

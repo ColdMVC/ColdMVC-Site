@@ -1,3 +1,3 @@
-When your application first loads, it will read the content inside a file located at _/root/config/environment.txt_ to determine which environment you're currently working in. For example, if you're currently in your development environment, the _environment.txt_ file should simply read _development_.
+When your application first loads, it will read the content inside a file located at _/config/environment.txt_ to determine which environment you're currently working in. For example, if you're currently in your development environment, the _environment.txt_ file should simply read _development_.
 
-Your environment is then used to load configuration settings located inside your _/root/config/config.ini_ file.
+Your environment is then used to load configuration settings located inside your _/config/config.ini_ file.
