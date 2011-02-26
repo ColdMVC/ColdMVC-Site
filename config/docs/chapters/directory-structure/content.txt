@@ -3,9 +3,11 @@ Since ColdMVC is a convention-based framework, it's important that applications 
 	app/
 		controllers/
 			LayoutController.cfc
+		helpers/
 		layouts/
 			index.cfm
 		model/
+		tags/
 		views/
 	config/
 		coldspring.xml
@@ -32,6 +34,9 @@ Here's a brief description of the various files and folders.
 /app/controllers/LayoutController.cfc
 : Handles putting data into layouts.
 
+/app/helpers/
+: Contains your helpers.
+
 /app/layouts/
 : Contains your layouts.
 
@@ -40,6 +45,9 @@ Here's a brief description of the various files and folders.
 
 /app/model/
 : Your domain model. Contains any persistent entities and services.
+
+/app/tags/
+: Contains your custom tags.
 
 /app/views/
 : Contains your views.
