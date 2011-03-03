@@ -1,0 +1,4 @@
+	<c:buttons>
+		<c:submit />
+		<c:button name="cancel" url="#linkTo({action="list"})#" />
+	</c:buttons>

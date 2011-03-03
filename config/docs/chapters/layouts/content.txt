@@ -1,0 +1,9 @@
+Layouts allow your application to have a consistent look and feel as well as help keep your views clean and focused. Layouts are simply .cfm files located inside your application's _/app/layouts/_ folder.
+
+By default, ColdMVC will look for a layout with the same name as your controller. For example, if you were make a request to _http://myapp.com/index.cfm/product/list_, ColdMVC would look for a layout located at _/app/layouts/product.cfm_. If it cannot find a _product.cfm_, it look look for the default layout, located at _/app/layouts/index.cfm_. This is useful if your application has several controllers but only 1 main layout.
+
+If you want to pass data to your layout, create a _LayoutController.cfc_ inside your application's _/app/controllers/_ folder and have it extend _coldmvc.LayoutController_. Then create a function inside the _LayoutController_ with the same name as the request's controller. In the previous example, you would create function named _product_. Inside the function, any data put into the _params_ scope will be automatically copied into the _variables_ scope of the layout. If a _product_ function isn't defined inside the _LayoutController_, ColdMVC will look for an _index_ method and call that instead.
+
+By default, each controller's corresponding layout is the same name as the controller. You can change this by adding an _@layout_ annotation to your controller. If you would like to change the layout for an individual action within a controller, you can do this by adding an _@layout_ annotation to the function.
+
+If your request uses a layout, your layout is in charge of rendering the view's content. This can be done simply by calling _#render()#_ or _<c:render />_ inside your layout where you want your view's content to be displayed. 

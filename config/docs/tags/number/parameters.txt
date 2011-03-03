@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                                       |
 |--------------|----------|---------|-------------------|---------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the number field to.   |
 | class        | false    | string  |                   | The class for the number field.                   |
 | disabled     | false    | boolean | false             | If the number field is disabled.                  |
 | id           | false    | string  | ${name}           | The id of the number field.                       |
@@ -22,3 +23,6 @@
 | value        | false    | string  |                   | The value of the number field.                    |
 | visible      | false    | boolean | true              | If the number field is visible.                   |
 | wrapper      | false    | boolean | true              | If the number field should be wrapped in a label. |
+| min | false | numeric | | The minimum acceptable value for the field. |
+| max | false | numeric | | The maximum acceptable value for the field. |
+| step | false | numeric | | Combined with the min and max, defines the acceptable numbers in the range for the field. |

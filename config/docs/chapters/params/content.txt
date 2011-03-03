@@ -1,2 +1,1 @@
 The _params_ scope contains all of your request's parameters, including all _url_ and _form_ variables, any values set into the _flash_ scope from the previous request, and any computed values created by the current request's route.
-

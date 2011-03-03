@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                                  |
 |--------------|----------|---------|-------------------|----------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the select to.    |
 | blank        | false    | boolean | true              | If the select should display a blank option. |
 | blankKey     | false    | string  |                   | The key of the blank option.                 |
 | blankTitle   | false    | string  | ${title}          | The title of the blank option.               |

@@ -1,0 +1,1 @@
+ColdMVC follows the Model-View-Controller (MVC) design pattern. In this type of application, incoming requests are handled by a controller, which retrieves data from the model, and passes it to the appropriate view for rendering.

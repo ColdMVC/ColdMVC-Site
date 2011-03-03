@@ -1,0 +1,5 @@
+	<c:form url="#linkTo({controller="user", action="save"})#" bind="user">
+		<c:hidden name="id" />
+		<c:input name="firstName" />
+		<c:input name="lastName" />
+	</c:form>

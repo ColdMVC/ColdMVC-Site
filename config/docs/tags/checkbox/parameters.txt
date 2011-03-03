@@ -1,6 +1,7 @@
 | Name         | Required | Type    | Default           | Description                                                                                                                                         |
 |--------------|----------|---------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | align        | false    | string  |                   | The alignment for the checkboxes, either horizontal or vertical. If more than 2 options are present, the default is vertical, otherwise horizontal. |
+| bind         | false    | string  |                   | The key of a param to bind the checkboxes to.                                                                                                       |
 | class        | false    | string  |                   | The class for the checkboxes.                                                                                                                       |
 | id           | false    | string  | ${name}           | The id of the checkboxes.                                                                                                                           |
 | instructions | false    | string  |                   | The instructions for the checkboxes.                                                                                                                |

@@ -1,5 +1,6 @@
-| Name         | Required | Type    | Default           | Description                                       |
-|--------------|----------|---------|-------------------|---------------------------------------------------|
+| Name         | Required | Type    | Default           | Description                                      |
+|--------------|----------|---------|-------------------|--------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the phone field to.   |
 | class        | false    | string  |                   | The class for the phone field.                   |
 | disabled     | false    | boolean | false             | If the phone field is disabled.                  |
 | id           | false    | string  | ${name}           | The id of the phone field.                       |

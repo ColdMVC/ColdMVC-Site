@@ -1,0 +1,1 @@
+	<c:range name="quantity" value="3" min="1" max="5" step="1" />

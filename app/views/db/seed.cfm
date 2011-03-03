@@ -85,13 +85,15 @@
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
+	
+	<cfset content = trim(getContent(d, "content")) />
 
-	<cfif not structKeyExists(chapters, name)>
+	<cfif content neq "" and not structKeyExists(chapters, name)>
 
 		<cfset chapter = _Chapter.new({
 			name = name,
 			description = getContent(d, "description"),
-			content = getContent(d, "content"),
+			content = content,
 			slug = slug,
 			order = i
 		}) />

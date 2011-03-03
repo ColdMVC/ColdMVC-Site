@@ -23,7 +23,6 @@
 			<page id="Models" />
 			<page id="Views" /> 
 			<page id="Controllers" />
-			<page id="Hello World" />
 			<page id="Directory Structure" />
 			<page id="Config Variables" />
 			<page id="Environments" />

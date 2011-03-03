@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                               |
 |--------------|----------|---------|-------------------|-------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the text to.   |
 | id           | false    | string  | ${name}           | The id of the text.                       |
 | instructions | false    | string  |                   | The instructions for the text.            |
 | label        | false    | string  | ${humanized name} | The label for the text.                   |

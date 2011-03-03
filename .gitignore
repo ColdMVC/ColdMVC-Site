@@ -6,3 +6,4 @@
 !.gitignore
 
 settings.xml
+config/environment.txt

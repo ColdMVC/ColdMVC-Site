@@ -1,0 +1,15 @@
+You can redirect the browser inside a controller by using the _redirect()_ method, which simply delegates to the _linkTo()_ view helper.
+
+## redirect(struct parameters [, string querystring])
+	
+	redirect({controller="post", action="show", id=post});
+	
+	redirect({controller="post", action="list"}, "sort=title");
+
+## redirect(string path [, string querystring])
+
+	redirect("/post/show/#post.id()#");
+	
+	redirect("/post/list", "sort=title");
+	
+Note: the _redirect()_ method is only available to controllers that extend _coldmvc.Controller_.

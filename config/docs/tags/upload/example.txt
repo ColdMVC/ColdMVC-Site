@@ -1,0 +1,1 @@
+	<c:upload name="photo" instructions="Select a photo to upload to your profile" />

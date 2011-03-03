@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                                      |
 |--------------|----------|---------|-------------------|--------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the input field to.   |
 | class        | false    | string  |                   | The class for the input field.                   |
 | disabled     | false    | boolean | false             | If the input field is disabled.                  |
 | id           | false    | string  | ${name}           | The id of the input field.                       |

@@ -1,6 +1,7 @@
 | Name         | Required | Type    | Default           | Description                                                                                                                                            |
 |--------------|----------|---------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | align        | false    | string  |                   | The alignment for the radio buttons, either horizontal or vertical. If more than 2 options are present, the default is vertical, otherwise horizontal. |
+| bind         | false    | string  |                   | The key of a param to bind the radio buttons to.                                                                                                       |
 | class        | false    | string  |                   | The class for the radio buttons.                                                                                                                       |
 | id           | false    | string  | ${name}           | The id of the radio buttons.                                                                                                                           |
 | instructions | false    | string  |                   | The instructions for the radio buttons.                                                                                                                |

@@ -1,0 +1,1 @@
+	<c:button name="cancel" url="#linkTo({action="list"})#" />

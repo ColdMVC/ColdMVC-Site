@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                                       |
 |--------------|----------|---------|-------------------|---------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the search field to.   |
 | class        | false    | string  |                   | The class for the search field.                   |
 | disabled     | false    | boolean | false             | If the search field is disabled.                  |
 | id           | false    | string  | ${name}           | The id of the search field.                       |

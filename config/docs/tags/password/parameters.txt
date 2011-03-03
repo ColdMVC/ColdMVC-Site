@@ -1,5 +1,6 @@
 | Name         | Required | Type    | Default           | Description                                         |
 |--------------|----------|---------|-------------------|-----------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the password field to.   |
 | class        | false    | string  |                   | The class for the password field.                   |
 | disabled     | false    | boolean | false             | If the password field is disabled.                  |
 | id           | false    | string  | ${name}           | The id of the password field.                       |

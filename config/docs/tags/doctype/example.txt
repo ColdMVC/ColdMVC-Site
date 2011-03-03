@@ -1,0 +1,1 @@
+	<c:doctype name="XHTML 1.0 Strict" />

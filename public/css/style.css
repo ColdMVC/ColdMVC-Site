@@ -165,6 +165,8 @@ div#tabs ul li.active a {
 	font-family: 'Consolas', 'Courier New', Courier, monospace;
 	line-height: 1.1em;	
 	padding: 15px;
+	overflow: auto;
+	width: 678px;
 }
 
 #content em {
