@@ -2,11 +2,8 @@
 <project name="coldsite" default="export" basedir=".">
 	
 	<target name="export" description="Export the site">
-		<property name="dir" value="c:\workspace\exports\" />
-		<property name="file" value="coldsite.zip" />
-		<property name="dest" value="${dir}${file}" />
+		<property name="dest" value="C:\Users\Tony\Desktop\coldsite.zip" />
 		<property name="git" value="C:\Program Files (x86)\Git\bin\git.exe" />
-		<mkdir dir="${dir}" />
 		<echo message="Exporting to ${dest}" />
 		<exec executable="${git}">
 			<arg line='archive --output "${dest}" master' />
