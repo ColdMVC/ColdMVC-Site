@@ -74,6 +74,7 @@
 <cfset _Chapter = modelFactory.get("Chapter") />
 <cfset chapters = $.array.toStruct(_Chapter.list(), "name") />
 <cfset chapterXML = xmlSearch(xml, "sections/section[@id='chapters']/pages/page") />
+<cfset counter = 0 />
 
 <cfloop from="1" to="#arrayLen(chapterXML)#" index="i">
 
@@ -89,13 +90,15 @@
 	<cfset content = trim(getContent(d, "content")) />
 
 	<cfif content neq "" and not structKeyExists(chapters, name)>
+	
+		<cfset counter = counter + 1 />
 
 		<cfset chapter = _Chapter.new({
 			name = name,
 			description = getContent(d, "description"),
 			content = content,
 			slug = slug,
-			order = i
+			order = counter
 		}) />
 
 		<cfset chapter.save(false) />
