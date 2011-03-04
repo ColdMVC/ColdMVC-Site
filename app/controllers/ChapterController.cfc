@@ -17,7 +17,6 @@ component {
 
 	function show() {
 
-
 		params.chapter = _Chapter.findBySlug(params.slug);
 
 		if (params.chapter.exists()) {
@@ -29,7 +28,7 @@ component {
 			params.next = "";
 			params.previous = "";
 
-			if (order != 1 && order < total) {
+			if (order != 1 && order <= total) {
 				params.previous = chapters[order - 1];
 			}
 

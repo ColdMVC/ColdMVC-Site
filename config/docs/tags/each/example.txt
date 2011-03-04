@@ -1,0 +1,25 @@
+	<cfset sports = [ "Baseball", "Basketball", "Football", "Hockey" ] />
+	
+	<c:each in="#sports#" do="sport" index="i">
+		#i#) #sport# <br />
+	</c:each>
+	
+	<cfset athletes = {
+		king = {
+			firstName = "LeBron",
+			lastName = "James"
+		},
+		dwade = {
+			firstName = "Dwyane",
+			lastName = "Wade"
+		},
+		air = {
+			firstName = "Michael",
+			lastName = "Jordan"
+		}
+	
+	} />
+	
+	<c:each in="#athletes#" do="athlete" index="i" key="key">
+		#i#) #athlete.firstName# #athlete.lastName# (#key#)<br />
+	</c:each>

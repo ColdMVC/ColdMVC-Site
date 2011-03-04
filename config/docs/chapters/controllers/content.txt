@@ -6,4 +6,72 @@ In order for a component to be considered a controller, it must be registered wi
 
 All public methods on a controller are considered actions.
 
+## Sample User Controller
+
+	/**
+	 * @accessors true
+	 * @extends coldmvc.Controller
+	 */
+	component {
+	
+		function create() {
+	
+			params.user = _User.new();
+	
+		}
+	
+		function delete() {
+	
+			var user = _User.get(params.id);			
+			user.delete();
+	
+			flash.message = "User deleted successfully";
+			
+			redirect({action="list"});
+	
+		}
+	
+		function edit() {
+	
+			params.user = _User.get(params.id);
+	
+		}
+	
+		function list() {
+	
+			params.users = _User.list();
+	
+		}
+	
+		function save() {
+	
+			var user = _User.new();
+			user.populate(params.user);
+			user.save();
+	
+			flash.message = "User added successfully";
+			redirect({action="show", id=user});
+	
+		}
+	
+		function show() {
+	
+			params.user = _User.get(params.id);
+	
+		}
+	
+		function update() {
+	
+			var user = _User.get(params.id);
+			user.populate(params.user);
+			user.save();
+	
+			flash.message = "User saved successfully";
+	
+			redirect({action="show", id=user});
+	
+		}
+	
+	}
+
 [1]: /annotations/singleton "Annotations: singleton"

@@ -280,6 +280,7 @@ div.wizard_navigation {
 	position: relative;
 	border-top: 1px solid #ddd;
 	margin-top: 10px;
+	height: 30px;
 }
 
 div.wizard_navigation div.wizard_previous {

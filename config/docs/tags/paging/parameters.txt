@@ -1,4 +1,7 @@
-| Name       | Required | Type   | Default | Description                                                        |
-|------------|----------|--------|---------|--------------------------------------------------------------------|
-| parameters | false    | string |         | A querystring of parameters to use when building pagination links. |
-| records    | true     | any    |         | The records that are being paginated.                              |
+| Name       | Required | Type    | Default | Description                                                        |
+|------------|----------|---------|---------|--------------------------------------------------------------------|
+| count      | false    | numeric |         | The number of records that are being paginated.                    |
+| max        | false    | numeric | 10      | The number of records per page.                                    |
+| parameters | false    | string  |         | A querystring of parameters to use when building pagination links. |
+| records    | true     | any     |         | The records that are being paginated.                              |
+| start      | false    | numeric | 1       | The starting index.                                                |

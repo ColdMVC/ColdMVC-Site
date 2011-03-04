@@ -1,0 +1,1 @@
+	<c:paging page="1" max="10" records="120" />

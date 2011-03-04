@@ -1,1 +1,1 @@
-Creates links for pagination
+Creates links for pagination.

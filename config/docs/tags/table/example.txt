@@ -1,0 +1,12 @@
+	<cfset names = "Kobe Bryant,Dwight Howard,Blake Griffin" />
+	
+	<c:table>
+		<tr>
+			<td>Name</td>
+		</tr>
+		<c:each in="#names#" do="name" index="i">
+			<c:tr index="#i#">
+				<td>#name#</td>
+			</c:tr>
+		</c:each>
+	</c:table>

@@ -25,3 +25,35 @@ For example, if you want to link to a blog post, your code might look like this:
 	<a href="#linkTo({controller="post", action="show", id=post})#">#post.title()#</a>
 
 If you don't specify a controller or an action in the parameters and a matching route can't be found, the router will look again, only this time it will add the current request's controller and action to the parameters.
+
+## Default Routes
+	
+The following routes are added to your application by default.	
+	
+	<cfset add("/:controller/:action/:id\.:format") />
+	<cfset add("/:controller/:action/:id") />
+	<cfset add("/:controller/:action\.:format") />
+	<cfset add("/:controller/:action") />
+	<cfset add("/:controller") />
+	
+## Sample Blog Route
+
+The following route is an example of how to create an SES URL to a blog post by using the following code: _#linkTo({controller="post", action="show", id=post})#_.
+
+	<cfset add("/:year/:month/:day/:slug", {
+		name = "post",
+		defaults = {
+			controller = "post",
+			action = "show"
+		},
+		requirements = {
+			year = "\d{4}"
+		},
+		computed = {
+			link = ":year/:month/:day/:slug"
+		},
+		model = "post",
+		generates = "/:id.link()"
+	}) />
+	
+This route will generate a link that looks like the following: _http://myapp.com/2011/7/16/hello-world_.
