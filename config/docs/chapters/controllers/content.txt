@@ -1,4 +1,4 @@
-Controllers are responding for handling requests, fetching data from the model, and optionally rendering views.
+Controllers are responsible for handling requests, fetching data from the model, and optionally rendering views.
 
 Controllers are located inside your application's _/app/controllers/_ directory.
 
