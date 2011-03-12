@@ -2,7 +2,7 @@ Controllers are responsible for handling requests, fetching data from the model,
 
 Controllers are located inside your application's _/app/controllers/_ directory.
 
-In order for a component to be considered a controller, it must be registered with the bean factory as a singleton using the [_@singleton_] [1] annotation and the file must be named using a "Controller" suffix. For example, a user controller would be located at _/app/controllers/UserController.cfc_.
+In order for a component to be considered a controller, it must be registered with the bean factory as a singleton and the file must be named using a "Controller" suffix. You can register the component as a singleton by using the [_@singleton_] [1] annotation or by extending _coldmvc.Controller_. For example, a user controller would be located at _/app/controllers/UserController.cfc_.
 
 All public methods on a controller are considered actions.
 
