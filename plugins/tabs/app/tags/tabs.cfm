@@ -7,7 +7,7 @@
 		<cfset attributes.tabs = tabManager.getTabs(argumentCollection=attributes) />
 	</cfif>
 
-	#tabManager.renderTabs(argumentCollection=attributes)#
+	<cfset thisTag.generatedContent = tabManager.renderTabs(argumentCollection=attributes) />
 
 </cfif>
 </cfoutput>

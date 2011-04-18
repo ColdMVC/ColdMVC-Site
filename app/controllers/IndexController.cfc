@@ -1,8 +1,17 @@
 /**
+ * @accessors true
  * @singleton
- * @directory /
  */
 component {
+
+	property config;
+
+	function download() {
+
+		var repository = new app.model.Repository(config.get("repositoryURL"));
+		params.commits = repository.getCommits();
+
+	}
 
 	/**
 	 * @events invalidController
@@ -21,6 +30,10 @@ component {
 	function pageNotFound() {
 
 		$.event.view("404");
+
+	}
+
+	function quickstart() {
 
 	}
 

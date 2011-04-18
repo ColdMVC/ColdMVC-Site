@@ -1,3 +1,14 @@
+<cfloop list="download,quickstart,documentation,contact" index="i">
+
+	<cfset add("/#i#", {
+		required = {
+			controller = "index",
+			action = i
+		}
+	}) />
+
+</cfloop>
+
 <cfloop list="annotation,helper,plugin,tag" index="i">
 
 	<cfset add("/#i#s/:slug", {

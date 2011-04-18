@@ -114,7 +114,7 @@ div#tabs ul li.active a {
 
 #header {
 	font-size: .9em;
-	padding: 3px;
+	padding: 5px 3px 3px;
 	color: #3f3f3f;
 	background: #cfcfcf;
 	background: gradient(linear, left bottom, right top, from(#cfcfcf), to(#dfdfdf));
@@ -167,6 +167,10 @@ div#tabs ul li.active a {
 	padding: 15px;
 	overflow: auto;
 	width: 678px;
+}
+
+#content.no-sidebar pre {
+	width: 918px;
 }
 
 #content em {
@@ -323,7 +327,7 @@ div.wizard_navigation div.wizard_next {
 
 #footer {
 	color: #666;
-	font-size: .7em;
+	font-size: .8em;
 	margin-top: 40px;
 	padding: 10px 0 40px;
 	border-top: 1px solid #e4e4e4;

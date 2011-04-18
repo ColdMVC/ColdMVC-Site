@@ -1,0 +1,3 @@
+<mappings>
+	<mapping controller="index" action="(download|quickstart|documentation|contact)" event=":controller.:action" />
+</mappings>

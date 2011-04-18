@@ -7,6 +7,6 @@ For more information on helpers, check out the [chapter on helpers] [1] in the [
 
 If you have an idea for a helper that you think would be great for ColdMVC, let us know by sending an email to <coldmvc@gmail.com>.
 
-[1]: /guide/helpers
-[2]: /guide
+[1]: /guide/helpers "Helpers"
+[2]: /guide "Reference Guide"
 </c:markdown>

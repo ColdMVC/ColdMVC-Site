@@ -78,18 +78,30 @@ component {
 
 				var mapping = variables.config[i];
 
+				// run regular expressions to match the controller and action
 				if (reFindNoCase("^#mapping.controller#$", controller) && reFindNoCase("^#mapping.action#$", action)) {
 
 					var result = {};
 					result.requires = mapping.requires;
 
+					// if there's a period, it's {controller}.{action}
 					if (find(".", mapping.event)) {
 						result.controller = listFirst(mapping.event, ".");
 						result.action = listLast(mapping.event, ".");
 					}
 					else {
+						// {action}
 						result.controller = controller;
 						result.action = mapping.event;
+					}
+
+					// check for placeholders
+					if (result.controller == ":controller") {
+						result.controller = controller;
+					}
+
+					if (result.action == ":action") {
+						result.action = action;
 					}
 
 					result.event = result.controller & "." & result.action;

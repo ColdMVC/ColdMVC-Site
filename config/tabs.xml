@@ -1,7 +1,8 @@
 <tabs action="index">
-	<tab name="Home" controller="site" action="index" />
-	<tab name="Download" controller="download" action="index" />
-	<tab name="Documentation" controller="documentation" action="index">
+	<tab name="Home" controller="index" action="index" />
+	<tab name="Download" controller="index" action="download" />
+	<tab name="Quick Start" controller="index" action="quickstart" />
+	<tab name="Documentation" controller="index" action="documentation">
 		<tabs>
 			<tab name="Annotations" controller="annotation" action="index" />
 			<tab name="Reference Guide" controller="chapter" action="index" />
@@ -11,5 +12,5 @@
 	</tab>
 	<tab name="Plugins" controller="plugin" action="index" />
 	<tab name="Discussion" controller="discussion" action="index" />
-	<tab name="Contact" controller="contact" action="index" />
+	<tab name="Contact" controller="index" action="contact" />
 </tabs>
