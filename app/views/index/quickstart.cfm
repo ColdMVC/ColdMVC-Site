@@ -804,7 +804,7 @@ Inside the _layouts_ directory, create an _index.cfm_ with the following content
 		<cfoutput>#open#</cfoutput>/body>
 	<cfoutput>#open#</cfoutput>/c:html>
 
-This will be the site-wide layout for our entire application.
+This will be the site-wide layout for your entire application.
 
 Now if you view your application in your browser again, you'll notice each view will be displayed inside the layout where it calls _&lt;c:render /&gt;_.
 
@@ -814,7 +814,7 @@ Again, more information can be found inside the chapter on [Layouts] [10] in the
 
 All of the code can be found on GitHub at [https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore] [11].
 
-Thanks for your time and I enjoy working with ColdMVC.
+Thanks for your time and I hope you enjoy working with ColdMVC.
 
 [1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
 [2]: /documentation "Documentation"
