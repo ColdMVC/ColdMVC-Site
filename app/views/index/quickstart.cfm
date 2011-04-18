@@ -9,12 +9,21 @@ You've come to the right place. In this one-page tutorial, we'll create a very s
 While I'll try to explain some things along the way, once you've completed this tutorial,
 you should head over to the [Documentation] [2] chapter for a more thorough explanation on how certain things are done.
 
+[1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
+[2]: /documentation "Documentation"
+</c:markdown>
+
+<c:markdown>
 ## Installing ColdMVC
 
-Before you can get started creating your application, you need to first install ColdMVC. After you [download the framework] [3],
+Before you can get started creating your application, you need to first install ColdMVC. After you [download the framework] [1],
 you can either put it directly in your web root or you can create a server mapping for _/coldmvc_ inside ColdFusion Administrator that
 points to the framework. The choice is yours.
 
+[1]: /download "Download"
+</c:markdown>
+
+<c:markdown>
 ## Creating your application
 
 Now that ColdMVC is installed, it's time to get started on the application. First, create a new ColdFusion project in your editor of choice and name it _BookStore_.
@@ -34,7 +43,9 @@ At this point, your directory structure should look like the following:
 
 	/BookStore
 		Application.cfc
+</c:markdown>
 
+<c:markdown>
 ## Creating a home page
 
 Since ColdMVC follows the MVC design pattern where requests are routed through controllers, we'll start by creating a controller for the bookstore.
@@ -74,7 +85,9 @@ At this point, your directory structure should look like the following:
 				/index
 					index.cfm
 		Application.cfc
+</c:markdown>
 
+<c:markdown>
 ## Testing it out
 
 Now that you've created a simple controller and view for the bookstore, let's test it out.
@@ -85,7 +98,7 @@ Inside the _public_ directory, create an _index.cfm_ with the following content:
 
 	<cfoutput>#open#</cfoutput>cfinclude template="/coldmvc/index.cfm" />
 
-This will be the main [front controller] [4] for your application and act as a centralized entry point for all requests. Basically the file just delegates control of the request to ColdMVC.
+This will be the main [front controller] [1] for your application and act as a centralized entry point for all requests. Basically the file just delegates control of the request to ColdMVC.
 
 Now, open a web browser and test out your application.
 
@@ -104,9 +117,15 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
+[1]: http://en.wikipedia.org/wiki/Front_Controller_pattern "Front Controller pattern"
+</c:markdown>
+
+<c:markdown>
 ## Development mode
 
-Your application should now be up and running in all of its limited glory. However, by default your application runs in _production_ mode, which has enhanced application caching enabled, but isn't ideal when you're making lots of changes in your development environment.
+Your application should now be up and running in all of its limited glory.
+However, by default your application runs in _production_ mode, which has enhanced application caching enabled,
+but isn't ideal when you're making lots of changes in your development environment.
 
 To make things a little easier on ourselves in development, let's configure our application to run in _development_ mode.
 
@@ -121,14 +140,14 @@ Inside the _config_ directory, create a _config.ini_ with the following content:
 	autoReload=true
 
 This is your application's main configuration file. Right now the file is turning on _development_ mode and telling the application to reload itself on every request.
-More information can be found in the [Config Variables] [5] chapter inside the [Reference Guide] [6].
+More information can be found in the [Config Variables] [1] chapter inside the [Reference Guide] [2].
 
 Also inside the _config_ directory, create an _environment.txt_ with the following content:
 
 	development
 
 This file sets your current environment, which is used to load your config variables.
-More information can be found in the [Environments] [7] chapter inside the [Reference Guide] [6].
+More information can be found in the [Environments] [3] chapter inside the [Reference Guide] [2].
 
 Now, go back to your browser and reload your application by appending _?init_ to the URL. For example, your URL could now be _http://localhost/bookstore/public/index.cfm?init_.
 
@@ -150,11 +169,17 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
+[1]: /guide/config-variables "Config Variables"
+[2]: /guide "Reference Guide"
+[3]: /guide/environments "Environments"
+</c:markdown>
+
+<c:markdown>
 ## Creating a model
 
 Now that you've created a very simple home page for your bookstore, it's time to start working with books.
 
-First, we'll need to create a _Book_ model. This will be a persistent ORM entity that is managed by [Hibernate] [8] behind the scenes.
+First, we'll need to create a _Book_ model. This will be a persistent ORM entity that is managed by [Hibernate] [1] behind the scenes.
 
 Inside your _app_ directory, create a directory called _model_. This will be the model of your application, where your business logic and persistent model objects are located.
 
@@ -198,6 +223,10 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
+[1]: http://www.hibernate.org/ "Hibernate"
+</c:markdown>
+
+<c:markdown>
 ## Performing CRUD
 
 Now that you have a _Book_ model created, it's time to perform some [CRUD] [1].
@@ -248,6 +277,10 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
+[1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
+</c:markdown>
+
+<c:markdown>
 ## Adding a book
 
 If you click on the "Add a Book" link on your book's home page, you'll see that nothing happens. Let's change that.
@@ -278,7 +311,7 @@ Next, create an _add.cfm_ inside _/BookStore/app/views/book/_ with the following
 		<cfoutput>#open#</cfoutput>c:submit label="Add Book" />
 	<cfoutput>#open#</cfoutput>/c:form>
 
-You've just created a simple form for adding a book using ColdMVC's built-in [custom tags] [9] and bound it to a _Book_ param.
+You've just created a simple form for adding a book using ColdMVC's built-in [custom tags] [1] and bound it to a _Book_ param.
 
 If you go to _http://localhost/bookstore/public/index.cfm/book/add_ and view the page source, you should see something like the following:
 
@@ -337,6 +370,10 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
+[1]: /guide/tags "Tags"
+</c:markdown>
+
+<c:markdown>
 ## Saving a book
 
 Now that we have a form for adding a book, let's save it to the database.
@@ -367,7 +404,9 @@ Once again, open up your _BookController_ and update it to the following content
 	}
 
 If you fill out your form and submit it, you should see a new record created in your database.
+</c:markdown>
 
+<c:markdown>
 ## Viewing a book
 
 Now that you were able to add a book to your database, let's display the newly created record.
@@ -438,7 +477,9 @@ At this point, your directory structure should look like the following:
 		/public
 			index.cfm
 		Application.cfc
+</c:markdown>
 
+<c:markdown>
 ## Listing books
 
 Now that we can add and view newly created books, let's create a page to display all of the books in the database.
@@ -539,7 +580,9 @@ At this point, your directory structure should look like the following:
 		/public
 			index.cfm
 		Application.cfc
+</c:markdown>
 
+<c:markdown>
 ## Editing books
 
 You'll notice the book list included a link to edit each book, so let's add that action to the application.
@@ -707,7 +750,9 @@ At this point, your directory structure should look like the following:
 		/public
 			index.cfm
 		Application.cfc
+</c:markdown>
 
+<c:markdown>
 ## Deleting books
 
 The book list also included a link to delete books, so let's add that action as well.
@@ -781,11 +826,13 @@ Update your _BookController_ to the following content:
 The new _delete_ action will find a book by its ID, delete it, then redirect to the _list_ action.
 
 Congratulations! You've successfully handled all [CRUD] [1] operations for books.
+</c:markdown>
 
+<c:markdown>
 ## Adding a layout
 
 The last item to cover in this tutorial will be layouts.
-We won't go very detailed into layouts, but more information can be found inside the [Layouts] [10] chapter in the [Reference Guide] [6].
+We won't go very detailed into layouts, but more information can be found inside the [Layouts] [2] chapter in the [Reference Guide] [3].
 
 Inside _/BookStore/app/_, create a directory called _layouts_.
 
@@ -808,23 +855,19 @@ This will be the site-wide layout for your entire application.
 
 Now if you view your application in your browser again, you'll notice each view will be displayed inside the layout where it calls _&lt;c:render /&gt;_.
 
-Again, more information can be found inside the chapter on [Layouts] [10] in the [Reference Guide] [6].
+Again, more information can be found inside the chapter on [Layouts] [2] in the [Reference Guide] [3].
 
+[1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
+[2]: /guide/layouts "Layouts"
+[3]: /guide "Reference Guide"
+</c:markdown>
+
+<c:markdown>
 ## Closing thoughts
 
-All of the code can be found on GitHub at [https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore] [11].
+All of the code can be found on GitHub at [https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore] [1].
 
 Thanks for your time and I hope you enjoy working with ColdMVC.
 
-[1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
-[2]: /documentation "Documentation"
-[3]: /download "Download"
-[4]: http://en.wikipedia.org/wiki/Front_Controller_pattern "Front Controller pattern"
-[5]: /guide/config-variables "Config Variables"
-[6]: /guide "Reference Guide"
-[7]: /guide/environments "Environments"
-[8]: http://www.hibernate.org/ "Hibernate"
-[9]: /guide/tags "Tags"
-[10]: /guide/layouts "Layouts"
-[11]: https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore
+[1]: https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore
 </c:markdown>
