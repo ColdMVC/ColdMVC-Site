@@ -12,8 +12,6 @@ component {
 
 		javaLoader.add(getDirectoryFromPath(getCurrentTemplatePath()) & "../../lib/markdownj-1.0.2b4-0.3.0.jar");
 
-		markdownProcessor = javaLoader.create("com.petebevin.markdown.MarkdownProcessor").init();
-
 		urlPath = config.get("urlPath");
 
 	}
@@ -24,6 +22,8 @@ component {
 
 		string = replaceTables(string);
 		string = replaceDefinitionLists(string);
+
+		var markdownProcessor = javaLoader.create("com.petebevin.markdown.MarkdownProcessor").init();
 
 		return markdownProcessor.markdown(string);
 
@@ -144,7 +144,7 @@ component {
 				});
 
 			}
-			
+
 			string = rebuildString(string, tables);
 
 		}
@@ -152,7 +152,7 @@ component {
 		return string;
 
 	}
-	
+
 	private string function replaceDefinitionLists(required string string) {
 
 		if (find(":", string)) {
@@ -167,7 +167,7 @@ component {
 			var insideList = false;
 			var lists = [];
 			var list = [];
-			
+
 			for (i = 1; i <= arrayLen(array); i++) {
 
 				line = array[i];
@@ -181,9 +181,9 @@ component {
 						arrayAppend(list, "<dl>");
 
 						insideList = true;
-					
+
 					}
-					
+
 					arrayAppend(list, "<dt>#trim(array[i - 1])#</dt>");
 					arrayAppend(list, "<dd>#trim(replace(line, ":", ""))#</dd>");
 
@@ -191,23 +191,23 @@ component {
 				else {
 
 					if (insideList) {
-					
+
 						if (arrayLen(array) >= i + 2) {
-						
+
 							if (left(array[i + 1], 1) != ":" && left(array[i + 2], 1) != ":") {
-							
+
 								arrayAppend(list, "</dl>");
-		
+
 								arrayAppend(lists, {
 									start = start,
 									end = i - 1,
 									array = list
 								});
-								
+
 								insideList = false;
-	
+
 							}
-						
+
 						}
 
 					}
@@ -236,7 +236,7 @@ component {
 	}
 
 	private string function rebuildString(required string string, required array items) {
-		
+
 		var array = listToArray(string, chr(10));
 		var new = [];
 		var start = 1;
@@ -279,7 +279,7 @@ component {
 		}
 
 		return arrayToList(new, chr(10));
-		
+
 	}
 
 }
