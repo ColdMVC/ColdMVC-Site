@@ -826,6 +826,8 @@ Update your _BookController_ to the following content:
 The new _delete_ action will find a book by its ID, delete it, then redirect to the _list_ action.
 
 Congratulations! You've successfully handled all [CRUD] [1] operations for books.
+
+[1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
 </c:markdown>
 
 <c:markdown>
