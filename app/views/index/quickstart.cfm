@@ -27,7 +27,9 @@ points to the framework. The choice is yours.
 ## Creating your application
 
 Now that ColdMVC is installed, it's time to get started on the application. First, create a new ColdFusion project in your editor of choice and name it _BookStore_.
+
 Since this will be a database-driven web application, you should also create a new datasource within ColdFusion Administrator and name it _BookStore_ as well.
+Technically you can configure the datasource to be named whatever you'd like it to be, but by default ColdMVC will look for a datasource with the same name as the project.
 For now, the database can be left completely empty.
 
 Next, add an _Application.cfc_ inside your _BookStore_ directory with the following content:
