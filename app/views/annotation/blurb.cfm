@@ -1,7 +1,7 @@
 <c:markdown>
 ### About Annotations
 
-Annotations allow you to add custom metadata to components and functions that can be used to provide additional functionality throughout your application.
+Annotations allow you to add custom metadata to components and methods that can be used to provide additional functionality throughout your application.
 
 For more information on annotations, check out the chapter on [annotations] [1] in the [Reference Guide] [2].
 

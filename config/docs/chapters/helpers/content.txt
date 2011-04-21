@@ -1,4 +1,4 @@
-ColdMVC allows you to create helper components that are globally available to your entire application. These helper components are good for containing useful functions similar to those found on cflib.org.
+ColdMVC allows you to create helper components that are globally available to your entire application. These helper components are good for containing useful methods similar to those found on cflib.org.
 
 When ColdMVC first loads, it will load any helpers located within your application's _/app/helpers/_ folder, then any helpers inside _/coldmvc/app/helpers/_ folder that haven't been loaded yet. These helpers will then be globally available throughout your application inside the _$_ and _coldmvc_ variables.
 

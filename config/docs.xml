@@ -2,6 +2,7 @@
 	<section id="annotations">
 		<pages>
 			<page id="action" />
+			<page id="actionHelper" /> 
 			<page id="ajaxLayout" />
 			<page id="controller" />
 			<page id="directory" />
@@ -34,6 +35,7 @@
 			<page id="Layouts" />
 			<page id="Tags" />
 			<page id="Helpers" />
+			<page id="Action Helpers" />
 			<page id="View Helpers" />
 			<page id="Link To Pages" />
 			<page id="Redirecting Requests" />
