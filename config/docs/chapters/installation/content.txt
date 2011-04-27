@@ -1,5 +1,9 @@
-There are two ways you can install ColdMVC.
+After you've [downloaded ColdMVC] [1], there are three simple ways you can install the framework.
 
-You can either put the _coldmvc_ framework directly into your server's web root or you could create a _/coldmvc_ mapping inside ColdFusion Administrator that points to the framework.
+1. Create a _/coldmvc_ mapping inside ColdFusion Administrator that points to the framework.
+2. Put the framework directly inside your server's web root.
+3. Put the framework directly inside your application's root.
 
 Pretty simple, right?
+
+[1]: /download "Download"

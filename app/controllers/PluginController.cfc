@@ -20,7 +20,7 @@ component {
 		params.plugin = _Plugin.findBySlug(params.slug);
 
 		if (!params.plugin.exists()) {
-			$.event.view('plugin/invalid');
+			setView('plugin/invalid');
 		}
 
 	}

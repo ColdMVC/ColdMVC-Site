@@ -20,7 +20,7 @@ component {
 		params.annotation = _Annotation.findBySlug(params.slug);
 
 		if (!params.annotation.exists()) {
-			$.event.view('annotation/invalid');
+			setView('annotation/invalid');
 		}
 
 	}

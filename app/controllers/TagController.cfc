@@ -20,7 +20,7 @@ component {
 		params.tag = _Tag.findBySlug(params.slug);
 
 		if (!params.tag.exists()) {
-			$.event.view('tag/invalid');
+			setView('tag/invalid');
 		}
 
 	}

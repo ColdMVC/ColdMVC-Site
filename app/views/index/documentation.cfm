@@ -1,19 +1,22 @@
 <c:markdown>
 # Looking for something?
 
-If you're new to ColdMVC, you should check out the [Reference Guide] [1].
+If you're new to ColdMVC, you should first read through the [Quick Start] [1] tutorial.
 
-Otherwise, there are complete reference manuals for all [tags] [2], [helpers] [3], and [annotations] [4].
+Once you feel comfortable with the basics, more advanced topics can be found in the [Reference Guide] [2].
 
-If you still can't find what you're looking for, check out the [plugins] [5] or [ask around] [6].
+Otherwise, there are complete reference manuals for all [tags] [3], [helpers] [4], and [annotations] [5].
 
-If you're still lost and feeling ambitious, feel free to peruse the [source code] [7]. It's all open source!
+If you still can't find what you're looking for, check out the [plugins] [6] or [ask around] [7].
 
-[1]: /guide "Reference Guide"
-[2]: /tags "Tags"
-[3]: /helpers "Helpers"
-[4]: /annotations "Annotations"
-[5]: /plugins "Plugins"
-[6]: /discussion "Discussion"
-[7]: https://github.com/tonynelson19/ColdMVC "tonynelson19/ColdMVC - GitHub"
+If you're still lost and feeling ambitious, feel free to peruse the [source code] [8]. It's all open source!
+
+[1]: /quickstart "Quick Start"
+[2]: /guide "Reference Guide"
+[3]: /tags "Tags"
+[4]: /helpers "Helpers"
+[5]: /annotations "Annotations"
+[6]: /plugins "Plugins"
+[7]: /discussion "Discussion"
+[8]: https://github.com/tonynelson19/ColdMVC "tonynelson19/ColdMVC - GitHub"
 </c:markdown>

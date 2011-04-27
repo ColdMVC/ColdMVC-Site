@@ -39,7 +39,7 @@ component {
 		}
 		else {
 
-			$.event.view('chapter/invalid');
+			setView('chapter/invalid');
 
 		}
 

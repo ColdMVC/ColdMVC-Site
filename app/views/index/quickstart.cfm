@@ -16,9 +16,14 @@ you should head over to the [Documentation] [2] chapter for a more thorough expl
 <c:markdown>
 ## Installing ColdMVC
 
-Before you can get started creating your application, you need to first install ColdMVC. After you [download the framework] [1],
-you can either put it directly in your web root or you can create a server mapping for _/coldmvc_ inside ColdFusion Administrator that
-points to the framework. The choice is yours.
+Before you can get started creating your application, you need to first install ColdMVC.
+After you [download the framework] [1], you have three options for installing it:
+
+1. Create a _/coldmvc_ mapping inside ColdFusion Administrator that points to the framework.
+2. Put the framework directly inside your server's web root.
+3. Put the framework directly inside your application's root.
+
+The choice is yours.
 
 [1]: /download "Download"
 </c:markdown>
@@ -28,9 +33,11 @@ points to the framework. The choice is yours.
 
 Now that ColdMVC is installed, it's time to get started on the application. First, create a new ColdFusion project in your editor of choice and name it _BookStore_.
 
-Since this will be a database-driven web application, you should also create a new datasource within ColdFusion Administrator and name it _BookStore_ as well.
-Technically you can configure the datasource to be named whatever you'd like it to be, but by default ColdMVC will look for a datasource with the same name as the project.
+Since this will be a database-driven web application, you should also create a new database in your database server.
 For now, the database can be left completely empty.
+
+Once you've created the database, create a datasource within ColdFusion Administrator that points to your new database and name it _BookStore_.
+Technically you can configure the datasource to be named whatever you'd like it to be, but by default ColdMVC will look for a datasource with the same name as the project.
 
 Next, add an _Application.cfc_ inside your _BookStore_ directory with the following content:
 
@@ -306,12 +313,15 @@ You've just added an _add_ action that creates a new instance of a _Book_ and pu
 
 Next, create an _add.cfm_ inside _/BookStore/app/views/book/_ with the following content:
 
+	<cfoutput>#open#</cfoutput>cfoutput>
 	<cfoutput>#open#</cfoutput>c:form action="save" bind="book">
 		<cfoutput>#open#</cfoutput>c:input name="title" />
 		<cfoutput>#open#</cfoutput>c:input name="author" />
 		<cfoutput>#open#</cfoutput>c:textarea name="description" />
 		<cfoutput>#open#</cfoutput>c:submit label="Add Book" />
+		<cfoutput>#open#</cfoutput>a href="#linkTo({action='list'})#">Back to List<cfoutput>#open#</cfoutput>/a>
 	<cfoutput>#open#</cfoutput>/c:form>
+	<cfoutput>#open#</cfoutput>/cfoutput>
 
 You've just created a simple form for adding a book using ColdMVC's built-in [custom tags] [1] and bound it to a _Book_ param.
 
@@ -346,9 +356,10 @@ If you go to _http://localhost/bookstore/public/index.cfm/book/add_ and view the
 		<cfoutput>#open#</cfoutput>span class="button">
 			<cfoutput>#open#</cfoutput>input type="submit" name="save" id="save" title="Add Book" class="button" value="Add Book" />
 		<cfoutput>#open#</cfoutput>/span>
+		<cfoutput>#open#</cfoutput>a href="http://localhost/bookstore/public/index.cfm/book/list">Back to List<cfoutput>#open#</cfoutput>/a>
 	<cfoutput>#open#</cfoutput>/form>
 
-Not bad for only 6 lines of code in the view.
+Not bad for less than 10 lines of code in the view.
 
 At this point, your directory structure should look like the following:
 
@@ -448,12 +459,16 @@ You'll notice the _BookController_'s _save_ action now has logic to redirect to 
 
 Now let's add the view. Create a _show.cfm_ inside _/BookStore/app/views/book/_ with the following content:
 
+	<cfoutput>#open#</cfoutput>cfoutput>
 	<cfoutput>#open#</cfoutput>c:bind to="book">
 		<cfoutput>#open#</cfoutput>c:text name="id" />
 		<cfoutput>#open#</cfoutput>c:text name="title" />
 		<cfoutput>#open#</cfoutput>c:text name="author" />
 		<cfoutput>#open#</cfoutput>c:text name="description" />
 	<cfoutput>#open#</cfoutput>/c:bind>
+
+	<cfoutput>#open#</cfoutput>a href="#linkTo({action='list'})#">Back to List<cfoutput>#open#</cfoutput>/a>
+	<cfoutput>#open#</cfoutput>/cfoutput>
 
 If you save another book, you will be redirected to the new book's _show_ page.
 
@@ -544,7 +559,7 @@ Create a _list.cfm_ located inside _/BookStore/app/views/book/_ with the followi
 		<cfoutput>#open#</cfoutput>tbody>
 			<cfoutput>#open#</cfoutput>c:each in="#books#" do="book">
 				<cfoutput>#open#</cfoutput>tr>
-					<cfoutput>#open#</cfoutput>td>#book.id()#<cfoutput>#open#</cfoutput>/td>
+					<cfoutput>#open#</cfoutput>td><cfoutput>#open#</cfoutput>a href="#linkTo({action='show', id=book})#">#book.id()#<cfoutput>#open#</cfoutput>/a><cfoutput>#open#</cfoutput>/td>
 					<cfoutput>#open#</cfoutput>td>#book.title()#<cfoutput>#open#</cfoutput>/td>
 					<cfoutput>#open#</cfoutput>td>#book.author()#<cfoutput>#open#</cfoutput>/td>
 					<cfoutput>#open#</cfoutput>td><cfoutput>#open#</cfoutput>a href="#linkTo({action='edit', id=book})#">Edit<cfoutput>#open#</cfoutput>/a><cfoutput>#open#</cfoutput>/td>
@@ -649,6 +664,7 @@ Inside _/BookStore/app/views/book/_, create an _edit.cfm_ with the following con
 		<cfoutput>#open#</cfoutput>c:textarea name="description" />
 		<cfoutput>#open#</cfoutput>c:submit label="Update Book" />
 		<cfoutput>#open#</cfoutput>a href="#linkTo({action='show', id=book})#">Cancel<cfoutput>#open#</cfoutput>/a>
+		<cfoutput>#open#</cfoutput>a href="#linkTo({action='list'})#">Back to List<cfoutput>#open#</cfoutput>/a>
 	<cfoutput>#open#</cfoutput>/c:form>
 	<cfoutput>#open#</cfoutput>/cfoutput>
 
@@ -726,6 +742,7 @@ While we're at it, let's add some links to the _show_ view. Update _/BookStore/a
 
 	<cfoutput>#open#</cfoutput>a href="#linkTo({action='edit', id=book})#">Edit<cfoutput>#open#</cfoutput>/a>
 	<cfoutput>#open#</cfoutput>a href="#linkTo({action='delete', id=book})#">Delete<cfoutput>#open#</cfoutput>/a>
+	<cfoutput>#open#</cfoutput>a href="#linkTo({action='list'})#">Back to List<cfoutput>#open#</cfoutput>/a>
 	<cfoutput>#open#</cfoutput>/cfoutput>
 
 At this point, your directory structure should look like the following:
@@ -869,7 +886,7 @@ Again, more information can be found inside the chapter on [Layouts] [2] in the 
 <c:markdown>
 ## Closing thoughts
 
-All of the code can be found on GitHub at [https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore] [1].
+All of the code in this tutorial is available on GitHub at [https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore] [1].
 
 Thanks for your time and I hope you enjoy working with ColdMVC.
 

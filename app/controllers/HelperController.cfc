@@ -20,7 +20,7 @@ component {
 		params.helper = _Helper.findBySlug(params.slug);
 
 		if (!params.helper.exists()) {
-			$.event.view('helper/invalid');
+			setView('helper/invalid');
 		}
 
 	}

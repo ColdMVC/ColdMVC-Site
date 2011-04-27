@@ -19,17 +19,15 @@ component {
 	function interceptPageNotFound() {
 
 		if ($.event.key() != "db.seed") {
-
-			$.event.controller("site");
-			$.event.action("pageNotFound");
-
+			setController("site");
+			setAction("pageNotFound");
 		}
 
 	}
 
 	function pageNotFound() {
 
-		$.event.view("404");
+		setView("404");
 
 	}
 
