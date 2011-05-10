@@ -11,6 +11,7 @@
 			<page id="initMethod" />
 			<page id="layout" />
 			<page id="model" />
+			<page id="modelHelper" /> 
 			<page id="singleton" />
 			<page id="view" />
 			<page id="viewHelper" /> 
@@ -36,6 +37,7 @@
 			<page id="Tags" />
 			<page id="Helpers" />
 			<page id="Action Helpers" />
+			<page id="Model Helpers" />
 			<page id="View Helpers" />
 			<page id="Link To Pages" />
 			<page id="Redirecting Requests" />

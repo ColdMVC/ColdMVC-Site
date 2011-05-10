@@ -1,0 +1,6 @@
+By using the _@modelHelper_ annotation, you can expose methods on both helpers and singleton beans to models using an alias.
+
+For more information, see the [chapter on model helpers] [1] in the [reference guide] [2].
+
+[1]: /guide/model-helpers "Model Helpers"
+[2]: /guide "Reference Guide"

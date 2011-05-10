@@ -1,0 +1,1 @@
+Makes a method inside a singleton component available to all models as an model helper.
