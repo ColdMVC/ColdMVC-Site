@@ -10,8 +10,10 @@
 			<page id="formats" />
 			<page id="initMethod" />
 			<page id="layout" />
+			<page id="methods" />
 			<page id="model" />
 			<page id="modelHelper" /> 
+			<page id="params" />
 			<page id="singleton" />
 			<page id="view" />
 			<page id="viewHelper" /> 

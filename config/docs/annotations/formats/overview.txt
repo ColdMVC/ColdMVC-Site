@@ -1,5 +1,7 @@
 By default, all actions are only allowed to output _html_ format only, but you can allow for more formats by using the _@formats_ annotation. Possible values include _html_, _json_, and _xml_.
 
+The _@formats_ annotation value accepts a comma-separated list of formats.
+
 If the current format is not allowed for the current action, a 403 exception is thrown.
 
 For more information, see the [chapter on formats] [1] in the [reference guide] [2].

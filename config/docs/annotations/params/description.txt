@@ -1,1 +1,1 @@
-Sets the required params for actions on controllers.
+Specifies the required params for actions on controllers.

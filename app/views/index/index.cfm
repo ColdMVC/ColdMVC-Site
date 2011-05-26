@@ -22,11 +22,11 @@
 	</div>
 	<div class="span-8">
 		<h2>Powerful</h2>
-		<p>Take advantage of modern best practices in <a href="#linkTo('/guide/dependency-injection')#" title="dependency injection">dependency injection</a> and <a href="#linkTo('/guide/orm')#" title="object relational mapping">object relational mapping</a> to build loosely coupled, highly cohesive applications.</p>
+		<p>Take advantage of modern best practices in dependency injection and object relational mapping to build loosely coupled, highly cohesive applications.</p>
 	</div>
 	<div class="span-8 last">
 		<h2>Flexible</h2>
-		<p>Easily extend your applications with <a href="#linkTo('/guide/plugins')#" title="plugins">plugins</a>, add <a href="#linkTo('/guide/tags')#" title="custom tags">custom tags</a> to clean up your presentation layer, and create <a href="#linkTo('/guide/helpers')#" title="helpers">helpers</a> to take handle the repetitive tasks.</p>
+		<p>Easily extend your applications with plugins, add custom tags to clean up your presentation layer, and create helpers to take handle the repetitive tasks.</p>
 	</div>
 </div>
 </cfoutput>
