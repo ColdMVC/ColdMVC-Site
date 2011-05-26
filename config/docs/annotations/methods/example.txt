@@ -1,0 +1,22 @@
+In the following example, the _show_ action is only available to _GET_ requests.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+
+		/**
+		 * @methods GET
+		 */
+		function show() {
+
+			params.book = _Book.get(params.id);
+
+		}
+
+	}

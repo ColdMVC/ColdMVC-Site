@@ -1,0 +1,1 @@
+Renders a private partial template.

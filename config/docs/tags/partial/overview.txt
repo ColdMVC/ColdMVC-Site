@@ -1,0 +1,1 @@
+Allows for private execution of an included template. Variables defined within the caller and the template are kept isolated from each other.

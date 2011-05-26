@@ -1,0 +1,22 @@
+In the following example, the _show_ action requires an _id_ param.
+
+**BookController.cfc**
+
+	/**
+ 	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		property _Book;
+
+		/**
+		 * @params id
+		 */
+		function show() {
+
+			params.book = _Book.get(params.id);
+
+		}
+
+	}

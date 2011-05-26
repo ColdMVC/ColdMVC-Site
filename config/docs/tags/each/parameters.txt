@@ -1,5 +1,6 @@
 | Name      | Required | Type    | Default | Description                                                               |
 |-----------|----------|---------|---------|---------------------------------------------------------------------------|
+| bind      | false    | string  |         | The name of a param to bind the loop to.                                  |
 | class     | false    | string  |         | The variable name to set for the iterating class value ("first", "last"). |
 | count     | false    | string  |         | The variable name to set for total number of items in the collection.     |
 | delimiter | false    | string  | ,       | The delimiter to use when iterating over a list.                          |
