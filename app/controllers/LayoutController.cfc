@@ -46,7 +46,7 @@ component {
 
 		addSidebar("annotation/sidebar");
 		params.annotations = _Annotation.list({
-			sort = "order",
+			sort = "name",
 			order = "asc"
 		});
 
@@ -89,7 +89,7 @@ component {
 
 		addSidebar("helper/sidebar");
 		params.helpers = _Helper.list({
-			sort = "order",
+			sort = "name",
 			order = "asc"
 		});
 
@@ -99,7 +99,7 @@ component {
 
 		addSidebar("plugin/sidebar");
 		params.plugins = _Plugin.list({
-			sort = "order",
+			sort = "name",
 			order = "asc"
 		});
 
@@ -109,7 +109,7 @@ component {
 
 		addSidebar("tag/sidebar");
 		params.tags = _Tag.list({
-			sort = "order",
+			sort = "name",
 			order = "asc"
 		});
 
