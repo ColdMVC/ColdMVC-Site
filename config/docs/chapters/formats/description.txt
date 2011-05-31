@@ -1,1 +1,1 @@
-How to handle different request formats (_html_, _js_, _xml_).
+How to handle different request formats.

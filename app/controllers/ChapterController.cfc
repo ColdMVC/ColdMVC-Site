@@ -11,7 +11,10 @@ component {
 	 */
 	function index() {
 
-		params.chapters = _Chapter.list({sort="order", order="asc"});
+		params.chapters = _Chapter.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
@@ -21,7 +24,10 @@ component {
 
 		if (params.chapter.exists()) {
 
-			var chapters = _Chapter.list({sort="order", order="asc"});
+			var chapters = _Chapter.list({
+				sort = "order",
+				order = "asc"
+			});
 			var total = arrayLen(chapters);
 			var order = params.chapter.order();
 

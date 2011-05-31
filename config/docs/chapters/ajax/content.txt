@@ -4,12 +4,14 @@ However, there are a few things to know when working with Ajax.
 
 ## Ajax Layouts
 
-There is not a layout associated with Ajax requests by default. This is because most of the time your Ajax requests will return a small snippet of HTML, or possiblly a JSON or XML string. If you would like to wrap your Ajax views inside a layout during Ajax requests, you would add an _@ajaxLayout_ annotation to your controller's actions.
+There is not a layout associated with Ajax requests by default.
+This is because most of the time your Ajax requests will return a small snippet of HTML, or possiblly a JSON or XML string.
+If you would like to wrap your Ajax views inside a layout during Ajax requests, you would add an _@ajaxLayout_ annotation to your controller's actions.
 
 	/**
 	 * @ajaxLayout modal
 	 * /
-	function results() {
+	function search() {
 
 		params.results = _Book.findAllByTitleLike(params.q);
 
@@ -19,12 +21,13 @@ There is not a layout associated with Ajax requests by default. This is because 
 
 If you would like your Ajax request to return something other than HTML, like a JSON or XML string, you can have the response automatically serialized into the proper format by adding a _format_ parameter to your Ajax request.
 
-	$('#results').load('#linkTo({controller="search", action="results"})#', {
-		'format': 'json',
-		'q': $('#q').val()
+	$('#results').load('#linkTo({controller="index", action="search"})#', {
+		format: 'json',
+		q: $('#q').val()
 	});
 
-You will also need to allow your action to respond to the format by adding a _@formats_ annotation to the action on your controller. By default, all actions only respond to an _html_ format.
+You will also need to allow your action to respond to the format by adding a _@formats_ annotation to the action on your controller.
+By default, all actions only respond to an _html_ format.
 
 	/**
 	 * @formats json
@@ -37,4 +40,5 @@ You will also need to allow your action to respond to the format by adding a _@f
 
 ## Debug Information
 
-There is no debug information appended to your request during an Ajax request in development mode. This is to prevent the Ajax request from returning too much data or breaking the response format.
+There is no debug information appended to your request during an Ajax request.
+This is to prevent the Ajax request from returning too much data or breaking the response format.

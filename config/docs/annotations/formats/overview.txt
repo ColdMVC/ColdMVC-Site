@@ -1,4 +1,5 @@
-By default, all actions are only allowed to output _html_ format only, but you can allow for more formats by using the _@formats_ annotation. Possible values include _html_, _json_, and _xml_.
+By default, all actions can be rendered in either _html_ or _pdf_ format, but you can allow for more formats by using the _@formats_ annotation.
+Possible values include _html_, _pdf_, _json_, and _xml_.
 
 The _@formats_ annotation value accepts a comma-separated list of formats.
 

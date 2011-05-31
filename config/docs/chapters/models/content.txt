@@ -1,19 +1,181 @@
-The model layer contains your application's business logic, typically inside persistent entities or service objects. Models in a ColdMVC application serve two purposes: to represent individual records in your database through properties as well as to provide database access through an abstraction layer on top of Hibernate ORM.
+The model layer contains your application's business logic, typically inside persistent entities or service objects.
+Models in a ColdMVC application serve two purposes: to represent individual records in your database through properties as well as to provide database access through an abstraction layer on top of Hibernate ORM.
 
-Models in ColdMVC contain several methods that help you easily query your database. Most of the methods are based on domain class methods found in Grails. Here's a quick list of the what's currently supported:
+Models in ColdMVC contain several methods that help you easily query your database.
+Most of the methods are based on domain class methods found in Grails.
 
-* add()
-* count()
-* countWhere()
-* exists()
-* findAll()
-* findAllWhere()
-* findWhere()
-* get()
-* has()
-* list()
-* new()
+Note: some of the methods listed below can accept an _options_ argument, which can be used for pagination and sorting.
 
-In addition to the methods mentioned above, ColdMVC also supports dynamic methods that are evaluated at runtime, which is made possible by leveraging ColdFusion's support of _onMissingMethod_. For example, assuming you had a _User_ model with _userName_ and _password_ properties, the following code is completely valid without having to actually define the method on the _User_ model:
+	var books = _Book.list({
+		sort = "title",
+		order = "asc",
+		max = "10",
+		offset = "20"
+	});
 
-	params.user = _User.findByUserNameAndPassword(params.userName, params.password);
+## count()
+
+Returns the total number of records.
+
+	var count = _Book.count();
+
+## countBy*(*)
+
+Returns the number of records with matching parameters.
+Uses dynamic finders via _onMissingMethod()_.
+
+	var count = _Book.countByTitle("The Da Vinci Code");
+
+## countWhere(parameters)
+
+Returns the number of records with matching parameters.
+	
+	var count = _Book.countWhere({
+		title = "The Da Vinci Code"
+	});
+	
+## delete([ flush ])
+
+Deletes a record from the database.
+
+	var book = _Book.get(id);
+	
+	book.delete();
+
+## exists()
+	
+Checks to see if a record exists with a certain ID without loading the model.
+	
+	if (_Book.exists(12)) {
+		// the book with ID "12" exists in the database
+	}
+	
+## exists(id)	
+	
+Checks to see if an instance of a model has already been stored in the database and has an ID.
+
+	var book = _Book.get(12);
+	
+	if (book.exists()) {
+		// the book with ID "12" already exists in the database
+	}
+
+## findAll(query [, parameters] [, options ])
+
+Executes a query and returns an array of records.
+
+	var books = _Book.findAll("from Book where book.title like :title", {
+		title = "The Da Vinci Code"
+	});
+
+## findAllWhere(parameters [, options])
+	
+Returns an array of records with matching parameters.
+
+	var books = _Book.findAllWhere({
+		title = "The Da Vinci Code"
+	});
+
+## findWhere(query [, parameters])
+
+Returns a record with matching parameters or a new instance of a model if no results are found.
+
+	var books = _Book.findWhere({
+		title = "The Da Vinci Code"
+	});
+
+## find(query [, parameters] [, options ])
+
+Executes a query and returns either the first result or a new instance of a model if no results are found.
+	
+	var book = _Book.find("from Book where book.title = :title", {
+		title = "The Da Vinci Code"
+	});
+	
+## findAllBy*(* [, options])
+
+Returns an array of records with matching parameters. Uses dynamic finders via _onMissingMethod()_.
+
+	var books = _Book.findAllByTitle("The Da Vinci Code");
+
+## findBy*(*)
+
+Returns a record with matching parameters or a new instance of a model if no results are found.
+Uses dynamic finders via _onMissingMethod()_.
+	
+	var book = _Book.findByTitle("The Da Vinci Code");
+	
+## getAll(ids [, options])
+
+Returns an array of records within a comma-separated list or array of IDs.
+The results within the array will be in the same order as the IDs that were passed in unless a _sort_ option is specified.
+
+	var books = _Book.getAll("1,2,3");
+	
+	var books = _Book.getAll([1,2,3]);
+
+## get(id [, data] [, properties])
+
+Returns a record with a matching ID or a new instance of a model if no results are found.
+Optionally allows you to populate the result.
+
+	var book = _Book.get(1, {
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+
+## list([ options ])
+
+Returns an array of records.
+
+	var books = _Book.list({
+		sort = "title",
+		order = "asc"
+	});
+
+## new([data] [, properties])
+
+Creates a new instance of a model.
+Optionally allows you to populate the result.
+
+	var book = _Book.new({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+
+## populate(data [, properties ])
+
+Populates an instance of a model.
+Optionally specify a list of valid properties to populate.
+
+	var book = _Book.new();
+	
+	book.populate({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+	
+
+## prop(property [, value])
+
+Provides a multi-purpose getter/setter for properties.
+If a value is specified, the property is set to the value and the instance of the model is returned.
+If a value is not specified, the current value of the property is returned.
+
+	var book = _Book.new();
+	
+	book.prop("title", "The Da Vinci Code"); // setter
+	
+	var title = book.prop("title"); // getter
+
+
+## save([ flush ])
+
+Saves a record to the database.
+
+	var book = _Book.new({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+	
+	book.save();

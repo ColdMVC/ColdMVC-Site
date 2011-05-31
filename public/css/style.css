@@ -178,12 +178,13 @@ div#tabs ul li.active a {
 	font-size: .9em;
 }
 
-#content strong {
-	
-}
-
 #content div.content {
 	margin-bottom: 20px;
+}
+
+#content div.content ul li {
+	list-style-position: inside;
+	list-style-type: disc;
 }
 
 #home p {

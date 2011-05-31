@@ -11,7 +11,10 @@ component {
 	 */
 	function index() {
 
-		params.helpers = _Helper.list({sort="name", order="asc"});
+		params.helpers = _Helper.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 

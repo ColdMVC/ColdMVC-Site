@@ -11,7 +11,10 @@ component {
 	 */
 	function index() {
 
-		params.plugins = _Plugin.list({sort="name", order="asc"});
+		params.plugins = _Plugin.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 

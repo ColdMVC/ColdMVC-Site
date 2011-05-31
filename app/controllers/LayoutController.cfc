@@ -45,14 +45,20 @@ component {
 	function annotation() {
 
 		addSidebar("annotation/sidebar");
-		params.annotations = _Annotation.list({sort="name", order="asc"});
+		params.annotations = _Annotation.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
 	function chapter() {
 
 		addSidebar("chapter/sidebar");
-		params.chapters = _Chapter.list({sort="order", order="asc"});
+		params.chapters = _Chapter.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
@@ -82,21 +88,30 @@ component {
 	function helper() {
 
 		addSidebar("helper/sidebar");
-		params.helpers = _Helper.list({sort="name", order="asc"});
+		params.helpers = _Helper.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
 	function plugin() {
 
 		addSidebar("plugin/sidebar");
-		params.plugins = _Plugin.list({sort="name", order="asc"});
+		params.plugins = _Plugin.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
 	function tag() {
 
 		addSidebar("tag/sidebar");
-		params.tags = _Tag.list({sort="name", order="asc"});
+		params.tags = _Tag.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 

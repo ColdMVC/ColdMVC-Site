@@ -11,7 +11,10 @@ component {
 	 */
 	function index() {
 
-		params.tags = _Tag.list({sort="name", order="asc"});
+		params.tags = _Tag.list({
+			sort = "order",
+			order = "asc"
+		});
 
 	}
 
