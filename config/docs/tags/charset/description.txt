@@ -1,0 +1,1 @@
+Specifies the character encoding for the page.
