@@ -23,7 +23,7 @@ component {
 	 */
 	function show() {
 
-		params.tag = _Tag.findBySlug("foo");
+		params.tag = _Tag.findBySlug(params.slug);
 
 		assertModelExists(params.tag, "Invalid tag");
 
