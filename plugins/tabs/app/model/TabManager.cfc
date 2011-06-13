@@ -38,16 +38,20 @@ component {
 		lazyLoad();
 
 		if (!structKeyExists(arguments, "controller")) {
-			controller = coldmvc.event.controller();
+			arguments.controller = coldmvc.event.controller();
 		}
 
 		if (!structKeyExists(arguments, "action")) {
-			action = coldmvc.event.action();
+			arguments.action = coldmvc.event.action();
 		}
 
-		var mapping = eventMapper.getMapping(controller, action);
+		var event = getEvent(arguments.controller, arguments.action);
 
-		return variables.config.events[mapping.event].name;
+		if (structKeyExists(variables.config.events, event)) {
+			return variables.config.events[event].name;
+		} else {
+			return "";
+		}
 
 	}
 
@@ -56,15 +60,14 @@ component {
 		lazyLoad();
 
 		if (!structKeyExists(arguments, "controller")) {
-			controller = coldmvc.event.controller();
+			arguments.controller = coldmvc.event.controller();
 		}
 
 		if (!structKeyExists(arguments, "action")) {
-			action = coldmvc.event.action();
+			arguments.action = coldmvc.event.action();
 		}
 
-		var mapping = eventMapper.getMapping(controller, action);
-		var event = mapping.event;
+		var event = getEvent(arguments.controller, arguments.action);
 		var tabs = [];
 		var code = "";
 
@@ -351,6 +354,20 @@ component {
 		}
 
 		return tabs;
+
+	}
+
+	private function getEvent(required string controller, required string action) {
+
+		var mapping = eventMapper.getMapping(arguments.controller, arguments.action);
+
+		if (structKeyExists(variables.config.events, mapping.event)) {
+			return mapping.event;
+		} else if (structKeyExists(variables.config.events, "index.index")) {
+			return "index.index";
+		} else {
+			return "";
+		}
 
 	}
 

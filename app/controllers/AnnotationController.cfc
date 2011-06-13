@@ -18,13 +18,14 @@ component {
 
 	}
 
+	/**
+	 * @params slug
+	 */
 	function show() {
 
 		params.annotation = _Annotation.findBySlug(params.slug);
 
-		if (!params.annotation.exists()) {
-			setView('annotation/invalid');
-		}
+		assertModelExists(params.annotation, "Invalid annotation");
 
 	}
 

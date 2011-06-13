@@ -18,13 +18,14 @@ component {
 
 	}
 
+	/**
+	 * @params slug
+	 */
 	function show() {
 
 		params.helper = _Helper.findBySlug(params.slug);
 
-		if (!params.helper.exists()) {
-			setView('helper/invalid');
-		}
+		assertModelExists(params.helper, "Invalid helper");
 
 	}
 

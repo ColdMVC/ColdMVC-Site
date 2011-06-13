@@ -18,13 +18,14 @@ component {
 
 	}
 
+	/**
+	 * @params slug
+	 */
 	function show() {
 
-		params.tag = _Tag.findBySlug(params.slug);
+		params.tag = _Tag.findBySlug("foo");
 
-		if (!params.tag.exists()) {
-			setView('tag/invalid');
-		}
+		assertModelExists(params.tag, "Invalid tag");
 
 	}
 

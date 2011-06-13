@@ -80,7 +80,7 @@ Returns an array of records with matching parameters.
 
 Returns a record with matching parameters or a new instance of a model if no results are found.
 
-	var books = _Book.findWhere({
+	var book = _Book.findWhere({
 		title = "The Da Vinci Code"
 	});
 

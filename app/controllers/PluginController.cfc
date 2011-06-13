@@ -12,19 +12,20 @@ component {
 	function index() {
 
 		params.plugins = _Plugin.list({
-			sort = "order",
+			sort = "name",
 			order = "asc"
 		});
 
 	}
 
+	/**
+	 * @params slug
+	 */
 	function show() {
 
 		params.plugin = _Plugin.findBySlug(params.slug);
 
-		if (!params.plugin.exists()) {
-			setView('plugin/invalid');
-		}
+		assertModelExists(params.plugin, "Invalid plugin");
 
 	}
 

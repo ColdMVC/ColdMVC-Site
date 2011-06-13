@@ -13,24 +13,6 @@ component {
 
 	}
 
-	/**
-	 * @events invalidController
-	 */
-	function interceptPageNotFound() {
-
-		if ($.event.key() != "db.seed") {
-			setController("site");
-			setAction("pageNotFound");
-		}
-
-	}
-
-	function pageNotFound() {
-
-		setView("404");
-
-	}
-
 	function quickstart() {
 
 	}
