@@ -1,1 +1,1 @@
-Renders a specified view.
+Renders the view.

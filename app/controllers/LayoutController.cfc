@@ -14,7 +14,7 @@ component {
 
 		params.sidebars = [];
 
-		var event = $.event.key();
+		var event = $.event.getKey();
 
 		switch(event) {
 
@@ -45,6 +45,7 @@ component {
 	function annotation() {
 
 		addSidebar("annotation/sidebar");
+
 		params.annotations = _Annotation.list({
 			sort = "name",
 			order = "asc"
@@ -55,6 +56,7 @@ component {
 	function chapter() {
 
 		addSidebar("chapter/sidebar");
+
 		params.chapters = _Chapter.list({
 			sort = "order",
 			order = "asc"
@@ -88,6 +90,7 @@ component {
 	function helper() {
 
 		addSidebar("helper/sidebar");
+
 		params.helpers = _Helper.list({
 			sort = "name",
 			order = "asc"
@@ -98,6 +101,7 @@ component {
 	function plugin() {
 
 		addSidebar("plugin/sidebar");
+
 		params.plugins = _Plugin.list({
 			sort = "name",
 			order = "asc"
@@ -108,6 +112,7 @@ component {
 	function tag() {
 
 		addSidebar("tag/sidebar");
+
 		params.tags = _Tag.list({
 			sort = "name",
 			order = "asc"
@@ -118,7 +123,7 @@ component {
 	private function addSidebar(required string sidebar) {
 
 		arrayAppend(params.sidebars, arguments.sidebar);
-		$.event.layout("sidebar");
+		$.event.setLayout("sidebar");
 
 	}
 
