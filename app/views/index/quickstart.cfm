@@ -202,7 +202,7 @@ Inside the _model_ directory, create a _Book.cfc_ with the following content:
 
 		/**
 		 * @fieldtype id
-		 * @generator increment
+		 * @generator identity
 		 */
 		property id;
 		property title;
