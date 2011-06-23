@@ -1,4 +1,4 @@
-<c:page_header text="Quick Start" />
+<cfset $.page.setContent("header", "Quick Start") />
 <cfset open = "<" />
 
 <c:markdown>

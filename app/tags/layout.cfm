@@ -1,21 +1,18 @@
 <cfif thisTag.executionMode eq "start">
 
 	<c:breadcrumbs result="breadcrumbs" />
-	<cfset page = $.factory.get("tabManager").getTab() />
+	<cfset tab = $.factory.get("tabManager").getTab() />
 
-	<cfset $.page.title(page) />
-	<cfset $.page.header(breadcrumbs) />
+	<cfif tab neq "" and tab neq "Home">
+		<cfset title = "ColdMVC " & tab />
+	<cfelse>
+		<cfset title = "ColdMVC" />
+	</cfif>
+
+	<cfset $.page.addTitle(title) />
+	<cfset $.page.setContent("header", breadcrumbs) />
 
 <cfelse>
-
-<cfset title = $.page.title() />
-<cfset suffix = " | A Convention-Based MVC Framework for ColdFusion" />
-
-<cfif title neq "" and title neq "Home">
-	<cfset title = "ColdMVC " & title & suffix />
-<cfelse>
-	<cfset title = "ColdMVC" & suffix />
-</cfif>
 
 <cfoutput>
 <cfsavecontent variable="thisTag.generatedContent">
@@ -23,7 +20,7 @@
 	<c:html>
 		<head>
 			<c:version />
-			<title>#title#</title>
+			<c:title />
 			<c:content_type />
 			<c:charset />
 			<c:viewport />
@@ -51,7 +48,7 @@
 			</div>
 			<div id="header">
 				<div class="container">
-					#$.page.header()#
+					<c:render section="header" />
 				</div>
 			</div>
 			<div class="container">
