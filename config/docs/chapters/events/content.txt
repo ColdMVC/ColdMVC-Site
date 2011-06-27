@@ -1,0 +1,47 @@
+ColdMVC provides your application with several interception points throughout the lifecyle of a request. 
+
+This is possible thanks to centralized event dispatching from ColdMVC's EventDispatcher component. 
+
+In a typical ColdMVC request, the following events will be dispatched:
+
+* preRequest	
+* requestStart
+* request
+* preAction
+* preAction
+* preAction:{controller}.{action}
+* postAction:{controller}.{action}
+* postAction:
+* postAction
+* preLayout
+* preLayout:{layout}
+* postLayout:{layout}
+* postLayout:
+* preView
+* preView:{view}
+* postView:{view}
+* postView 
+
+Any controller within the application can listen for these events by applying an _@events_ annotation to the desired listener method.
+
+The _@events_ annotation is a comma-separated list of regular expressions, providing quite a bit of flexibility in intercepting.
+
+For example, if you wanted a SecurityController to verify that the current user is logged in at the beginning of each request, here's how you could listen for the _requestStart_ event:
+
+	/**
+	 * @singleton
+	 */
+	component {
+
+	 	/**
+	  	 * @events requestStart
+	  	 */
+		function verifyLoggedIn() {
+			if (!$.user.isLoggedIn()) {
+				redirect({controller="security", action="logout"});
+			}
+		}
+	
+	}
+	
+All of the request's events are displayed in the ColdMVC debug output, along with any registered listeners for each event.

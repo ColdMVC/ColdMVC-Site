@@ -48,7 +48,7 @@
 			</div>
 			<div id="header">
 				<div class="container">
-					<c:render section="header" />
+					<c:render name="header" />
 				</div>
 			</div>
 			<div class="container">

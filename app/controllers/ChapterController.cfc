@@ -31,18 +31,20 @@ component {
 			sort = "order",
 			order = "asc"
 		});
+
 		var total = arrayLen(chapters);
 		var order = params.chapter.order();
 
-		params.next = "";
-		params.previous = "";
-
 		if (order != 1 && order <= total) {
 			params.previous = chapters[order - 1];
+		} else {
+			params.previous = "";
 		}
 
 		if (order < total) {
 			params.next = chapters[order + 1];
+		} else {
+			params.next = "";
 		}
 
 	}

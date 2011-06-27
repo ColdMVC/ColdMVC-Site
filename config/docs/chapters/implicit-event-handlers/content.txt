@@ -1,0 +1,7 @@
+ColdMVC will implicitly invoke certain methods on your request's controller if they are defined.
+
+Before the request's action is invoked, ColdMVC will invoke the controller's _pre_ and _pre{Action}_ methods if they exist. 
+
+Next, ColdMVC will invoke the action for the request, followed by the _post{Action}_ and _post_ methods if they exist. 
+
+For example, if the current request is _/product/list_, ColdMVC will invoke _ProductController.pre()_, _ProductController.preList()_, _ProductController.list()_, _ProductController.postList()_, and finally _ProductController.post()_. 

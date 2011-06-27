@@ -16,8 +16,9 @@ you should head over to the [Documentation] [2] chapter for a more thorough expl
 <c:markdown>
 ## Installing ColdMVC
 
-Before you can get started creating your application, you need to first install ColdMVC.
-After you [download the framework] [1], you have three options for installing it:
+Before you can get started creating your application, make sure you're running the latest version of ColdFusion, as the early releases of ColdFusion 9 had some ORM bugs that were fixed in later releases.
+
+Next, you need to install ColdMVC. After you [download the framework] [1], you have three options for installing it:
 
 1. Create a _/coldmvc_ mapping inside ColdFusion Administrator that points to the framework.
 2. Put the framework directly inside your server's web root.

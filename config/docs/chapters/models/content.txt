@@ -1,6 +1,9 @@
 The model layer contains your application's business logic, typically inside persistent entities or service objects.
 Models in a ColdMVC application serve two purposes: to represent individual records in your database through properties as well as to provide database access through an abstraction layer on top of Hibernate ORM.
 
+To inject a singleton instance of a model into your components, simply add a property to your component with the name of model, prefixed with an underscore.
+For example, to inject a User model, just add *property _User;* to your component.
+
 Models in ColdMVC contain several methods that help you easily query your database.
 Most of the methods are based on domain class methods found in Grails.
 

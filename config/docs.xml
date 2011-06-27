@@ -24,13 +24,14 @@
 			<page id="Introduction" />
 			<page id="Installation" />
 			<page id="MVC" />			
-			<page id="Directory Structure" />			
+			<page id="Directory Structure" />		
 			<page id="Controllers" />
+			<page id="Dependency Injection" />
+			<page id="Implicit Event Handlers" />
 			<page id="Action Helpers" />
 			<page id="Redirecting Requests" />
 			<page id="Formats" />
-			<page id="Routing Requests" />
-			<page id="Implicit Event Handlers" />			
+			<page id="Routing Requests" />		
 			<page id="Models" />
 			<page id="Operators" />
 			<page id="Queries" />
@@ -38,7 +39,7 @@
 			<page id="Model Helpers" />
 			<page id="Views" /> 
 			<page id="View Helpers" />
-			<page id="Link To Pages" />
+			<page id="Linking To Pages" />
 			<page id="Tags" />
 			<page id="Form Binding" />
 			<page id="Form Fields" />
@@ -46,7 +47,6 @@
 			<page id="Config Variables" />
 			<page id="Environments" />
 			<page id="Mappings" />
-			<page id="Dependency Injection" />
 			<page id="Params" />
 			<page id="Flash" />
 			<page id="Layouts" />

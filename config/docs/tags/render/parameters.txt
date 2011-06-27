@@ -1,0 +1,3 @@
+| Name | Required | Type   | Default | Description                        |
+|------|----------|--------|---------|------------------------------------|
+| name | false    | string | body    | The name of the section to render. |

@@ -7,12 +7,12 @@
 | instructions | false    | string  |                   | The instructions for the checkboxes.                                                                                                                |
 | label        | false    | string  | ${humanized name} | The label for the checkboxes.                                                                                                                       |
 | name         | true     | string  |                   | The name of the checkboxes.                                                                                                                         |
-| optionKey    | false    | string  |                   | The key for the option option key.                                                                                                                  |
+| optionKey    | false    | string  | id                | The key for the option option key.                                                                                                                  |
 | optionKeys   | false    | any     |                   | The option keys.                                                                                                                                    |
 | options      | false    | any     |                   | The options for the select.                                                                                                                         |
 | optionTitle  | false    | string  |                   | The key for the option title.                                                                                                                       |
 | optionTitles | false    | any     |                   | The option titles.                                                                                                                                  |
-| optionValue  | false    | string  |                   | The key for the option value.                                                                                                                       |
+| optionValue  | false    | string  | name              | The key for the option value.                                                                                                                       |
 | optionValues | false    | any     |                   | The option values.                                                                                                                                  |
 | style        | false    | string  |                   | The style for the checkboxes.                                                                                                                       |
 | title        | false    | string  | ${label}          | The title for the checkboxes.                                                                                                                       |

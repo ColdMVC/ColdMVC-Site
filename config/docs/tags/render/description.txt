@@ -1,1 +1,1 @@
-Renders the view.
+Renders a section of HTML content.
