@@ -330,25 +330,25 @@ If you go to _http://localhost/bookstore/public/index.cfm/book/add_ and view the
 
 	<cfoutput>#open#</cfoutput>form action="http://localhost/bookstore/public/index.cfm/book/save"
 		method="post" enctype="multipart/form-data" name="form" id="form">
-		<cfoutput>#open#</cfoutput>div class="wrapper" id="wrapper_for_book_title">
+		<cfoutput>#open#</cfoutput>div class="wrapper">
 			<cfoutput>#open#</cfoutput>div class="label">
-				<cfoutput>#open#</cfoutput>label id="label_for_book_title" for="book_title" title="Title">Title:<cfoutput>#open#</cfoutput>/label>
+				<cfoutput>#open#</cfoutput>label for="book_title" title="Title">Title:<cfoutput>#open#</cfoutput>/label>
 			<cfoutput>#open#</cfoutput>/div>
 			<cfoutput>#open#</cfoutput>div class="field">
 				<cfoutput>#open#</cfoutput>input type="text" name="book.title" id="book_title" title="Title" value="" />
 			<cfoutput>#open#</cfoutput>/div>
 		<cfoutput>#open#</cfoutput>/div>
-		<cfoutput>#open#</cfoutput>div class="wrapper" id="wrapper_for_book_author">
+		<cfoutput>#open#</cfoutput>div class="wrapper">
 			<cfoutput>#open#</cfoutput>div class="label">
-				<cfoutput>#open#</cfoutput>label id="label_for_book_author" for="book_author" title="Author">Author:<cfoutput>#open#</cfoutput>/label>
+				<cfoutput>#open#</cfoutput>label for="book_author" title="Author">Author:<cfoutput>#open#</cfoutput>/label>
 			<cfoutput>#open#</cfoutput>/div>
 			<cfoutput>#open#</cfoutput>div class="field">
 				<cfoutput>#open#</cfoutput>input type="text" name="book.author" id="book_author" title="Author" value="" />
 			<cfoutput>#open#</cfoutput>/div>
 		<cfoutput>#open#</cfoutput>/div>
-		<cfoutput>#open#</cfoutput>div class="wrapper" id="wrapper_for_book_description">
+		<cfoutput>#open#</cfoutput>div class="wrapper">
 			<cfoutput>#open#</cfoutput>div class="label">
-				<cfoutput>#open#</cfoutput>label id="label_for_book_description" for="book_description" title="Description">Description:<cfoutput>#open#</cfoutput>/label>
+				<cfoutput>#open#</cfoutput>label for="book_description" title="Description">Description:<cfoutput>#open#</cfoutput>/label>
 			<cfoutput>#open#</cfoutput>/div>
 			<cfoutput>#open#</cfoutput>div class="field">
 				<cfoutput>#open#</cfoutput>textarea name="book.description" id="book_description" title="Description"><cfoutput>#open#</cfoutput>/textarea>
