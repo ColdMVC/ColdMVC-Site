@@ -329,7 +329,7 @@ You've just created a simple form for adding a book using ColdMVC's built-in [cu
 If you go to _http://localhost/bookstore/public/index.cfm/book/add_ and view the page source, you should see something like the following:
 
 	<cfoutput>#open#</cfoutput>form action="http://localhost/bookstore/public/index.cfm/book/save"
-		method="post" enctype="multipart/form-data" name="form" id="form">
+		method="post" enctype="multipart/form-data" id="form">
 		<cfoutput>#open#</cfoutput>div class="wrapper">
 			<cfoutput>#open#</cfoutput>div class="label">
 				<cfoutput>#open#</cfoutput>label for="book_title" title="Title">Title:<cfoutput>#open#</cfoutput>/label>
