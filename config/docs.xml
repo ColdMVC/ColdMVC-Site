@@ -5,7 +5,6 @@
 			<page id="actionHelper" /> 
 			<page id="ajaxLayout" />
 			<page id="controller" />
-			<page id="directory" />
 			<page id="events" />
 			<page id="formats" />
 			<page id="initMethod" />

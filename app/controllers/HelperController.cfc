@@ -1,6 +1,5 @@
 /**
  * @accessors true
- * @singleton
  */
 component {
 
