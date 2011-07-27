@@ -551,18 +551,20 @@ Create a _list.cfm_ located inside _/BookStore/app/views/book/_ with the followi
 	<cfoutput>#open#</cfoutput>cfoutput>
 	<cfoutput>#open#</cfoutput>table>
 		<cfoutput>#open#</cfoutput>thead>
-			<cfoutput>#open#</cfoutput>th>ID<cfoutput>#open#</cfoutput>/th>
-			<cfoutput>#open#</cfoutput>th>Title<cfoutput>#open#</cfoutput>/th>
-			<cfoutput>#open#</cfoutput>th>Author<cfoutput>#open#</cfoutput>/th>
-			<cfoutput>#open#</cfoutput>th>&nbsp;<cfoutput>#open#</cfoutput>/th>
-			<cfoutput>#open#</cfoutput>th>&nbsp;<cfoutput>#open#</cfoutput>/th>
+			<cfoutput>#open#</cfoutput>tr>
+				<cfoutput>#open#</cfoutput>th>ID<cfoutput>#open#</cfoutput>/th>
+				<cfoutput>#open#</cfoutput>th>Title<cfoutput>#open#</cfoutput>/th>
+				<cfoutput>#open#</cfoutput>th>Author<cfoutput>#open#</cfoutput>/th>
+				<cfoutput>#open#</cfoutput>th>&nbsp;<cfoutput>#open#</cfoutput>/th>
+				<cfoutput>#open#</cfoutput>th>&nbsp;<cfoutput>#open#</cfoutput>/th>
+			<cfoutput>#open#</cfoutput>/tr>
 		<cfoutput>#open#</cfoutput>/thead>
 		<cfoutput>#open#</cfoutput>tbody>
 			<cfoutput>#open#</cfoutput>c:each in="#books#" do="book">
 				<cfoutput>#open#</cfoutput>tr>
 					<cfoutput>#open#</cfoutput>td><cfoutput>#open#</cfoutput>a href="#linkTo({action='show', id=book})#">#book.id()#<cfoutput>#open#</cfoutput>/a><cfoutput>#open#</cfoutput>/td>
-					<cfoutput>#open#</cfoutput>td>#book.title()#<cfoutput>#open#</cfoutput>/td>
-					<cfoutput>#open#</cfoutput>td>#book.author()#<cfoutput>#open#</cfoutput>/td>
+					<cfoutput>#open#</cfoutput>td>#escape(book.title())#<cfoutput>#open#</cfoutput>/td>
+					<cfoutput>#open#</cfoutput>td>#escape(book.author())#<cfoutput>#open#</cfoutput>/td>
 					<cfoutput>#open#</cfoutput>td><cfoutput>#open#</cfoutput>a href="#linkTo({action='edit', id=book})#">Edit<cfoutput>#open#</cfoutput>/a><cfoutput>#open#</cfoutput>/td>
 					<cfoutput>#open#</cfoutput>td><cfoutput>#open#</cfoutput>a href="#linkTo({action='delete', id=book})#">Delete<cfoutput>#open#</cfoutput>/a><cfoutput>#open#</cfoutput>/td>
 				<cfoutput>#open#</cfoutput>/tr>
