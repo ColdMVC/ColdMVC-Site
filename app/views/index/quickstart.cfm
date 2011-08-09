@@ -719,7 +719,7 @@ Update your _BookController_ to the following content:
 
 		function update() {
 
-			var book = _Book.get(params.book.id, params.book);
+			var book = _Book.get(params.book);
 
 			book.save();
 
@@ -825,7 +825,7 @@ Update your _BookController_ to the following content:
 
 		function update() {
 
-			var book = _Book.get(params.book.id, params.book);
+			var book = _Book.get(params.book);
 
 			book.save();
 
