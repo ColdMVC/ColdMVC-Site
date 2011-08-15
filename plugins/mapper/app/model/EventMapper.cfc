@@ -5,7 +5,7 @@
  */
 component {
 
-	property fileSystemFacade;
+	property fileSystem;
 	property pluginManager;
 
 	public EventMapper function init() {
@@ -41,13 +41,13 @@ component {
 
 	private void function loadXML(required string filePath) {
 
-		if (!fileSystemFacade.fileExists(filePath)) {
-			filePath = expandPath(filePath);
+		if (!fileSystem.fileExists(arguments.filePath)) {
+			arguments.filePath = expandPath(arguments.filePath);
 		}
 
-		if (fileSystemFacade.fileExists(filePath)) {
+		if (fileSystem.fileExists(arguments.filePath)) {
 
-			var xml = xmlParse(fileRead(filePath));
+			var xml = xmlParse(fileRead(arguments.filePath));
 			var i = "";
 
 			for (i = 1; i <= arrayLen(xml.mappings.xmlChildren); i++) {
@@ -69,9 +69,9 @@ component {
 
 	public struct function getMapping(required string controller, required string action) {
 
-		var event = controller & "." & action;
+		var event = arguments.controller & "." & arguments.action;
 
-		if (!structKeyExists(mappings, event)) {
+		if (!structKeyExists(variables.mappings, event)) {
 
 			var i = "";
 			for (i = 1; i <= arrayLen(variables.config); i++) {
@@ -79,7 +79,7 @@ component {
 				var mapping = variables.config[i];
 
 				// run regular expressions to match the controller and action
-				if (reFindNoCase("^#mapping.controller#$", controller) && reFindNoCase("^#mapping.action#$", action)) {
+				if (reFindNoCase("^#mapping.controller#$", arguments.controller) && reFindNoCase("^#mapping.action#$", arguments.action)) {
 
 					var result = {};
 					result.requires = mapping.requires;
@@ -91,22 +91,22 @@ component {
 					}
 					else {
 						// {action}
-						result.controller = controller;
+						result.controller = arguments.controller;
 						result.action = mapping.event;
 					}
 
 					// check for placeholders
 					if (result.controller == ":controller") {
-						result.controller = controller;
+						result.controller = arguments.controller;
 					}
 
 					if (result.action == ":action") {
-						result.action = action;
+						result.action = arguments.action;
 					}
 
 					result.event = result.controller & "." & result.action;
 
-					mappings[event] = result;
+					variables.mappings[event] = result;
 					break;
 
 				}
@@ -115,7 +115,11 @@ component {
 
 		}
 
-		return mappings[event];
+		if (structKeyExists(variables.mappings, event)) {
+			return variables.mappings[event];
+		} else {
+			return variables.mappings["index.index"];
+		}
 
 	}
 

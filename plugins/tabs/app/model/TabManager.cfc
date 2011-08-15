@@ -6,7 +6,7 @@ component {
 
 	property configPath;
 	property eventMapper;
-	property fileSystemFacade;
+	property fileSystem;
 
 	public any function init() {
 
@@ -38,11 +38,11 @@ component {
 		lazyLoad();
 
 		if (!structKeyExists(arguments, "controller")) {
-			arguments.controller = coldmvc.event.controller();
+			arguments.controller = coldmvc.event.getController();
 		}
 
 		if (!structKeyExists(arguments, "action")) {
-			arguments.action = coldmvc.event.action();
+			arguments.action = coldmvc.event.getAction();
 		}
 
 		var event = getEvent(arguments.controller, arguments.action);
@@ -60,11 +60,11 @@ component {
 		lazyLoad();
 
 		if (!structKeyExists(arguments, "controller")) {
-			arguments.controller = coldmvc.event.controller();
+			arguments.controller = coldmvc.event.getController();
 		}
 
 		if (!structKeyExists(arguments, "action")) {
-			arguments.action = coldmvc.event.action();
+			arguments.action = coldmvc.event.getAction();
 		}
 
 		var event = getEvent(arguments.controller, arguments.action);
@@ -234,7 +234,7 @@ component {
 
 	private void function loadConfig() {
 
-		if (!fileSystemFacade.fileExistS(variables.configPath)) {
+		if (!fileSystem.fileExists(variables.configPath)) {
 			variables.configPath = expandPath(variables.configPath);
 		}
 
@@ -268,14 +268,14 @@ component {
 
 		var tabs = [];
 
-		if (structKeyExists(xml, "tabs")) {
+		if (structKeyExists(arguments.xml, "tabs")) {
 
-			if (structKeyExists(xml.tabs.xmlAttributes, "controller")) {
-				controller = xml.tabs.xmlAttributes.controller;
+			if (structKeyExists(arguments.xml.tabs.xmlAttributes, "controller")) {
+				controller = arguments.xml.tabs.xmlAttributes.controller;
 			}
 
-			if (structKeyExists(xml.tabs.xmlAttributes, "group")) {
-				var group = xml.tabs.xmlAttributes.group;
+			if (structKeyExists(arguments.xml.tabs.xmlAttributes, "group")) {
+				var group = arguments.xml.tabs.xmlAttributes.group;
 			}
 			else {
 				var group = "";
@@ -286,14 +286,14 @@ component {
 			}
 
 			var i = "";
-			for (i = 1; i <= arrayLen(xml.tabs.xmlChildren); i++) {
+			for (i = 1; i <= arrayLen(arguments.xml.tabs.xmlChildren); i++) {
 
-				var tabXML = xml.tabs.xmlChildren[i];
+				var tabXML = arguments.xml.tabs.xmlChildren[i];
 
 				var tab = {};
 				tab.name = tabXML.xmlAttributes.name;
 				tab.parent = parent;
-				tab.level = level;
+				tab.level = arguments.level;
 				tab.title = coldmvc.xml.get(tabXML, "title", tab.name);
 				tab.target = coldmvc.xml.get(tabXML, "target");
 				tab.querystring = coldmvc.xml.get(tabXML, "querystring");
@@ -341,7 +341,7 @@ component {
 				variables.config.events[tab.event] = tab;
 				variables.config.codes[tab.code] = tab.event;
 
-				tab.tabs = loadTabs(tabXML, tab.level+1, tab.controller, tab.event);
+				tab.tabs = loadTabs(tabXML, tab.level + 1, tab.controller, tab.event);
 
 				arrayAppend(tabs, tab);
 
