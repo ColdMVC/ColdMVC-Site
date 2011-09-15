@@ -190,7 +190,7 @@ Specifies the _select_ statement for the query. Can be used to execute custom se
 	
 	q.select("select count(team.id)");
 	
-	var teams = get();
+	var teams = q.get();
 	
 ## sort(value)
 
