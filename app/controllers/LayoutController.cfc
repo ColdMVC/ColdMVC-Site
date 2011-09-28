@@ -45,10 +45,7 @@ component {
 
 		addSidebar("annotation/sidebar");
 
-		params.annotations = _Annotation.list({
-			sort = "name",
-			order = "asc"
-		});
+		params.annotations = _Annotation.list();
 
 	}
 
@@ -56,10 +53,7 @@ component {
 
 		addSidebar("chapter/sidebar");
 
-		params.chapters = _Chapter.list({
-			sort = "order",
-			order = "asc"
-		});
+		params.chapters = _Chapter.list();
 
 	}
 
@@ -90,10 +84,7 @@ component {
 
 		addSidebar("helper/sidebar");
 
-		params.helpers = _Helper.list({
-			sort = "name",
-			order = "asc"
-		});
+		params.helpers = _Helper.list();
 
 	}
 
@@ -101,10 +92,7 @@ component {
 
 		addSidebar("plugin/sidebar");
 
-		params.plugins = _Plugin.list({
-			sort = "name",
-			order = "asc"
-		});
+		params.plugins = _Plugin.list();
 
 	}
 
@@ -112,10 +100,7 @@ component {
 
 		addSidebar("tag/sidebar");
 
-		params.tags = _Tag.list({
-			sort = "name",
-			order = "asc"
-		});
+		params.tags = _Tag.list();
 
 	}
 

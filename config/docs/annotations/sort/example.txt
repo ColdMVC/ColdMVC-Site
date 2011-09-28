@@ -1,0 +1,22 @@
+In the following example, the default sort value for products is set to the _title_ property.
+
+**Book**
+
+	/**
+	 * @persistent true
+	 * @extends coldmvc.Model
+	 * @sort title
+	 * @order asc
+	 */
+	component {
+	
+	    /**
+	     * @fieldtype id
+	     * @generator identity
+	     */
+	    property id;
+	    property title;
+	    property author;
+	    property description;
+	
+	}

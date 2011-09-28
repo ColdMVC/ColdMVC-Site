@@ -1,4 +1,4 @@
-<c:layout>
+<s:layout>
 	<div id="content" class="span-18">
 		<c:render />
 	</div>
@@ -9,4 +9,4 @@
 			</cfloop>
 		</div>
 	</div>
-</c:layout>
+</s:layout>

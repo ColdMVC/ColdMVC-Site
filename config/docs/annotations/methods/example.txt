@@ -4,7 +4,6 @@ In the following example, the _show_ action is only available to _GET_ requests.
 
 	/**
  	 * @accessors true
-	 * @singleton
 	 */
 	component {
 

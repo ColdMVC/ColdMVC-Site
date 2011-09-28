@@ -1,5 +1,28 @@
+<cfset add("/submit-plugin", {
+	params = {
+		controller = "plugin",
+		action = "submit"
+	}
+}) />
+
+<cfset add("/guide/:slug", {
+	params = {
+		controller = "chapter",
+		action = "show"
+	},
+	model = "chapter",
+	generates = "/guide/:id"
+}) />
+
+<cfset add("/guide", {
+	params = {
+		controller = "chapter",
+		action = "index"
+	}
+}) />
+
 <cfset add("/:action", {
-	required = {
+	params = {
 		controller = "index"
 	},
 	requirements = {
@@ -10,35 +33,19 @@
 <cfloop list="annotation,helper,plugin,tag" index="i">
 
 	<cfset add("/#i#s/:slug", {
-		defaults = {
+		params = {
 			controller = i,
 			action = "show"
 		},
 		model = i,
-		generates = "/#i#s/:id.slug()"
+		generates = "/#i#s/:id"
 	}) />
 
 	<cfset add("/#i#s", {
-		required = {
+		params = {
 			controller = i,
 			action = "index"
 		}
 	}) />
 
 </cfloop>
-
-<cfset add("/guide/:slug", {
-	defaults = {
-		controller = "chapter",
-		action = "show"
-	},
-	model = "chapter",
-	generates = "/guide/:id.slug()"
-}) />
-
-<cfset add("/guide", {
-	required = {
-		controller = "chapter",
-		action = "index"
-	}
-}) />

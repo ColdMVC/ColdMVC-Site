@@ -10,16 +10,17 @@
 	truncate table tag
 </cfquery>
 
-<cffunction name="getFileName">
-	<cfargument name="path" />
+<cffunction name="getFileName" access="public" output="false" returntype="string">
+	<cfargument name="path" required="true" type="string" />
 
 	<cfreturn listFirst(listLast(path, "\"), ".") />
 
 </cffunction>
 
-<cffunction name="getContent">
-	<cfargument name="directory" />
-	<cfargument name="file" />
+<cffunction name="getContent" access="public" output="false" returntype="string">
+	<cfargument name="directory" required="true" type="string" />
+	<cfargument name="file" required="true" type="string" />
+	<cfargument name="isHTML" required="false" default="true" type="boolean" />
 
 	<cfset var path = arguments.directory & arguments.file & ".txt" />
 
@@ -27,14 +28,20 @@
 		<cfset fileWrite(path, "") />
 	</cfif>
 
-	<cfreturn markdown(fileRead(path)) />
+	<cfset var content = fileRead(path) />
+
+	<cfif arguments.isHTML>
+		<cfset content = markdown(content) />
+	</cfif>
+
+	<cfreturn content />
 
 </cffunction>
 
-<cffunction name="markdown">
-	<cfargument name="text" />
+<cffunction name="markdown" access="public" output="false" returntype="string">
+	<cfargument name="text" required="true" type="string" />
 
-	<cfreturn markdownProcessor.markdown(arguments.text) />
+	<cfreturn trim(markdownProcessor.markdown(arguments.text)) />
 
 </cffunction>
 
@@ -86,11 +93,11 @@
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
 	</cfif>
-	
+
 	<cfset content = trim(getContent(d, "content")) />
 
 	<cfif content neq "" and not structKeyExists(chapters, name)>
-	
+
 		<cfset counter = counter + 1 />
 
 		<cfset chapter = _Chapter.new({
@@ -121,12 +128,6 @@
 
 	<cfif not directoryExists(d)>
 		<cfset directoryCreate(d) />
-	</cfif>
-
-	<cfset f = expandPath("/config/docs/helpers/#name#.txt") />
-
-	<cfif fileExists(f)>
-		<cfset fileDelete(f) />
 	</cfif>
 
 	<cfif not structKeyExists(helpers, name)>
@@ -162,22 +163,15 @@
 		<cfset directoryCreate(d) />
 	</cfif>
 
-	<cfset f = expandPath("/config/docs/plugins/#slug#/content.txt") />
-
-	<cfif fileExists(f)>
-		<cfset fileDelete(f) />
-	</cfif>
-
 	<cfif not structKeyExists(plugins, name)>
 
 		<cfset plugin = _Plugin.new({
 			name = name,
 			description = getContent(d, "description"),
-			author = getContent(d, "author"),
-			version = getContent(d, "version"),
+			author = getContent(d, "author", false),
 			overview = getContent(d, "overview"),
 			example = getContent(d, "example"),
-			url = getContent(d, "url"),
+			url = getContent(d, "url", false),
 			slug = slug
 		}) />
 

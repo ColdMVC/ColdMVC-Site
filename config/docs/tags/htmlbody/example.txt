@@ -1,0 +1,5 @@
+	<c:htmlbody>
+		<script>
+			$('#foo').hide();
+		</script>
+	</c:htmlbody>

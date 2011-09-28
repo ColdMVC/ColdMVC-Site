@@ -1,4 +1,4 @@
-<cfset $.page.setContent("header", "&nbsp;") />
+<c:content name="header" value="&nbsp;" />
 
 <cfoutput>
 <div id="home">

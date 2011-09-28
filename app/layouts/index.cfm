@@ -1,7 +1,7 @@
 <cfoutput>
-<c:layout>
+<s:layout>
 	<div id="content" class="no-sidebar">
 		<c:render />
 	</div>
-</c:layout>
+</s:layout>
 </cfoutput>

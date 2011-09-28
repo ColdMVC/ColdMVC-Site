@@ -9,10 +9,14 @@
 			<page id="formats" />
 			<page id="initMethod" />
 			<page id="layout" />
+			<page id="loggedIn" />
 			<page id="methods" />
 			<page id="model" />
 			<page id="modelHelper" /> 
+			<page id="notLoggedIn" />
+			<page id="order" />
 			<page id="params" />
+			<page id="sort" />
 			<page id="singleton" />
 			<page id="view" />
 			<page id="viewHelper" /> 
@@ -60,18 +64,24 @@
 	</section>
 	<section id="plugins">
 		<pages>
-			<page id="Mapper" />
-			<page id="Tabs" />
-			<page id="Breadcrumbs" />
-			<page id="Markdown" />
-			<page id="LessCSS" />
 			<page id="Assets" />
-			<page id="Samples" />
+			<page id="Breadcrumbs" />
 			<page id="Cells" />
-			<page id="Serializer" />
-			<page id="Security" />
-			<page id="Validation" />
+			<page id="CKEditor" />
+			<page id="Forms" />
+			<page id="Hoth" />
+			<page id="Hyrule" />
 			<page id="JavaLoader" />
+			<page id="LessCSS" />
+			<page id="Mapper" />
+			<page id="Markdown" />
+			<page id="Paginator" />
+			<page id="Security" />
+			<page id="Serializer" />
+			<page id="TableSorter" />
+			<page id="Tabs" />
+			<page id="TagInvoker" />
+			<page id="Validation" />
 		</pages>
 	</section>
 </sections>

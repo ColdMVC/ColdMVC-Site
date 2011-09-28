@@ -10,7 +10,11 @@
 			<tab name="Tags" controller="tag" action="index" />
 		</tabs>
 	</tab>
-	<tab name="Plugins" controller="plugin" action="index" />
+	<tab name="Plugins" controller="plugin" action="index">
+		<tabs>
+			<tab name="Submit a Plugin" controller="plugin" action="submit" />
+		</tabs>
+	</tab>
 	<tab name="Discussion" controller="discussion" action="index" />
 	<tab name="Contact" controller="index" action="contact" />
 </tabs>

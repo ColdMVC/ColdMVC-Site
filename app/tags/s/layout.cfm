@@ -1,6 +1,5 @@
 <cfif thisTag.executionMode eq "start">
 
-	<c:breadcrumbs result="breadcrumbs" />
 	<cfset tab = $.factory.get("tabManager").getTab() />
 
 	<cfif tab neq "" and tab neq "Home">
@@ -9,8 +8,12 @@
 		<cfset title = "ColdMVC" />
 	</cfif>
 
-	<cfset $.page.addTitle(title) />
-	<cfset $.page.setContent("header", breadcrumbs) />
+	<c:title value="#title#" />
+
+	<cfif $.page.getContent("header") eq "">
+		<c:breadcrumbs result="breadcrumbs" />
+		<cfset $.page.setContent("header", breadcrumbs) />
+	</cfif>
 
 <cfelse>
 
@@ -24,20 +27,20 @@
 			<c:content_type />
 			<c:charset />
 			<c:viewport />
-			<meta name="keywords" content="ColdMVC, ColdFusion, MVC, framework, open-source" />
-			<meta name="description" content="ColdMVC is a convention-based framework for ColdFusion" />
-			<meta name="author" content="Tony Nelson" />
+			<c:meta keywords="ColdMVC, ColdFusion, MVC, framework, open-source" />
+			<c:meta description="ColdMVC is a convention-based framework for ColdFusion" />
+			<c:meta author="Tony Nelson" />
 			<c:favicon />
 			<c:style name="blueprint/reset.css" media="screen, projection" />
 			<c:style name="blueprint/grid.css" media="screen, projection" />
 			<c:style name="blueprint/print.css" media="print" />
 			<c:style name="blueprint/ie.css" media="screen, projection" condition="lt IE 8" />
-			<link href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet" type="text/css" />
+			<c:style name="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
 			<c:style name="style.css" />
 			<c:script name="jquery-1.4.4.min.js" />
 			<c:script name="application.js" />
 		</head>
-		<body>
+		<c:body>
 			<div id="top">
 				<div class="container">
 					<div id="logo"><a href="#linkTo('/')#">ColdMVC</a></div>
@@ -60,7 +63,7 @@
 					<c:tabs />
 				</div>
 			</div>
-			<cfif not $.config.get("development")>
+			<cfif not isDevelopment()>
 				<script type="text/javascript">
 					var _gaq = _gaq || [];
 					_gaq.push(['_setAccount', 'UA-21088677-1']);
@@ -72,7 +75,7 @@
 					})();
 				</script>
 			</cfif>
-		</body>
+		</c:body>
 	</c:html>
 </cfsavecontent>
 </cfoutput>

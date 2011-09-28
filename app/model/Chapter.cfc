@@ -1,6 +1,8 @@
 /**
  * @extends coldmvc.Model
  * @persistent true
+ * @sort order
+ * @order asc
  */
 component {
 
@@ -10,5 +12,9 @@ component {
 	property content;
 	property slug;
 	property order;
+
+	function toParam() {
+		return variables.slug;
+	}
 
 }

@@ -1,0 +1,1 @@
+Specifies the default sort value for a model.

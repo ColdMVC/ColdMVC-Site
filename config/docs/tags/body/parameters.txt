@@ -1,0 +1,3 @@
+| Name  | Required | Type    | Default | Description               |
+|-------|----------|---------|---------|---------------------------|
+| class | false    | string  |         | A class for the body tag. |

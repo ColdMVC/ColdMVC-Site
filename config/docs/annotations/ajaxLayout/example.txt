@@ -5,7 +5,6 @@ In the following example, Ajax requests made to _/book/list_ will_ use the _simp
 	/**
  	 * @accessors true
  	 * @ajaxLayout simple
-	 * @singleton
 	 */
 	component {
 

@@ -1,0 +1,5 @@
+	<c:content name="header">
+		Hello, World
+	</c:content>
+	
+	<c:render name="header" />

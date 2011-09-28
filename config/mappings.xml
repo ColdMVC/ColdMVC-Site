@@ -1,3 +1,4 @@
 <mappings>
 	<mapping controller="index" action="(download|quickstart|documentation|contact)" event=":controller.:action" />
+	<mapping controller="plugin" action="submit" event="plugin.submit" />
 </mappings>

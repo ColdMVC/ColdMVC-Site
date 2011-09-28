@@ -6,23 +6,34 @@ body {
 }
 
 input,
-select,
+textarea {
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+input,
 textarea {
 	font-size: 1em;	
 }
 
 input[type='text'],
 input[type='password'],
-textarea,
-select {
+input[type='url'],
+input[type='email'],
+textarea {
 	border: 1px solid #d2d2d2;
 	padding: 4px;
+	width: 500px;
+}
+
+textarea {
+	height: 200px;
 }
 
 input[type='text']:focus,
 input[type='password']:focus,
-textarea:focus,
-select:focus {
+input[type='url']:focus,
+input[type='email']:focus,
+textarea:focus {
 	border: 1px solid #8fbaff;
 }
 
@@ -324,6 +335,21 @@ div.wizard_navigation div.wizard_next {
 	list-style-type: circle;
 	margin-left: 20px;
 	margin-bottom: 5px;
+}
+
+div.wrapper {
+	margin-bottom: 10px;
+}
+
+div.wrapper div.description {
+	color: #777;
+	font-size: .8em;
+	font-style: italic;
+}
+
+ul.errors {
+	margin-bottom: 10px;
+	color: #ff0000;
 }
 
 #footer {

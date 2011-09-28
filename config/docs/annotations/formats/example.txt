@@ -4,7 +4,6 @@ In the following example, the _show_ action can output its params in either _htm
 
 	/**
  	 * @accessors true
-	 * @singleton
 	 */
 	component {
 

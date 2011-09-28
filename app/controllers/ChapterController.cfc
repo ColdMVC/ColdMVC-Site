@@ -10,10 +10,7 @@ component {
 	 */
 	function index() {
 
-		params.chapters = _Chapter.list({
-			sort = "order",
-			order = "asc"
-		});
+		params.chapters = _Chapter.list();
 
 	}
 
@@ -26,10 +23,7 @@ component {
 
 		assertModelExists(params.chapter, "Invalid chapter");
 
-		var chapters = _Chapter.list({
-			sort = "order",
-			order = "asc"
-		});
+		var chapters = _Chapter.list();
 
 		var total = arrayLen(chapters);
 		var order = params.chapter.order();

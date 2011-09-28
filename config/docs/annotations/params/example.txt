@@ -4,7 +4,6 @@ In the following example, the _show_ action requires an _id_ param.
 
 	/**
  	 * @accessors true
-	 * @singleton
 	 */
 	component {
 

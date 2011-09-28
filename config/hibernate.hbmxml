@@ -81,9 +81,6 @@
 		<property name="author" type="string">
 			<column name="Author" length="100" />
 		</property>
-		<property name="version" type="string">
-			<column name="Version" length="10" />
-		</property>
 		<property name="description" type="string">
 			<column name="Description" sql-type="varchar(max)" />
 		</property>

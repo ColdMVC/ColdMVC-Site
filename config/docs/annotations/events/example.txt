@@ -4,7 +4,6 @@ In the following example, the _SecurityController_ will listen for an _unauthori
 
 	/**
  	 * @accessors true
-	 * @singleton
 	 */
 	component {
 

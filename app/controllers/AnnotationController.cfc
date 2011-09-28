@@ -10,10 +10,7 @@ component {
 	 */
 	function index() {
 
-		params.annotations = _Annotation.list({
-			sort = "name",
-			order = "asc"
-		});
+		params.annotations = _Annotation.list();
 
 	}
 

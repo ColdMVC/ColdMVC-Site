@@ -4,7 +4,6 @@ In the following example, the _paperback_ action in the _BookController_ will re
 
 	/**
  	 * @accessors true
-	 * @singleton
 	 */
 	component {
 

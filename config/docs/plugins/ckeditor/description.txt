@@ -1,0 +1,1 @@
+Easily render a CK Editor wysiwyg editor.

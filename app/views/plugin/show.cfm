@@ -1,8 +1,14 @@
-<c:valid_page record="#plugin#" />
+<s:valid_page record="#plugin#" />
 
 <cfoutput>
 <h1>#plugin.name()#</h1>
-<c:content title="Description" text="#plugin.description()#" />
-<c:content title="Overview" text="#plugin.overview()#" />
-<c:content title="Plugin" text="#plugin.example()#" />
+<s:content title="Author">
+	#plugin.author()#
+</s:content>
+<s:content title="URL">
+	<a href="#plugin.url()#" target="_blank">#plugin.url()#</a>
+</s:content>
+<s:content title="Description" text="#plugin.description()#" />
+<s:content title="Overview" text="#plugin.overview()#" />
+<s:content title="Example" text="#plugin.example()#" />
 </cfoutput>

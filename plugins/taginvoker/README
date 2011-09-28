@@ -1,0 +1,62 @@
+Dynamically invoke your ColdMVC application's custom tags.
+
+* Usage
+	
+	html = tagInvoker.invoke(tag, attributes);
+
+* Installation
+
+Download the TagInvoker plugin for ColdMVC and put it inside your _/plugins_ folder.
+
+Update your app's _/config/plugins.cfm_ with the following.
+
+	<cfset add("taginvoker") />
+
+* Example
+
+	/**
+	 * @accessors true
+	 * @singleton
+	 */
+	component {
+	
+		property tagInvoker;
+	
+		function index() {
+	
+			var html = tagInvoker.invoke("input", {
+				name = "firstName",
+				value = "Tony"
+			});
+			
+			writeDump(html);
+			abort;
+	
+		}
+	
+	}
+
+* Notes
+
+The TagInvoker works by getting the registered custom tags from ColdMVC and generating a temporary ColdFusion template with a switch statement for each custom tag.
+
+The temporary template is written to /generated/taginvoker/tags.cfm when the application is first loaded.
+
+* Disclosure
+
+I'm not sure how if this is actually useful, but it might be if you're creating some sort of form builder.
+
+
+Copyright 2011 Tony Nelson
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

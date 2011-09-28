@@ -5,7 +5,6 @@ In the following example, the default action for the _BookController_ is set to 
 	/**
  	 * @accessors true
  	 * @action list
-	 * @singleton
 	 */
 	component {
 
