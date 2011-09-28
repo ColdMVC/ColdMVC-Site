@@ -42,7 +42,7 @@ Examples:
 	});
 	
 	
-In addition, the following operators are aliased when working with _createQuery()_ for shorting method names.
+In addition, the following operators are aliased when working with _createQuery()_ for shorter method names.
 
 * eq: equal
 * neq: notEqual
