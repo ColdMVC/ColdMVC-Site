@@ -5,6 +5,7 @@ component {
 
 	property _Plugin;
 	property formFactory;
+	property mailSettings;
 
 	function index() {
 
@@ -31,16 +32,19 @@ component {
 
 		if (isPost() && pluginForm.isValid(params)) {
 
-			// send out an email
+			var attributes = {
+				to = "coldmvc@gmail.com",
+				from = "coldmvc@gmail.com",
+				subject = "New Plugin Submission: #escape(pluginForm.pluginName.getValue())#",
+				body = renderPartial("plugin/email.cfm", pluginForm.getValues()),
+				type = "html",
+				server = mailSettings.server,
+				username = mailSettings.username,
+				password = mailSettings.password
+			};
 
-			var body = renderPartial("plugin/email.cfm", pluginForm.getValues());
+			var email = new Mail(argumentCollection=attributes);
 
-			var email = new Mail();
-			email.setTo("coldmvc@gmail.com");
-			email.setFrom("coldmvc@gmail.com");
-			email.setSubject("New Plugin Submission: #escape(pluginForm.pluginName.getValue())#");
-			email.setBody(body);
-			email.setType("html");
 			email.send();
 
 			flash.message = "Thanks for submitting your plugin. I'll email you if I have any questions.";
