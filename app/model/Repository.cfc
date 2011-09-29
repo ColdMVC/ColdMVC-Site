@@ -25,7 +25,7 @@ component {
 				var repository = deserializeJSON(json);
 				var i = "";
 				var len = arrayLen(repository.commits);
-				var max = len > 3 ? 3 : len;
+				var max = len > 5 ? 5 : len;
 
 				for (i = 1; i <= max; i++) {
 

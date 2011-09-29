@@ -5,9 +5,6 @@ component {
 
 	property _Annotation;
 
-	/**
-	 * @layout index
-	 */
 	function index() {
 
 		params.annotations = _Annotation.list();
@@ -22,6 +19,8 @@ component {
 		params.annotation = _Annotation.findBySlug(params.slug);
 
 		assertModelExists(params.annotation, "Invalid annotation");
+
+		params.annotations = _Annotation.list();
 
 	}
 

@@ -6,9 +6,6 @@ component {
 	property _Plugin;
 	property formFactory;
 
-	/**
-	 * @layout index
-	 */
 	function index() {
 
 		params.plugins = _Plugin.list();
@@ -24,6 +21,8 @@ component {
 		params.plugin = _Plugin.findBySlug(params.slug);
 
 		assertModelExists(params.plugin, "Invalid plugin");
+
+		params.plugins = _Plugin.list();
 
 	}
 

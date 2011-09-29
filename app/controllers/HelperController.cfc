@@ -5,9 +5,6 @@ component {
 
 	property _Helper;
 
-	/**
-	 * @layout index
-	 */
 	function index() {
 
 		params.helpers = _Helper.list();
@@ -22,6 +19,8 @@ component {
 		params.helper = _Helper.findBySlug(params.slug);
 
 		assertModelExists(params.helper, "Invalid helper");
+
+		params.helpers = _Helper.list();
 
 	}
 

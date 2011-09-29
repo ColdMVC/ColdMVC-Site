@@ -17,19 +17,20 @@ component {
 
 		addElement("input", "pluginName")
 			.setDescription("So I know what to call your code.")
-			.setRequired(true, "Please enter the name of the plugin.");
+			.setRequired(true, "Please enter the name of the plugin. It does have a name, right?");
 
 		addElement("url", "pluginURL")
 			.setLabel("Plugin URL")
-			.setDescription("So I know where to see your code. A GitHub repository works best.")
+			.setDescription("So I know where to see your code. A GitHub repository URL works best.")
 			.setRequired(true, "Please enter the URL of the plugin.")
 			.addValidator("url", "Please enter a valid URL.");
 
 		addElement("textarea", "description")
-			.setDescription("So I know what your code does.")
+			.setDescription("So I know what your code does. You can be brief. I'll email you if I have any questions.")
 			.setRequired(true, "Please enter a description.");
 
-		addElement("submit", "submit");
+		addElement("submit", "submit")
+			.setLabel("Submit Plugin");
 
 	}
 

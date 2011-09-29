@@ -5,9 +5,6 @@ component {
 
 	property _Chapter;
 
-	/**
-	 * @layout index
-	 */
 	function index() {
 
 		params.chapters = _Chapter.list();
@@ -23,19 +20,19 @@ component {
 
 		assertModelExists(params.chapter, "Invalid chapter");
 
-		var chapters = _Chapter.list();
+		params.chapters = _Chapter.list();
 
-		var total = arrayLen(chapters);
+		var total = arrayLen(params.chapters);
 		var order = params.chapter.order();
 
 		if (order != 1 && order <= total) {
-			params.previous = chapters[order - 1];
+			params.previous = params.chapters[order - 1];
 		} else {
 			params.previous = "";
 		}
 
 		if (order < total) {
-			params.next = chapters[order + 1];
+			params.next = params.chapters[order + 1];
 		} else {
 			params.next = "";
 		}

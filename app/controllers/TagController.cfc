@@ -5,9 +5,6 @@ component {
 
 	property _Tag;
 
-	/**
-	 * @layout index
-	 */
 	function index() {
 
 		params.tags = _Tag.list();
@@ -22,6 +19,8 @@ component {
 		params.tag = _Tag.findBySlug(params.slug);
 
 		assertModelExists(params.tag, "Invalid tag");
+
+		params.tags = _Tag.list();
 
 	}
 
