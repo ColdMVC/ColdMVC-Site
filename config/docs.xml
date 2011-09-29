@@ -65,6 +65,7 @@
 	<section id="plugins">
 		<pages>
 			<page id="Assets" />
+			<page id="Bootstrap" />
 			<page id="Breadcrumbs" />
 			<page id="Cells" />
 			<page id="CKEditor" />
