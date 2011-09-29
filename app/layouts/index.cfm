@@ -54,10 +54,12 @@
 		<div class="container">
 			<cfif sidebar eq "">
 				<div id="content" class="no-sidebar">
+					<c:flash />
 					<c:render />
 				</div>
 			<cfelse>
 				<div id="content" class="span-18">
+					<c:flash />
 					<c:render />
 				</div>
 				<div id="sidebar" class="span-6 last">

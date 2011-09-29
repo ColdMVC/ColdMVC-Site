@@ -7,7 +7,7 @@ component {
 	public void function create() {
 
 		addElement("input", "yourName")
-			.setDescription("So I can give you credit for your work.")
+			.setDescription("So I can give you credit for your work. Because you earned it, bro.")
 			.setRequired(true, "Please enter your name.");
 
 		addElement("email", "yourEmail")
@@ -16,8 +16,8 @@ component {
 			.addValidator("email", "Please enter valid email address.");
 
 		addElement("input", "pluginName")
-			.setDescription("So I know what to call your code.")
-			.setRequired(true, "Please enter the name of the plugin. It does have a name, right?");
+			.setDescription("So I know what to call your code. It does have a name, right?")
+			.setRequired(true, "Please enter the name of the plugin.");
 
 		addElement("url", "pluginURL")
 			.setLabel("Plugin URL")

@@ -14,7 +14,6 @@ component {
 
 	/**
 	 * @params slug
-	 * @notLoggedIn
 	 */
 	function show() {
 
@@ -34,12 +33,17 @@ component {
 
 			// send out an email
 
-			var values = pluginForm.getValues();
+			var body = renderPartial("plugin/email.cfm", pluginForm.getValues());
 
-			writeDump(values);
-			abort;
+			var email = new Mail();
+			email.setTo("coldmvc@gmail.com");
+			email.setFrom("coldmvc@gmail.com");
+			email.setSubject("New Plugin Submission: #escape(pluginForm.pluginName.getValue())#");
+			email.setBody(body);
+			email.setType("html");
+			email.send();
 
-			flash.message = "Thanks for submitting your plugin.";
+			flash.message = "Thanks for submitting your plugin. I'll email you if I have any questions.";
 
 			redirect({action="index"});
 

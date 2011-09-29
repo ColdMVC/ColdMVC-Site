@@ -382,3 +382,9 @@ ul.errors {
 #footer ul li a {
 	color: #666;
 }
+
+div.flash {
+	background-color: #fffece;
+	margin-bottom: 10px;
+	padding: 5px 15px;
+}
