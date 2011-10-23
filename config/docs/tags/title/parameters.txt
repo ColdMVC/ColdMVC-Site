@@ -1,5 +1,0 @@
-| Name       | Required | Type    | Default | Description                                                     |
-|------------|----------|---------|---------|-----------------------------------------------------------------|
-| result     | false    | string  |         | The variable name for the title.                                |
-| type       | false    | string  | append  | The placement type for the title. Either 'append' or 'prepend'. |
-| value      | false    | string  |         | The value of the title tag.                                     |

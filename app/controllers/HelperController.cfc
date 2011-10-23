@@ -20,6 +20,12 @@ component {
 
 		assertModelExists(params.helper, "Invalid helper");
 
+		getRequestContext().addAction("sidebar");
+
+	}
+
+	function sidebar() {
+
 		params.helpers = _Helper.list();
 
 	}

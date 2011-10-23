@@ -12,4 +12,4 @@ You can redirect the browser inside a controller by using the _redirect()_ metho
 	
 	redirect("/post/list", "sort=title");
 	
-Note: the _redirect()_ method is only available to controllers that extend _coldmvc.Controller_.
+Note: the _redirect()_ method is available to controllers as an action helper.

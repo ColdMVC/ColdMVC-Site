@@ -1,1 +1,0 @@
-Serialize your models to other data types, such as JSON, XML, and simple structs.

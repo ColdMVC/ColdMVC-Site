@@ -1,0 +1,3 @@
+| Name      | Required | Type                         | Default          | Description                                         |
+|-----------|----------|------------------------------|------------------|-----------------------------------------------------|
+| paginator | false    | coldmvc.pagination.Paginator | params.paginator | A paginator. |

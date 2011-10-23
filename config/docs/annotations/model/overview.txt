@@ -1,3 +1,0 @@
-Controllers that extend _coldmvc.Controller_ inherit a few generic CRUD methods for working with the controller's corresponding model. By default, the name of the model associated with a controller is the name of the component without the _Controller_ suffix.
-
-For example, a _FooController_ would typically work with a _Foo_ model, while a _FooBarController_ would work with a _FooBar_ model. While this convention works in most cases, you can use the _@model_ annotation to change the name of the associated model.

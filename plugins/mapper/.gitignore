@@ -1,7 +1,0 @@
-# Ignore all dotfiles...
-.*
-
-# except for .gitignore
-!.gitignore
-
-settings.xml

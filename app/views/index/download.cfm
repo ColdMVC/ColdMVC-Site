@@ -1,3 +1,5 @@
+<cfset setTitle("Download") />
+
 <c:markdown>
 # What are you waiting for?
 

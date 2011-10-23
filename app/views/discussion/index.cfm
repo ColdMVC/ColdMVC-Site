@@ -1,3 +1,5 @@
+<cfset setTitle("Discussion") />
+
 <c:markdown>
 # Got a question?
 

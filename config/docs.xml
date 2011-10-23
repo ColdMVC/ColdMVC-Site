@@ -1,17 +1,15 @@
 <sections>
 	<section id="annotations">
 		<pages>
-			<page id="action" />
 			<page id="actionHelper" /> 
 			<page id="ajaxLayout" />
 			<page id="controller" />
 			<page id="events" />
 			<page id="formats" />
-			<page id="initMethod" />
+			<page id="setupMethod" />
 			<page id="layout" />
 			<page id="loggedIn" />
 			<page id="methods" />
-			<page id="model" />
 			<page id="modelHelper" /> 
 			<page id="notLoggedIn" />
 			<page id="order" />
@@ -66,23 +64,12 @@
 		<pages>
 			<page id="Assets" />
 			<page id="Bootstrap" />
-			<page id="Breadcrumbs" />
-			<page id="Cells" />
 			<page id="CKEditor" />
-			<page id="Forms" />
 			<page id="Hoth" />
 			<page id="Hyrule" />
 			<page id="JavaLoader" />
 			<page id="LessCSS" />
-			<page id="Mapper" />
 			<page id="Markdown" />
-			<page id="Paginator" />
-			<page id="Security" />
-			<page id="Serializer" />
-			<page id="TableSorter" />
-			<page id="Tabs" />
-			<page id="TagInvoker" />
-			<page id="Validation" />
 		</pages>
 	</section>
 </sections>

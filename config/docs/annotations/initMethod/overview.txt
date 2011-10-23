@@ -1,5 +1,0 @@
-You can have the bean factory automatically call a method once all properties have been injected into a component by using the _@initMethod_ annotation.
-
-For more information, refer to the [Initialization callbacks] [1] section in the Spring reference documentation.
-
-[1]: http://static.springsource.org/spring/docs/2.0.x/reference/beans.html#beans-factory-lifecycle-initializingbean "3.5.1.1. Initialization callbacks"

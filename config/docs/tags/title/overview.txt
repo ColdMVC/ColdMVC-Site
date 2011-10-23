@@ -1,5 +1,5 @@
 The title tag can be used to set request-specific title tags.
 
-Since views are executed before layouts, you can set title tag within the view using &lt;c:title value="My Title" /&gt;. 
+Since views are executed before layouts, you can set title tag within the view using _&lt;cfset setTitle("My Title"); /&gt;_. 
 
-Internally this stores the title as an array of strings that can the be displayed within the layout using &lt;c:title /&gt;, which wraps the title inside &lt;title&gt;&lt;/title&gt;.
+The title can then be displayed on the layout using &lt;c:title /&gt;, which wraps the title inside &lt;title&gt;&lt;/title&gt;.

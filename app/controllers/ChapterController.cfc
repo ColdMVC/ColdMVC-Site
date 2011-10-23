@@ -37,6 +37,14 @@ component {
 			params.next = "";
 		}
 
+		getRequestContext().addAction("sidebar");
+
+	}
+
+	function sidebar() {
+
+		params.chapters = _Chapter.list();
+
 	}
 
 }

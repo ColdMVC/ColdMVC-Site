@@ -1,3 +1,5 @@
+<cfset setTitle("Annotations") />
+
 <cfoutput>
 <h1>Annotations</h1>
 <dl class="list">

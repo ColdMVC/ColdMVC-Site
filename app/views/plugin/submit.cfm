@@ -1,4 +1,4 @@
-<c:title value="Submit a Plugin" />
+<cfset setTitle("Submit a Plugin") />
 
 <cfoutput>
 <h1>Submit a Plugin</h1>

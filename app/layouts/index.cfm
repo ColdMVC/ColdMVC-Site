@@ -1,33 +1,7 @@
-<cfset tab = $.factory.get("tabManager").getTab() />
-
-	<cfif tab neq "" and tab neq "Home">
-		<cfset title = "ColdMVC " & tab />
-	<cfelse>
-		<cfset title = "ColdMVC" />
-	</cfif>
-
-	<c:title value="#title#" />
-
-	<cfif $.page.getContent("header") eq "">
-		<c:breadcrumbs result="breadcrumbs" />
-		<cfset $.page.setContent("header", breadcrumbs) />
-	</cfif>
-
-	<cfset sidebar = getContent("sidebar") />
-
 <cfoutput>
 <c:doctype />
 <c:html>
-	<head>
-		<c:version />
-		<c:title />
-		<c:content_type />
-		<c:charset />
-		<c:viewport />
-		<c:meta keywords="ColdMVC, ColdFusion, MVC, framework, open-source" />
-		<c:meta description="ColdMVC is a convention-based framework for ColdFusion" />
-		<c:meta author="Tony Nelson" />
-		<c:favicon />
+	<c:head>
 		<c:style name="blueprint/reset.css" media="screen, projection" />
 		<c:style name="blueprint/grid.css" media="screen, projection" />
 		<c:style name="blueprint/print.css" media="print" />
@@ -36,43 +10,43 @@
 		<c:style name="style.css" />
 		<c:script name="jquery-1.4.4.min.js" />
 		<c:script name="application.js" />
-	</head>
+	</c:head>
 	<c:body>
 		<div id="top">
 			<div class="container">
 				<div id="logo"><a href="#linkTo('/')#">ColdMVC</a></div>
 				<div id="tabs">
-					<c:tabs />
+					<c:menu maxDepth="1" />
 				</div>
 			</div>
 		</div>
 		<div id="header">
 			<div class="container">
-				<c:render name="header" />
+				<c:breadcrumbs />
 			</div>
 		</div>
 		<div class="container">
-			<cfif sidebar eq "">
-				<div id="content" class="no-sidebar">
-					<c:flash />
-					<c:render />
-				</div>
-			<cfelse>
+			<cfif hasContent("sidebar")>
 				<div id="content" class="span-18">
 					<c:flash />
 					<c:render />
 				</div>
 				<div id="sidebar" class="span-6 last">
 					<div id="sidebar_container">
-						#sidebar#
+						<c:render key="sidebar" />
 					</div>
+				</div>
+			<cfelse>
+				<div id="content" class="no-sidebar">
+					<c:flash />
+					<c:render />
 				</div>
 			</cfif>
 		</div>
 		<div id="footer">
 			<div class="container">
 				&copy; #year(now())# Tony Nelson
-				<c:tabs />
+				<c:menu maxDepth="1" />
 			</div>
 		</div>
 		<cfif not isDevelopment()>

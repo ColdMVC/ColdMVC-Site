@@ -1,0 +1,1 @@
+Renders pagination links for a paginator.

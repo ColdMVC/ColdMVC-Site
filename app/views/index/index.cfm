@@ -1,5 +1,3 @@
-<c:content name="header" value="&nbsp;" />
-
 <cfoutput>
 <div id="home">
 	<div class="span-24 last">

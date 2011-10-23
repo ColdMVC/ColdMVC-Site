@@ -1,3 +1,5 @@
+<cfset setTitle("Contact") />
+
 <c:markdown>
 # Want to get ahold of somebody?
 

@@ -133,6 +133,7 @@ div#tabs ul li.active a {
 	background: -webkit-gradient(linear, left bottom, right top, from(#cfcfcf), to(#dfdfdf));
 	text-shadow: rgba(255, 255, 255, 0.3) 1px 1px 1px;
 	border-bottom: 1px solid #bbb;
+	height: 20px;
 }
 
 #header ul li {

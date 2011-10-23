@@ -1,1 +1,0 @@
-<cfset requires("taginvoker") />

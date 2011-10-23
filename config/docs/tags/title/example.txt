@@ -1,3 +1,1 @@
-	<c:title value="About Us" />
-	
 	<c:title />

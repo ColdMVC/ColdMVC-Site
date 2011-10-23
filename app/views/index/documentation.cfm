@@ -1,3 +1,5 @@
+<cfset setTitle("Documentation") />
+
 <c:markdown>
 # Looking for something?
 

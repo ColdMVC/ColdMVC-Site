@@ -1,3 +1,5 @@
+<cfset setTitle("Quick Start") />
+
 <cfset open = "<" />
 
 <c:markdown>
@@ -65,9 +67,6 @@ Inside the _app_ directory, create a directory called _controllers_. As the name
 
 Now, inside _/BookStore/app/controllers/_, create an _IndexController.cfc_ with the following content:
 
-	/**
-	 * @extends coldmvc.Controller
-	 */
 	component {
 
 	}
@@ -243,9 +242,11 @@ Now that you have a _Book_ model created, it's time to perform some [CRUD] [1].
 Inside your _controllers_ directory, create a _BookController.cfc_ with the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 	}
 
@@ -297,9 +298,11 @@ If you click on the "Add a Book" link on your book's home page, you'll see that 
 Open up your _BookController_ and update it to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -396,9 +399,11 @@ You'll notice that the add form that we just created has an action of _save_, so
 Once again, open up your _BookController_ and update it to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -427,9 +432,11 @@ Now that you were able to add a book to your database, let's display the newly c
 Let's start by updating the _BookController_ to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -504,9 +511,11 @@ Now that we can add and view newly created books, let's create a page to display
 Once again, open your _BookController_ and update it to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -609,9 +618,11 @@ You'll notice the book list included a link to edit each book, so let's add that
 Open your _BookController_ and update it to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -675,9 +686,11 @@ You'll notice this form posts to the _BookController_'s _update_ action, so let'
 Update your _BookController_ to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 
@@ -781,9 +794,11 @@ The book list also included a link to delete books, so let's add that action as 
 Update your _BookController_ to the following content:
 
 	/**
-	 * @extends coldmvc.Controller
+	 * @accessors true
 	 */
 	component {
+
+		property _Book;
 
 		function add() {
 

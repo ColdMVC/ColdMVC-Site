@@ -4,8 +4,8 @@
 component {
 
 	property _Plugin;
-	property formFactory;
 	property mailSettings;
+	property fooService;
 
 	function index() {
 
@@ -22,13 +22,19 @@ component {
 
 		assertModelExists(params.plugin, "Invalid plugin");
 
+		getRequestContext().addAction("sidebar");
+
+	}
+
+	function sidebar() {
+
 		params.plugins = _Plugin.list();
 
 	}
 
 	function submit() {
 
-		var pluginForm = formFactory.new("plugin");
+		var pluginForm = createForm("plugin");
 
 		if (isPost() && pluginForm.isValid(params)) {
 
@@ -53,8 +59,9 @@ component {
 
 		}
 
-
 		params.pluginForm = pluginForm;
+
+		getRequestContext().addAction("sidebar");
 
 	}
 

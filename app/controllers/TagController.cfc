@@ -20,6 +20,12 @@ component {
 
 		assertModelExists(params.tag, "Invalid tag");
 
+		getRequestContext().addAction("sidebar");
+
+	}
+
+	function sidebar() {
+
 		params.tags = _Tag.list();
 
 	}

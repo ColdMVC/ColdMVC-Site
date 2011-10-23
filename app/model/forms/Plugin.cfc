@@ -1,6 +1,6 @@
 /**
  * @accessors true
- * @extends plugins.forms.app.model.Form
+ * @extends coldmvc.forms.Form
  */
 component {
 

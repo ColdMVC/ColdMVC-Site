@@ -1,5 +1,5 @@
-<cfset modelFactory = $.factory.get("modelFactory") />
-<cfset markdownProcessor = $.factory.get("markdownProcessor") />
+<cfset modelFactory = $.framework.getBean("modelFactory") />
+<cfset markdownProcessor = $.factory.getBean("markdownProcessor") />
 <cfset xml = fileRead(expandPath("/config/docs.xml")) />
 
 <cfquery>
@@ -46,7 +46,7 @@
 </cffunction>
 
 <!--- annotations --->
-<cfset _Annotation = modelFactory.get("Annotation") />
+<cfset _Annotation = modelFactory.getModel("Annotation") />
 <cfset annotations = $.array.toStruct(_Annotation.list(), "name") />
 <cfset annotationXML = xmlSearch(xml, "sections/section[@id='annotations']/pages/page") />
 
@@ -78,7 +78,7 @@
 </cfloop>
 
 <!--- chapters --->
-<cfset _Chapter = modelFactory.get("Chapter") />
+<cfset _Chapter = modelFactory.getModel("Chapter") />
 <cfset chapters = $.array.toStruct(_Chapter.list(), "name") />
 <cfset chapterXML = xmlSearch(xml, "sections/section[@id='chapters']/pages/page") />
 <cfset counter = 0 />
@@ -115,7 +115,7 @@
 </cfloop>
 
 <!--- helpers --->
-<cfset _Helper = modelFactory.get("Helper") />
+<cfset _Helper = modelFactory.getModel("Helper") />
 <cfset helpers = $.array.toStruct(_Helper.list(), "name") />
 <cfset helperArray = directoryList(expandPath("/coldmvc/app/helpers")) />
 
@@ -148,7 +148,7 @@
 </cfloop>
 
 <!--- plugins --->
-<cfset _Plugin = modelFactory.get("Plugin") />
+<cfset _Plugin = modelFactory.getModel("Plugin") />
 <cfset plugins = $.array.toStruct(_Plugin.list(), "name") />
 <cfset pluginXML = xmlSearch(xml, "sections/section[@id='plugins']/pages/page") />
 
@@ -182,7 +182,7 @@
 </cfloop>
 
 <!--- tags --->
-<cfset _Tag = modelFactory.get("Tag") />
+<cfset _Tag = modelFactory.getModel("Tag") />
 <cfset tags = $.array.toStruct(_Tag.list(), "name") />
 <cfset tagArray = directoryList(expandPath("/coldmvc/app/tags")) />
 

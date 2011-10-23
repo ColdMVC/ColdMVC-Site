@@ -1,3 +1,5 @@
+<cfset setTitle("Helpers") />
+
 <cfoutput>
 <h1>Helpers</h1>
 <dl class="list">

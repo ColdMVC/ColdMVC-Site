@@ -1,3 +1,5 @@
+<cfset setTitle("Custom Tags") />
+
 <cfoutput>
 <h1>Custom Tags</h1>
 <dl class="list">

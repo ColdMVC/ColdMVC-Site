@@ -1,3 +1,5 @@
+<cfset setTitle("Reference Guide") />
+
 <cfoutput>
 <h1>Reference Guide</h1>
 <dl class="list">

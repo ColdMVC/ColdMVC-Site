@@ -1,3 +1,5 @@
+<cfset setTitle("Plugins") />
+
 <c:markdown>
 # Need something extra?
 </c:markdown>

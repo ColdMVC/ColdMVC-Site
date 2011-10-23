@@ -3,7 +3,14 @@
  */
 component {
 
+	/**
+	 * @inject coldmvc
+	 */
 	property config;
+
+	function index() {
+
+	}
 
 	function download() {
 
