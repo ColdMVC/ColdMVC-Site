@@ -1,1 +1,0 @@
-Renders a section of HTML content.

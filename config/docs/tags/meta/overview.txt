@@ -1,5 +1,0 @@
-The _meta_ tag can be used to display a <meta> tag on the page.
-
-Any attribute keys passed to the tag are rendered as a meta tag with a corresponding name.
-
-The value of the tag that is displayed can be changed at runtime inside a view by using _$.page.setMeta(key, value)_.

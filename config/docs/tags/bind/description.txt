@@ -1,1 +1,0 @@
-Allows you to bind form elements to a param variable.

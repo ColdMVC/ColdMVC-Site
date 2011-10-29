@@ -1,75 +1,6 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 								   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-	<class entity-name="Annotation" lazy="true" name="cfc:app.model.Annotation" table="Annotation">
-		<id name="id" type="int">
-			<column name="ID" />
-			<generator class="identity" />
-		</id>
-		<property name="name" type="string">
-			<column name="Name" length="50" />
-		</property>
-		<property name="description" type="string">
-			<column name="Description" sql-type="varchar(max)" />
-		</property>
-		<property name="overview" type="string">
-			<column name="Overview" sql-type="varchar(max)" />
-		</property>
-		<property name="example" type="string">
-			<column name="Example" sql-type="varchar(max)" />
-		</property>
-		<property name="slug" type="string">
-			<column name="Slug" length="50" />
-		</property>
-	</class>
-	<class entity-name="Chapter" lazy="true" name="cfc:app.model.Chapter" table="Chapter">
-		<id name="id" type="int">
-			<column name="ID" />
-			<generator class="identity" />
-		</id>
-		<property name="name" type="string">
-			<column name="Name" length="50" />
-		</property>
-		<property name="description" type="string">
-			<column name="Description" sql-type="varchar(max)" />
-		</property>
-		<property name="content" type="string">
-			<column name="Content" sql-type="varchar(max)" />
-		</property>
-		<property name="slug" type="string">
-			<column name="Slug" length="50" />
-		</property>
-		<property name="order" type="integer">
-			<column name="`Order`" />
-		</property>
-	</class>
-	<class entity-name="Helper" lazy="true" name="cfc:app.model.Helper" table="Helper">
-		<id name="id" type="int">
-			<column name="ID" />
-			<generator class="identity" />
-		</id>
-		<property name="name" type="string">
-			<column name="Name" length="50" />
-		</property>
-		<property name="description" type="string">
-			<column name="Description" sql-type="varchar(max)" />
-		</property>
-		<property name="overview" type="string">
-			<column name="Overview" sql-type="varchar(max)" />
-		</property>
-		<property name="Parameters" type="string">
-			<column name="Parameters" sql-type="varchar(max)" />
-		</property>
-		<property name="example" type="string">
-			<column name="Example" sql-type="varchar(max)" />
-		</property>
-		<property name="slug" type="string">
-			<column name="Slug" length="50" />
-		</property>
-		<property name="url" type="string">
-			<column name="URL" length="200" />
-		</property>
-	</class>
 	<class entity-name="Plugin" lazy="true" name="cfc:app.model.Plugin" table="Plugin">
 		<id name="id" type="int">
 			<column name="ID" />
@@ -95,33 +26,6 @@
 		</property>
 		<property name="slug" type="string">
 			<column name="Slug" length="50" />
-		</property>
-	</class>
-	<class entity-name="Tag" lazy="true" name="cfc:app.model.Tag" table="Tag">
-		<id name="id" type="int">
-			<column name="ID" />
-			<generator class="identity" />
-		</id>
-		<property name="name" type="string">
-			<column name="Name" length="50" />
-		</property>
-		<property name="description" type="string">
-			<column name="Description" sql-type="varchar(max)" />
-		</property>
-		<property name="overview" type="string">
-			<column name="Overview" sql-type="varchar(max)" />
-		</property>
-		<property name="Parameters" type="string">
-			<column name="Parameters" sql-type="varchar(max)" />
-		</property>
-		<property name="example" type="string">
-			<column name="Example" sql-type="varchar(max)" />
-		</property>
-		<property name="slug" type="string">
-			<column name="Slug" length="50" />
-		</property>
-		<property name="url" type="string">
-			<column name="URL" length="200" />
 		</property>
 	</class>
 </hibernate-mapping>

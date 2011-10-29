@@ -1,1 +1,0 @@
-The operators available to ORM methods.

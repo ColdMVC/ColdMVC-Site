@@ -2,31 +2,7 @@
 	<page label="Home" visible="false" />
 	<page label="Download" action="download" />
 	<page label="Quick Start" action="quickstart" />
-	<page label="Documentation" action="documentation">
-		<pages>
-			<page label="Annotations" controller="annotation" action="documentation" />
-			<page label="Reference Guide" controller="chapter">
-				<pages>
-					<page controller="chapter" action="show" visible="false" />
-				</pages>
-			</page>
-			<page label="Annotations" controller="annotation">
-				<pages>
-					<page controller="annotation" action="show" visible="false" />
-				</pages>
-			</page>
-			<page label="Helpers" controller="helper">
-				<pages>
-					<page controller="helper" action="show" visible="false" />
-				</pages>
-			</page>
-			<page label="Tags" controller="tag">
-				<pages>
-					<page controller="tag" action="show" visible="false" />
-				</pages>
-			</page>
-		</pages>
-	</page>
+	<page label="Documentation" action="documentation" />
 	<page label="Plugins" controller="plugin">
 		<pages>
 			<page controller="plugin" action="show" visible="false" />

@@ -1,4 +1,0 @@
-| Name  | Required | Type   | Default          | Description                |
-|-------|----------|--------|------------------|----------------------------|
-| title | false    | string |                  | The title of the RSS feed. |
-| url   | false    | string | #linkTo("/rss")# | The URL of the RSS feed.   |

@@ -1,1 +1,0 @@
-Specifies the allowed output formats for actions on controllers.

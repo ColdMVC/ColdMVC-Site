@@ -1,6 +1,0 @@
-<c:field name="address">
-	<c:input name="street" value="123 Main St" wrapper="false" /> <br />
-	<c:input name="city" value="Burnsville" wrapper="false" />
-	<c:input name="state" value="MN" wrapper="false" />
-	<c:input name="zip" value="55337" wrapper="false" />
-</c:field>

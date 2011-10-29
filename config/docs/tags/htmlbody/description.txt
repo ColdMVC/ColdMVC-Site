@@ -1,3 +1,0 @@
-Stores wrapped content into the request to be displayed right before the closing [body] tag.
-
-[1]: /tags/body

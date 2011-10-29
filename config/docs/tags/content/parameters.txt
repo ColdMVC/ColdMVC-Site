@@ -1,3 +1,0 @@
-| Name | Required | Type   | Default | Description              |
-|------|----------|--------|---------|--------------------------|
-| key  | true     | string |         | The key for the section. |

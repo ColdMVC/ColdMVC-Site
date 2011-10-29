@@ -1,3 +1,0 @@
-You can require the current user to not be logged in for an action by adding the _@notLoggedIn_ annotation to the action.
-
-If the user is logged in, a 401 exception is thrown.

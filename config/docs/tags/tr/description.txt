@@ -1,3 +1,0 @@
-Creates a [tr] [1] tag with an _index_ attribute for easy styling.
-
-[1]: http://www.w3.org/TR/html-markup/tr.html

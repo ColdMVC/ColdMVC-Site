@@ -1,1 +1,0 @@
-	<c:url name="website" value="http://www.coldmvc.com/" />

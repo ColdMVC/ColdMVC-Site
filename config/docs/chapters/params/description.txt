@@ -1,1 +1,0 @@
-An introduction to the _params_ scope.

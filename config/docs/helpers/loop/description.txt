@@ -1,3 +1,0 @@
-Helper methods used with the [_each_] [1] tag.
-
-[1]: /tags/each "Tag: each"

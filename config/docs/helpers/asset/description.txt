@@ -1,1 +1,0 @@
-Helper methods for working with public assets (images, css files, js files).

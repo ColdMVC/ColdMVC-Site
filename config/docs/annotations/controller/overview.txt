@@ -1,3 +1,0 @@
-Controllers are referenced in the framework by their name, which is typically an underscore-ized name of the component without the _Controller_ suffix.
-
-For example, a _FooController_ would be referenced as the _foo_ controller, while a _FooBarController_ would be referenced as the _foo_bar_ controller. While this convention works in most cases, you can use the _@controller_ annotation to change the name of a controller.

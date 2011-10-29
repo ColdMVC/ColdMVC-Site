@@ -1,1 +1,0 @@
-An overview of how to decorate your models with model helpers.

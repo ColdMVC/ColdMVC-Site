@@ -1,1 +1,0 @@
-	<c:checkbox name="sports" value="Baseball,Football" options="Baseball,Basketball,Football,Hockey,Soccer" />

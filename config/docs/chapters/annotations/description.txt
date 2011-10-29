@@ -1,1 +1,0 @@
-How to use metadata to add extra functionality to your components.

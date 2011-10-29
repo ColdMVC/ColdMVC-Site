@@ -1,9 +1,0 @@
-ColdMVC leverages custom annotations on your components to provide additional functionality throughout your application.
-
-The custom metadata can be parsed by other components within the framework to customize your application without having to rely on external configuration files.
-
-Annotations can be used for a variety of settings, such as specifying the views and layouts associated with actions on your controllers, as well as specifying the allowed return formats for your requests.
-
-For a complete list of the annotations used by the framework, you can visit the reference manual for [annotations] [1].
-
-[1]: /annotations "annotations"

@@ -1,1 +1,0 @@
-Allows for execution of an included template. Variables defined within the caller and the template are shared between each other.

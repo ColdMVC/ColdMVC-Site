@@ -1,4 +1,0 @@
-	<c:fieldset label="Personal Information">
-		<c:text name="firstName" value="Tony" />
-		<c:text name="lastName" value="Nelson" />
-	</c:fieldset>

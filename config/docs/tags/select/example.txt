@@ -1,1 +1,0 @@
-	<c:select name="color" value="Blue" options="Red,White,Blue" />

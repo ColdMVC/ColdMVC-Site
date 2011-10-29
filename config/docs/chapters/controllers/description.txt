@@ -1,1 +1,0 @@
-An overview of the "C" in MVC.

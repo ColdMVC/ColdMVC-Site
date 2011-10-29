@@ -1,6 +1,0 @@
-By using the _@actionHelper_ annotation, you can expose methods on both helpers and singleton beans to controllers using an alias.
-
-For more information, see the [chapter on action helpers] [1] in the [reference guide] [2].
-
-[1]: /guide/action-helpers "Action Helpers"
-[2]: /guide "Reference Guide"

@@ -1,1 +1,0 @@
-	<c:favicon url="#linkToImage("favicon.ico")#" />

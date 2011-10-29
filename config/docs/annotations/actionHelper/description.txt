@@ -1,1 +1,0 @@
-Makes a method inside a singleton component available to all controllers as an action helper.

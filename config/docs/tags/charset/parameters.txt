@@ -1,3 +1,0 @@
-| Name    | Required | Type   | Default | Description                          |
-|---------|----------|--------|---------|--------------------------------------|
-| charset | false    | string | utf-8   | The character-encoding for the page. |

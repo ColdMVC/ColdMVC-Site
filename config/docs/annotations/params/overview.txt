@@ -1,5 +1,0 @@
-You can specify the required params for an action by adding the _@params_ annotation to the action.
-
-The _@params_ annotation value accepts a comma-separated list of param names.
-
-If a required param is not specified, a 404 exception is thrown.

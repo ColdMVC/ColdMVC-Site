@@ -1,3 +1,0 @@
-Creates a [form] [1] tag.
-
-[1]: http://www.w3.org/TR/html-markup/form.html

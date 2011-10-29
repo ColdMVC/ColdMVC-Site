@@ -1,1 +1,0 @@
-Describes a typical directory structure for ColdMVC applications.

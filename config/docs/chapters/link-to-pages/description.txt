@@ -1,1 +1,0 @@
-A tutorial on how to use the link helper to create links between pages in your application.

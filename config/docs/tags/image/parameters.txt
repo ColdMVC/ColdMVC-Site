@@ -1,5 +1,0 @@
-| Name  | Required | Type   | Default | Description                      |
-|-------|----------|--------|---------|----------------------------------|
-| alt   | false    | string |         | The alternate text of the image. |
-| name  | true     | string |         | The name of the image.           |
-| title | false    | string |         | The title of the image.          |

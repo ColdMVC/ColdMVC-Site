@@ -1,3 +1,0 @@
-You can specify the default order value for a model by adding the _@order_ annotation to the model.
-
-The _@order_ annotation value is used as a default value when using  _list()_, _findAllBy()_, and _findAllWhere()_.

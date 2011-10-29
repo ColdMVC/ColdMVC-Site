@@ -1,4 +1,0 @@
-When working in development mode, your views will automatically be appended with additional debug information.
-This includes general request information, such as the controller, action, view, layout, format, and current route.
-
-The debug information also provides helpful insight into otherwise hidden information, such as the HQL queries that were executed, the available tags, helpers, and view helpers, any events that were dispatched during the request, all config settings, and all of the registered beans, models, and templates.

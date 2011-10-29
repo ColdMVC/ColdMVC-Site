@@ -1,1 +1,0 @@
-Display the current application version and framework version within HTML comments. Useful for quickly checking the versions on a production environments.

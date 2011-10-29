@@ -1,3 +1,0 @@
-Specifies the [Document Type Definition (DTD)] [1] for the page.
-
-[1]: http://en.wikipedia.org/wiki/Document_Type_Declaration "Document Type Declaration"

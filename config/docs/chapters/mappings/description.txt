@@ -1,1 +1,0 @@
-Describes the per-application mappings that ColdMVC automatically creates for your application.

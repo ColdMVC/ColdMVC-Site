@@ -1,1 +1,0 @@
-An overview of ColdMVC debug information.

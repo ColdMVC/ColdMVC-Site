@@ -1,1 +1,0 @@
-Generic iterator for looping over elements in a specified object.

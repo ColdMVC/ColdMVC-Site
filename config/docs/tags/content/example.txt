@@ -1,5 +1,0 @@
-	<c:content key="header">
-		Hello, World
-	</c:content>
-	
-	<c:render key="header" />

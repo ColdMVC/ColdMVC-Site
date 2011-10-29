@@ -1,7 +1,0 @@
-ColdMVC follows the [Model-View-Controller (MVC)] [1] design pattern.
-In this type of application, incoming requests are handled by a controller, which retrieves data from the model, and optionally renders a view.
-
-If you're looking for a better description of MVC, [there are plenty of online articles written on the topic] [2].
-
-[1]: http://en.wikipedia.org/wiki/Model-view-controller "Model–view–controller"
-[2]: http://lmgtfy.com/?q=model+view+controller "Model View Controller"

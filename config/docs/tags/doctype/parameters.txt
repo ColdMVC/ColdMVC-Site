@@ -1,3 +1,0 @@
-| Name | Required | Type   | Default | Description                              |
-|------|----------|--------|---------|------------------------------------------|
-| name | false    | string | HTML    | The name of the the doctype declaration. |

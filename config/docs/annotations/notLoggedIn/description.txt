@@ -1,1 +1,0 @@
-Requires the current user to not be logged in for an action on a controller.

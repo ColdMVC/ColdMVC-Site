@@ -1,5 +1,0 @@
-Action helpers are custom functions that are available to your controllers that expose common controller-related methods without having to extend a base controller.
-
-You can expose any function on a singleton bean or a helper as an action helper by adding an _@actionHelper {name}_ annotation to the function.
-
-When you first create an application using ColdMVC, you'll already have access to a standard set of action helpers. The most prominent action helper is the _redirect()_ method that allows you to redirect the browser after you perform an action. 

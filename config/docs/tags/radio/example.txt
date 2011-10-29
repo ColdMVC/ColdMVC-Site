@@ -1,1 +1,0 @@
-	<c:radio name="gender" value="Male" options="Male,Female" />

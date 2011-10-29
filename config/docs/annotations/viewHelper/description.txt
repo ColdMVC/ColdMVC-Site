@@ -1,1 +1,0 @@
-Makes a method inside a singleton component available to views as a view helper.

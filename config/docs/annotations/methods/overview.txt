@@ -1,7 +1,0 @@
-You can specify the allowed request methods for an action by adding the _@methods_ annotation to the action.
-
-The _@methods_ annotation value accepts a comma-separated list of request methods.
-
-By default, all request methods (_GET_, _POST_, etc...) are allowed for actions.
-
-If the current request method is not allowed for the current action, a 405 exception is thrown.

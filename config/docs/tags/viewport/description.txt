@@ -1,1 +1,0 @@
-Specifies the desired screen size for the page.

@@ -1,3 +1,0 @@
-| Name    | Required | Type   | Default                  | Description                    |
-|---------|----------|--------|--------------------------|--------------------------------|
-| content | false    | string | text/html; charset=utf-8 | The content type for the page. |

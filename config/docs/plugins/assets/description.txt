@@ -1,1 +1,0 @@
-Create JavaScript and CSS asset packages.

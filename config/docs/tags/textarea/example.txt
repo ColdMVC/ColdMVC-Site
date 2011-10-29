@@ -1,1 +1,0 @@
-	<c:textarea name="message" value="Hello, world" />

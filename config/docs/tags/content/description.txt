@@ -1,1 +1,0 @@
-Set HTML content into a page section.

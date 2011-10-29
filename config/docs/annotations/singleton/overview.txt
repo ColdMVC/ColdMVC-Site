@@ -1,6 +1,0 @@
-By using the _@singleton_ annotation, you can automatically register components as singleton beans in the bean factory.
-
-For more information, see the [chapter on the bean factory] [1] in the [reference guide] [2].
-
-[1]: /guide/bean-factory "Bean Factory"
-[2]: /guide "Reference Guide"

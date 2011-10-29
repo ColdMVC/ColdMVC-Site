@@ -1,4 +1,0 @@
-	<c:bind to="user">
-		<c:input name="firstName" />
-		<c:input name="lastName" />
-	</c:bind>

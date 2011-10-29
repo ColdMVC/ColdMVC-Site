@@ -1,4 +1,0 @@
-Creates a [body] [1] tag with event-specific classes. Also outputs any content previously wrapped in the [htmlbody] [2] tag.
-
-[1]: http://www.w3.org/TR/html-markup/input.date.html
-[2]: /tags/htmlbody
