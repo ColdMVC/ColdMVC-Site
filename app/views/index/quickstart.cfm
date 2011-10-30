@@ -2,6 +2,7 @@
 
 <cfset open = "<" />
 
+<div class="container">
 <c:markdown>
 # So you want to build an application using ColdMVC?
 
@@ -144,8 +145,7 @@ Inside the _config_ directory, create a _config.ini_ with the following content:
 	[default]
 
 	[development]
-	development=true
-	autoReload=true
+	development = true
 
 This is your application's main configuration file. Right now the file is turning on _development_ mode and telling the application to reload itself on every request.
 More information can be found in the [Config Variables] [1] chapter inside the [Reference Guide] [2].
@@ -878,15 +878,13 @@ Inside the _layouts_ directory, create an _index.cfm_ with the following content
 
 	<cfoutput>#open#</cfoutput>c:doctype />
 	<cfoutput>#open#</cfoutput>c:html>
-		<cfoutput>#open#</cfoutput>head>
-			<cfoutput>#open#</cfoutput>c:version />
-			<cfoutput>#open#</cfoutput>title>My Bookstore<cfoutput>#open#</cfoutput>/title>
-			<cfoutput>#open#</cfoutput>c:content_type />
-		<cfoutput>#open#</cfoutput>/head>
-		<cfoutput>#open#</cfoutput>body>
+		<cfoutput>#open#</cfoutput>c:head>
+			<cfoutput>#open#</cfoutput>c:title>My Bookstore<cfoutput>#open#</cfoutput>/c:title>
+		<cfoutput>#open#</cfoutput>/c:head>
+		<cfoutput>#open#</cfoutput>c:body>
 			<cfoutput>#open#</cfoutput>h1>My Bookstore<cfoutput>#open#</cfoutput>/h1>
 			<cfoutput>#open#</cfoutput>c:render />
-		<cfoutput>#open#</cfoutput>/body>
+		<cfoutput>#open#</cfoutput>/c:body>
 	<cfoutput>#open#</cfoutput>/c:html>
 
 This will be the site-wide layout for your entire application.
@@ -909,3 +907,4 @@ Thanks for your time and I hope you enjoy working with ColdMVC.
 
 [1]: https://github.com/tonynelson19/ColdMVC-Samples/tree/master/BookStore
 </c:markdown>
+</div>

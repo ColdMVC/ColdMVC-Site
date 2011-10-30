@@ -9,6 +9,5 @@
 			<page label="Submit a Plugin" controller="plugin" action="submit" />
 		</pages>
 	</page>
-	<page label="Discussion" controller="discussion" />
 	<page label="Contact" action="contact" />
 </pages>

@@ -15,8 +15,4 @@ component {
 	property url;
 	property slug;
 
-	function toParam() {
-		return variables.slug;
-	}
-
 }

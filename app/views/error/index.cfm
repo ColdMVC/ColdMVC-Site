@@ -1,7 +1,9 @@
 <cfset setTitle("Error") />
 
 <cfoutput>
-<h1>#error.message#</h1>
+<div class="container">
+	<h1>#error.message#</h1>
 
-#error.detail#
+	#error.detail#
+</div>
 </cfoutput>

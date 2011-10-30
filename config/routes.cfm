@@ -5,6 +5,14 @@
 		controller = "index"
 	},
 	requirements = {
-		action = "download|quickstart|documentation|contact"
+		action = "download|quickstart|documentation|discussion|contact"
+	}
+}) />
+
+<cfset add("/plugins", "plugin.index") />
+
+<cfset add("/plugin/:id", "plugin", "plugin.show", {
+	toParam = {
+		id = "getSlug"
 	}
 }) />
