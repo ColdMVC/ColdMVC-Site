@@ -2,7 +2,7 @@
 	<page label="Home" visible="false" />
 	<page label="Download" action="download" />
 	<page label="Quick Start" action="quickstart" />
-	<page label="Documentation" action="documentation" />
+	<page label="Documentation" controller="documentation" />
 	<page label="Plugins" controller="plugin">
 		<pages>
 			<page controller="plugin" action="show" visible="false" />

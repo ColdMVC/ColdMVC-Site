@@ -3,7 +3,6 @@
 <cfoutput>
 <div class="container">
 	<h1>#error.message#</h1>
-
-	#error.detail#
+	<p>#error.detail#</p>
 </div>
 </cfoutput>
