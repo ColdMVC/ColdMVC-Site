@@ -1,6 +1,79 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 								   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
+	<class entity-name="Category" lazy="true" name="cfc:app.model.Category" table="Category">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="name" type="string">
+			<column name="Name" />
+		</property>
+		<property name="text" type="string">
+			<column name="Text" sql-type="varchar(max)" />
+		</property>
+		<property name="html" type="string">
+			<column name="HTML" sql-type="varchar(max)" />
+		</property>
+		<property name="order" type="int">
+			<column name="`Order`" />
+		</property>
+		<property name="slug" type="string">
+			<column name="Slug" length="200" />
+		</property>
+		<bag name="chapters" order-by="`order` asc">
+			<key column="Category_ID" />
+			<one-to-many class="cfc:app.model.Chapter" />
+		</bag>
+	</class>
+	<class entity-name="Chapter" lazy="true" name="cfc:app.model.Chapter" table="Chapter">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="title" type="string">
+			<column name="Title" />
+		</property>
+		<property name="text" type="string">
+			<column name="Text" sql-type="varchar(max)" />
+		</property>
+		<property name="html" type="string">
+			<column name="HTML" sql-type="varchar(max)" />
+		</property>
+		<property name="slug" type="string">
+			<column name="Slug" length="200" />
+		</property>
+		<property name="order" type="int">
+			<column name="`Order`" />
+		</property>
+		<many-to-one class="cfc:app.model.Category" column="Category_ID" name="category" />
+		<bag name="articles" order-by="`order` asc">
+			<key column="Chapter_ID" />
+			<one-to-many class="cfc:app.model.Article" />
+		</bag>
+	</class>	
+	<class entity-name="Article" lazy="true" name="cfc:app.model.Article" table="Article">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="identity" />
+		</id>
+		<property name="title" type="string">
+			<column name="Title" length="200" />
+		</property>
+		<property name="text" type="string">
+			<column name="Text" sql-type="varchar(max)" />
+		</property>
+		<property name="html" type="string">
+			<column name="HTML" sql-type="varchar(max)" />
+		</property>
+		<property name="slug" type="string">
+			<column name="Slug" length="200" />
+		</property>
+		<property name="order" type="int">
+			<column name="`Order`" />
+		</property>
+		<many-to-one class="cfc:app.model.Chapter" column="Chapter_ID" name="chapter" />
+	</class>	
 	<class entity-name="Plugin" lazy="true" name="cfc:app.model.Plugin" table="Plugin">
 		<id name="id" type="int">
 			<column name="ID" />
