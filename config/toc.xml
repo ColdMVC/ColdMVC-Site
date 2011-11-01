@@ -1,0 +1,185 @@
+<categories>
+	<category name="Introduction">		
+		<chapter title="Overview">
+			
+		</chapter>
+		<chapter title="Installation">
+			
+		</chapter>
+		<chapter title="Configuration">
+			<article title="Environments" />
+			<article title="Default Environment" />
+			<article title="Development Environment" />
+			<article title="Production Environment" />
+			<article title="Accessing Config Settings" />
+			<article title="Complex Settings" />
+			<article title="Autowiring Settings" />
+		</chapter>
+		<chapter title="Model-View-Controller">
+			<article title="Controllers" />
+			<article title="Models" />
+			<article title="Views" />
+		</chapter>	
+		<chapter title="Directory Structure">
+			
+		</chapter>
+		<chapter title="Mappings">
+			
+		</chapter>
+		<chapter title="Dependency Injection">
+			
+		</chapter>
+		<chapter title="Modules">
+			
+		</chapter>
+		<chapter title="Plugins">
+			
+		</chapter>
+		<chapter title="Helpers">
+			<article title="Overview" />
+		</chapter>
+	</category>
+	<category name="Controllers">
+		<chapter title="Overview">
+			<article title="Request Context" />
+			<article title="Params" />
+			<article title="Flash" />
+		</chapter>
+		<chapter title="Action Helpers">
+			<article title="Overview" />
+		</chapter>
+		<chapter title="Implicit Event Handlers">
+			<article title="pre" />
+			<article title="pre{Action}" />
+			<article title="post{Action}" />
+			<article title="post" />
+		</chapter>
+		<chapter title="Events">
+			<article title="applicationStart" />
+			<article title="requestStart" />
+			<article title="preAction" />
+			<article title="postAction" />
+		</chapter>
+		<chapter title="Routing">
+			<article title="Routing Requests" />
+			<article title="Redirecting Requests" />
+			<article title="Defining Routes" />
+			<article title="Default Routes" />
+			<article title="Named Routes" />
+			<article title="Route Shortcuts" />
+			<article title="Params" />	
+			<article title="Defaults" />
+			<article title="Requirements" />
+			<article title="Placeholders" />
+			<article title="Optional Placeholders" />
+			<article title="Greedy Placeholders" />
+			<article title="Wildcard Routes" />
+			<article title="Route Expiry" />
+			<article title="Generators" />
+			<article title="Validators" />
+		</chapter>
+		<chapter title="Formats">
+			<article title="Ajax" />
+			<article title="JSON" />
+			<article title="XML" />
+			<article title="PDF" />
+		</chapter>
+		<chapter title="Annotations">
+						
+		</chapter>
+		<chapter title="Ajax">
+			<article title="Automatic Detection" />
+			<article title="Ajax Layouts" />	
+			<article title="Debug" />	
+		</chapter>
+		<chapter title="Access Control">
+			<article title="Configuration" />
+			<article title="Roles" />
+			<article title="Resources" />	
+			<article title="Permissions" />	
+			<article title="Assertions" />	
+			<article title="Checking Permissions" />
+		</chapter>
+	</category>
+	<category name="Models">
+		<chapter title="Overview">
+			
+		</chapter>
+		<chapter title="ORM">
+			
+		</chapter>
+		<chapter title="Dynamic Finders">
+			
+		</chapter>
+		<chapter title="Operators">
+			
+		</chapter>
+		<chapter title="Queries">
+			
+		</chapter>
+		<chapter title="Getters and Setters">
+			
+		</chapter>
+		<chapter title="Model Helpers">
+			<article title="Overview" />
+		</chapter>
+		<chapter title="Events">
+			<article title="preLoad" />
+			<article title="postLoad" />
+		</chapter>
+		<chapter title="Annotations">
+			
+		</chapter>
+		<chapter title="Validation">
+			<article title="Annotations" />
+			<article title="Validators" />
+			<article title="Errors" />
+		</chapter>
+		<chapter title="Auto Properties">
+			<article title="createdOn" />
+			<article title="createdBy" />
+			<article title="updatedOn" />
+			<article title="updatedBy" />
+			<article title="isDeleted" />			
+		</chapter>
+	</category>
+	<category name="Views">
+		<chapter title="Overview">
+			
+		</chapter>
+		<chapter title="Layouts">
+			<article title="Layout Controller" />
+		</chapter>
+		<chapter title="View Helpers">
+			<article title="Overview" />
+		</chapter>
+		<chapter title="Tags">
+		</chapter>	
+		<chapter title="Forms">
+			<article title="Form Fields" />
+			<article title="Binding" />
+		</chapter>
+		<chapter title="Assets">
+			<article title="Images" />
+			<article title="JavaScript" />
+			<article title="CSS" />
+		</chapter>
+		<chapter title="Partials">
+			<article title="Rendering a Partial" />
+			<article title="Rendering an Include" />			
+		</chapter>
+		<chapter title="Navigation">
+			
+		</chapter>
+		<chapter title="Pagination">
+			<article title="Creating a Paginator" />
+			<article title="Displaying Pagination Links" />
+		</chapter>
+		<chapter title="Sortable Tables">
+			
+		</chapter>
+		<chapter title="Debug">
+			
+		</chapter>
+	</category>
+</categories>

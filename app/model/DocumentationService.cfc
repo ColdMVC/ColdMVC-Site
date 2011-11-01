@@ -22,7 +22,7 @@ component {
 
 	function load() {
 
-		var toc = xmlParse(fileRead(expandPath("/config/docs/toc.xml")));
+		var toc = xmlParse(fileRead(expandPath("/config/toc.xml")));
 		var i = "";
 		var j = "";
 		var k = "";
