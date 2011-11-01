@@ -6,11 +6,13 @@
 		<chapter title="Installation">
 			
 		</chapter>
-		<chapter title="Configuration">
-			<article title="Environments" />
+		<chapter title="Environments">
+			<article title="Overview" />
 			<article title="Default Environment" />
 			<article title="Development Environment" />
 			<article title="Production Environment" />
+		</chapter>
+		<chapter title="Configuration">
 			<article title="Accessing Config Settings" />
 			<article title="Complex Settings" />
 			<article title="Autowiring Settings" />
@@ -27,13 +29,23 @@
 			
 		</chapter>
 		<chapter title="Dependency Injection">
-			
+			<article title="Overview" />
+			<article title="Configuration" />
+			<article title="Singletons" />
+			<article title="Autowiring" />
+			<article title="Inject ColdMVC Singletons" />
+			<article title="@singleton" />
+			<article title="@setupMethod" />
+			<article title="@beanName" />
 		</chapter>
 		<chapter title="Modules">
-			
+			<article title="Directory Structure" />			
 		</chapter>
 		<chapter title="Plugins">
-			
+			<article title="Directory Structure" />
+		</chapter>
+		<chapter title="Error Handling">
+			<article title="Overview" />
 		</chapter>
 		<chapter title="Helpers">
 			<article title="Overview" />
@@ -41,12 +53,23 @@
 	</category>
 	<category name="Controllers">
 		<chapter title="Overview">
+			<article title="Directory Structure" />
+			<article title="Naming Conventions" />
 			<article title="Request Context" />
+			<article title="Global Variables" />
+		</chapter>
+		<chapter title="Dependency Injection">
+			<article title="Singletons" />
+			<article title="Models" />
+		</chapter>
+		<chapter title="Scopes">
 			<article title="Params" />
 			<article title="Flash" />
 		</chapter>
 		<chapter title="Action Helpers">
 			<article title="Overview" />
+			<article title="@actionHelper" />
+			<article title="isAllowed" />
 		</chapter>
 		<chapter title="Implicit Event Handlers">
 			<article title="pre" />
@@ -85,55 +108,82 @@
 			<article title="PDF" />
 		</chapter>
 		<chapter title="Annotations">
-						
+			<article title="@formats" />
+			<article title="@params" />
+			<article title="@methods" />
+			<article title="@layout" />
+			<article title="@ajaxLayout" />
+			<article title="@view" />
+		</chapter>
+		<chapter title="Access Control">
+			<article title="Configuration" />
+			<article title="Roles" />
+			<article title="Resources" />	
+			<article title="Allow" />	
+			<article title="Deny" />	
+			<article title="Assertions" />	
+			<article title="Checking Permissions" />
+		</chapter>
+		<chapter title="Assertions">
+			<article title="assertParamExists" />
+			<article title="assertModelExists" />
+			<article title="assertGet" />
+			<article title="assertPost" />
+			<article title="assertAjax" />
+			<article title="assertAllowed" />
+			<article title="assertLoggedIn" />
+			<article title="assertNotLoggedIn" />
 		</chapter>
 		<chapter title="Ajax">
 			<article title="Automatic Detection" />
 			<article title="Ajax Layouts" />	
 			<article title="Debug" />	
 		</chapter>
-		<chapter title="Access Control">
-			<article title="Configuration" />
-			<article title="Roles" />
-			<article title="Resources" />	
-			<article title="Permissions" />	
-			<article title="Assertions" />	
-			<article title="Checking Permissions" />
-		</chapter>
 	</category>
 	<category name="Models">
 		<chapter title="Overview">
-			
+			<article title="Directory Structure" />
+			<article title="Naming Conventions" />			
 		</chapter>
 		<chapter title="ORM">
+			<article title="Overview" />
+			<article title="Configuration" />
+		</chapter>
+		<chapter title="Basic CRUD">
 			
 		</chapter>
-		<chapter title="Dynamic Finders">
-			
+		<chapter title="Finders">
+			<article title="Static Finders" />
+			<article title="Dynamic Finders" />
 		</chapter>
 		<chapter title="Operators">
 			
 		</chapter>
 		<chapter title="Queries">
-			
+			<article title="Joins" />
+			<article title="Criteria" />
+			<article title="Operators" />
+			<article title="Sorting" />
 		</chapter>
 		<chapter title="Getters and Setters">
 			
 		</chapter>
 		<chapter title="Model Helpers">
 			<article title="Overview" />
+			<article title="@modelHelper" />
 		</chapter>
 		<chapter title="Events">
 			<article title="preLoad" />
 			<article title="postLoad" />
 		</chapter>
-		<chapter title="Annotations">
-			
-		</chapter>
 		<chapter title="Validation">
 			<article title="Annotations" />
 			<article title="Validators" />
 			<article title="Errors" />
+		</chapter>
+		<chapter title="Annotations">
+			<article title="@sort" />
+			<article title="@order" />
 		</chapter>
 		<chapter title="Auto Properties">
 			<article title="createdOn" />
@@ -145,38 +195,53 @@
 	</category>
 	<category name="Views">
 		<chapter title="Overview">
-			
+			<article title="Naming Conventions" />
+			<article title="Directory Structure" />
+			<article title="Global Variables" />
 		</chapter>
 		<chapter title="Layouts">
 			<article title="Layout Controller" />
 		</chapter>
 		<chapter title="View Helpers">
 			<article title="Overview" />
+			<article title="@viewHelper" />
 		</chapter>
 		<chapter title="Tags">
+			<article title="Overview" />
+			<article title="Nested Tag Libraries" />
 		</chapter>	
 		<chapter title="Forms">
 			<article title="Form Fields" />
 			<article title="Binding" />
+			<article title="Form Builder" />
 		</chapter>
 		<chapter title="Assets">
+			<article title="Directory Structure" />
 			<article title="Images" />
 			<article title="JavaScript" />
 			<article title="CSS" />
 		</chapter>
 		<chapter title="Partials">
-			<article title="Rendering a Partial" />
+			<article title="Rendering a Partial" />			
+		</chapter>
+		<chapter title="Includes">
 			<article title="Rendering an Include" />			
 		</chapter>
 		<chapter title="Navigation">
-			
+			<article title="Configuration" />
+			<article title="Menus" />
+			<article title="Breadcrumbs" />
+			<article title="Generation URLs" />
+			<article title="Active" />
+			<article title="Visible" />
 		</chapter>
 		<chapter title="Pagination">
 			<article title="Creating a Paginator" />
 			<article title="Displaying Pagination Links" />
 		</chapter>
 		<chapter title="Sortable Tables">
-			
+			<article title="Creating a Table Sorter" />
+			<article title="Displaying Sortable Links" />
 		</chapter>
 		<chapter title="Debug">
 			
