@@ -5,13 +5,35 @@ body {
 	font-size: 14px;
 }
 
+body {
+	padding-top: 60px;	
+}
+
+input,
+textarea,
+select {
+	color: #444;
+}
+
 input,
 textarea {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
 
-body {
-	padding-top: 60px;	
+input[type='text'],
+input[type='password'],
+input[type='url'],
+input[type='email'],
+textarea {
+	width: 450px;
+}
+
+input[type='number'] {
+	width: 50px;
+}
+
+textarea {
+	height: 110px;
 }
 
 h1,
@@ -209,22 +231,21 @@ dl.list dd.last {
 	line-height: 18px;	
 }
 
-input[type='text'],
-input[type='password'],
-input[type='url'],
-input[type='email'],
-textarea {
-	width: 450px;
-}
-
-textarea {
-	height: 110px;
-}
-
 form .clearfix {
 	margin-bottom: 10px;
 }
 
-#documentation {
-	
+.actions {
+	border: 0;
+	margin: 0;
+	background-color: transparent;
+}
+
+ul.alert-message {
+	margin-left: 0;	
+}
+
+.alert-message li {
+	color: #fff;
+	list-style-type: none;
 }

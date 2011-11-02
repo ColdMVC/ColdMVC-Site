@@ -101,4 +101,28 @@
 			<column name="Slug" length="50" />
 		</property>
 	</class>
+	<class entity-name="User" lazy="true" name="cfc:app.model.User" table="`User`">
+		<id name="id" type="int">
+			<column length="10" name="ID" />
+			<generator class="native" />
+		</id>
+		<property name="firstName" type="string">
+			<column name="First_Name" length="50" />
+		</property>
+		<property name="lastName" type="string">
+			<column name="Last_Name" length="50" />
+		</property>
+		<property name="username" type="string">
+             <column name="Username" length="50" />
+        </property>
+		<property name="password" type="string">
+             <column name="Password" length="50" />
+        </property>
+		<property name="salt" type="string">
+             <column name="Salt" length="50" />
+        </property>
+		<property name="role" type="string">
+			<column name="Role" length="50" />
+		</property>
+	</class>
 </hibernate-mapping>

@@ -7,7 +7,7 @@
 <div class="container">
 	<div class="row">
 		<div class="span12">
-			<h1>#chapter.name()#</h1>
+			<h1>#chapter.title()#</h1>
 			#chapter.html()#
 			<c:each in="#chapter.articles()#" do="article">
 				<h2>#escape(article.title())#</h2>

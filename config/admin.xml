@@ -1,0 +1,13 @@
+<pages>
+	<page label="Dashboard" module="admin" resource="dashboard" />
+	<page label="Categories" module="admin" controller="category" resource="category">
+		<pages>
+			<page label="Add a Category" key="admin:category.add" resource="category" />
+			<page label="Edit Category" key="admin:category.edit" resource="category" visible="false" />
+		</pages>
+	</page>
+	<page label="Chapters" module="admin" controller="chapter" resource="chapter" />
+	<page label="Articles" module="admin" controller="article" resource="article" />
+	<page label="Users" module="admin" controller="user" resource="user" />
+	<page label="Logout" module="admin" controller="authentication" action="logout" resource="dashboard" />
+</pages>

@@ -3,7 +3,18 @@
  */
 component {
 
+	/**
+	 * @inject coldmvc
+	 */
 	property framework;
+
+	function unauthorized() {
+
+		if (params.errorContext.getModule() == "admin") {
+			returnRedirect({module="admin", controller="authentication", action="login"});
+		}
+
+	}
 
 	/**
 	 * @events invalidController
