@@ -9,6 +9,9 @@
 		<property name="name" type="string">
 			<column name="Name" />
 		</property>
+		<property name="status" type="string">
+			<column name="Status" />
+		</property>
 		<property name="text" type="string">
 			<column name="Text" sql-type="varchar(max)" />
 		</property>
@@ -31,8 +34,11 @@
 			<column name="ID" />
 			<generator class="identity" />
 		</id>
-		<property name="title" type="string">
-			<column name="Title" />
+		<property name="name" type="string">
+			<column name="Name" length="200" />
+		</property>
+		<property name="status" type="string">
+			<column name="Status" />
 		</property>
 		<property name="text" type="string">
 			<column name="Text" sql-type="varchar(max)" />
@@ -57,8 +63,11 @@
 			<column name="ID" />
 			<generator class="identity" />
 		</id>
-		<property name="title" type="string">
-			<column name="Title" length="200" />
+		<property name="name" type="string">
+			<column name="Name" length="200" />
+		</property>
+		<property name="status" type="string">
+			<column name="Status" />
 		</property>
 		<property name="text" type="string">
 			<column name="Text" sql-type="varchar(max)" />

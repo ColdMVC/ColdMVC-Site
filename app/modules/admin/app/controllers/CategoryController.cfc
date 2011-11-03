@@ -4,20 +4,28 @@
 component {
 
 	property _Category;
+	property _Status;
 
-	/**
-	 * @assertAllowed
-	 */
 	function index() {
 
-		params.categories = _Category.list();
+		assertAllowed();
+
+		var query = _Category.createQuery();
+
+		if (structKeyExists(params, "status") && params.status != "") {
+			query.where(
+				query.eq("status", params.status)
+			);
+		}
+
+		params.categories = query.list();
+		params.statuses = _Status.list();
 
 	}
 
-	/**
-	 * @assertAllowed
-	 */
 	function add() {
+
+		assertAllowed();
 
 		var category = _Category.new();
 
@@ -44,6 +52,7 @@ component {
 		}
 
 		params.category = category;
+		params.statuses = _Status.list();
 
 	}
 
@@ -79,6 +88,7 @@ component {
 		}
 
 		params.category = category;
+		params.statuses = _Status.list();
 
 	}
 

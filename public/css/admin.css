@@ -1,0 +1,19 @@
+h2 {
+	border-bottom: 0;
+}
+
+form {
+	margin: 0;
+}
+
+ul.filters {
+	margin: 3px;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
+
+ul.filters li {
+	list-style-type: none;
+	display: inline;
+}

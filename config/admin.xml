@@ -2,12 +2,22 @@
 	<page label="Dashboard" module="admin" resource="dashboard" />
 	<page label="Categories" module="admin" controller="category" resource="category">
 		<pages>
-			<page label="Add a Category" key="admin:category.add" resource="category" />
-			<page label="Edit Category" key="admin:category.edit" resource="category" visible="false" />
+			<page label="Add a Category" request="admin:category.add" resource="category" />
+			<page label="Edit Category" request="admin:category.edit" resource="category" visible="false" />
 		</pages>
 	</page>
-	<page label="Chapters" module="admin" controller="chapter" resource="chapter" />
-	<page label="Articles" module="admin" controller="article" resource="article" />
-	<page label="Users" module="admin" controller="user" resource="user" />
+	<page label="Chapters" module="admin" controller="chapter" resource="chapter">
+		<pages>
+			<page label="Add a Chapter" request="admin:chapter.add" resource="chapter" />
+			<page label="Edit Chapter" request="admin:chapter.edit" resource="chapter" visible="false" />
+		</pages>
+	</page>
+	<page label="Articles" module="admin" controller="article" resource="article">
+		<pages>
+			<page label="Add an Article" request="admin:article.add" resource="article" />
+			<page label="Edit Article" request="admin:article.edit" resource="article" visible="false" />
+		</pages>
+	</page>
+	<!-- <page label="Users" module="admin" controller="user" resource="user" /> -->
 	<page label="Logout" module="admin" controller="authentication" action="logout" resource="dashboard" />
 </pages>

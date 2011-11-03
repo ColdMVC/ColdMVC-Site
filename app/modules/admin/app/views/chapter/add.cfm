@@ -1,8 +1,9 @@
-<cfset setTitle("Add a Category") />
+<cfset setTitle("Add a Chapter") />
 
 <div class="container">
-	<h1>Add a Category</h1>
-	<c:form bind="category">
+	<h1>Add a Chapter</h1>
+	<c:form bind="chapter">
+		<c:select name="category" />
 		<c:number name="order" />
 		<c:input name="name" />
 		<c:textarea name="text" />

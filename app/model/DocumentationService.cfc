@@ -58,11 +58,11 @@ component {
 			for (j = 1; j <= arrayLen(categoryXML.xmlChildren); j++) {
 
 				var chapterXML = categoryXML.xmlChildren[j];
-				var title = chapterXML.xmlAttributes.title;
-				var slug = $.string.slugify(title);
+				var name = chapterXML.xmlAttributes.name;
+				var slug = $.string.slugify(name);
 
 				var chapter = _Chapter.new({
-					title = chapterXML.xmlAttributes.title,
+					name = chapterXML.xmlAttributes.name,
 					order = j,
 					slug = slug,
 					category = category
@@ -79,11 +79,11 @@ component {
 				for (k = 1; k <= arrayLen(chapterXML.xmlChildren); k++) {
 
 					var articleXML = chapterXML.xmlChildren[k];
-					var title = articleXML.xmlAttributes.title;
-					var slug = $.string.slugify(title);
+					var name = articleXML.xmlAttributes.name;
+					var slug = $.string.slugify(name);
 
 					var article = _Article.new({
-						title = title,
+						name = name,
 						order = k,
 						slug = slug,
 						chapter = chapter

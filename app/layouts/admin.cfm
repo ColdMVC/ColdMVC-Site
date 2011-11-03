@@ -5,8 +5,10 @@
 		<c:style name="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
 		<c:style name="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
 		<c:style name="style.css" />
+		<c:style name="admin.css" />
 		<c:script name="http://html5shim.googlecode.com/svn/trunk/html5.js" />
 		<c:script name="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" />
+		<c:script name="admin.js" />
 	</c:head>
 	<c:body>
 		<div class="topbar">

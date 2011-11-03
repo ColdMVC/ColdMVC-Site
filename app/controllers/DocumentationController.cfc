@@ -38,7 +38,7 @@ component {
 
 	function load() {
 
-		documentationService.load();
+		// documentationService.load();
 
 	}
 
