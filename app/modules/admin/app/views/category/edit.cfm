@@ -1,4 +1,4 @@
-<cfset setTitle("Edit Category") />
+<cfset setTitle("Edit Category: " & category.name()) />
 <cfset addBreadcrumb(category.name()) />
 
 <cfoutput>

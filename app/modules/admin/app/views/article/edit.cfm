@@ -1,7 +1,7 @@
 <cfset chapter = article.chapter() />
 <cfset category = chapter.category() />
 
-<cfset setTitle("Edit Article") />
+<cfset setTitle("Edit Article: " & article.name()) />
 <cfset addBreadcrumb(linkTo("admin:category.edit", {id=category}), category.name()) />
 <cfset addBreadcrumb(linkTo("admin:chapter.edit", {id=chapter}), chapter.name()) />
 <cfset addBreadcrumb(article.name()) />
