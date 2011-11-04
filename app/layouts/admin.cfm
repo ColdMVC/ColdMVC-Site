@@ -14,12 +14,12 @@
 		<div class="topbar">
 			<div class="container">
 				<a class="brand" href="#linkTo('/')#">ColdMVC</a>
-				<c:menu navigation="admin" maxDepth="1" />
+				<c:menu maxDepth="1" />
 			</div>
 		</div>
 		<div class="breadcrumbs">
 			<div class="container">
-				<c:breadcrumbs navigation="admin" />
+				<c:breadcrumbs />
 			</div>
 		</div>
 		<div class="container">
@@ -30,7 +30,7 @@
 		<footer id="footer">
 			<div class="container">
 				&copy; #year(now())# Tony Nelson
-				<c:menu navigation="admin" maxDepth="1" />
+				<c:menu maxDepth="1" />
 			</div>
 		</footer>
 	</c:body>
