@@ -9,7 +9,7 @@
 You've come to the right place. In this one-page tutorial, we'll create a very simple application for managing books and performing basic [CRUD] [1] operations using ColdMVC.
 
 While I'll try to explain some things along the way, once you've completed this tutorial,
-you should head over to the [Documentation] [2] chapter for a more thorough explanation on how certain things are done.
+you should head over to the [documentation] [2] for a more thorough explanation on how certain things are done.
 
 [1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
 [2]: /documentation "Documentation"
@@ -148,14 +148,14 @@ Inside the _config_ directory, create a _config.ini_ with the following content:
 	development = true
 
 This is your application's main configuration file. Right now the file is turning on _development_ mode and telling the application to reload itself on every request.
-More information can be found in the [Config Variables] [1] chapter inside the [Reference Guide] [2].
+More information can be found in the configuration chapter inside the [documentation] [1].
 
 Also inside the _config_ directory, create an _environment.txt_ with the following content:
 
 	development
 
 This file sets your current environment, which is used to load your config variables.
-More information can be found in the [Environments] [3] chapter inside the [Reference Guide] [2].
+More information can be found in the environments chapter inside the [documentation] [1].
 
 Now, go back to your browser and reload your application by appending _?init_ to the URL. For example, your URL could now be _http://localhost/bookstore/public/index.cfm?init_.
 
@@ -177,9 +177,7 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
-[1]: /guide/config-variables "Config Variables"
-[2]: /guide "Reference Guide"
-[3]: /guide/environments "Environments"
+[1]: /documentation "Documentation"
 </c:markdown>
 
 <c:markdown>
@@ -326,7 +324,7 @@ Next, create an _add.cfm_ inside _/BookStore/app/views/book/_ with the following
 	<cfoutput>#open#</cfoutput>/c:form>
 	<cfoutput>#open#</cfoutput>/cfoutput>
 
-You've just created a simple form for adding a book using ColdMVC's built-in [custom tags] [1] and bound it to a _Book_ param.
+You've just created a simple form for adding a book using ColdMVC's built-in custom tags and bound it to a _Book_ param.
 
 If you go to _http://localhost/bookstore/public/index.cfm/book/add_ and view the page source, you should see something like the following:
 
@@ -386,7 +384,6 @@ At this point, your directory structure should look like the following:
 			index.cfm
 		Application.cfc
 
-[1]: /guide/tags "Tags"
 </c:markdown>
 
 <c:markdown>
@@ -870,7 +867,7 @@ Congratulations! You've successfully handled all [CRUD] [1] operations for books
 ## Adding a layout
 
 The last item to cover in this tutorial will be layouts.
-We won't go very detailed into layouts, but more information can be found inside the [Layouts] [2] chapter in the [Reference Guide] [3].
+We won't go very detailed into layouts, but more information can be found inside the chapter on layouts in the [documentation] [2].
 
 Inside _/BookStore/app/_, create a directory called _layouts_.
 
@@ -891,11 +888,10 @@ This will be the site-wide layout for your entire application.
 
 Now if you view your application in your browser again, you'll notice each view will be displayed inside the layout where it calls _&lt;c:render /&gt;_.
 
-Again, more information can be found inside the chapter on [Layouts] [2] in the [Reference Guide] [3].
+Again, more information can be found inside the chapter on chapter on layouts in the [documentation] [2].
 
 [1]: http://en.wikipedia.org/wiki/Create,_read,_update_and_delete "Create, read, update and delete"
-[2]: /guide/layouts "Layouts"
-[3]: /guide "Reference Guide"
+[2]: /documentation "Documentation"
 </c:markdown>
 
 <c:markdown>

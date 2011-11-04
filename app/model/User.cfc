@@ -49,15 +49,9 @@ component {
 
 	public boolean function passwordMatches(required string password) {
 
-		var generatedPassword =	generatePassword(arguments.password, getSalt());
+		var generatedPassword =	$.string.hash(arguments.password, getSalt());
 
 		return generatedPassword == getPassword();
-
-	}
-
-	private string function generatePassword(required string password, required string salt) {
-
-		return hash(lcase(arguments.password & arguments.salt), "sha-1");
 
 	}
 
