@@ -1,0 +1,15 @@
+JavaScript files will be located inside your application's _/public/js/_ directory.
+
+There are a few ways to render links to JavaScript files. The easiest way is to use the _script_ tag: 
+
+	<c:script name="jquery.js" />
+
+Another method is to use the _renderJS_ view helper:
+
+	#renderJS("jquery.js")#
+
+Finally, you can also use the _linkToJS_ view helper to display just the URL to the JavaScript file.
+
+	<script src="#linkToJS("jquery.js")#" type="text/javascript"></script>
+
+The previous three examples all output equivalent HTML.

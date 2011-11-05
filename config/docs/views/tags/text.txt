@@ -1,0 +1,20 @@
+Displays plain text in a [field] [1] wrapper.
+
+[1]: /tags/field "Tag: field"
+
+### Parameters
+
+| Name         | Required | Type    | Default           | Description                               |
+|--------------|----------|---------|-------------------|-------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the text to.   |
+| id           | false    | string  | ${name}           | The id of the text.                       |
+| instructions | false    | string  |                   | The instructions for the text.            |
+| label        | false    | string  | ${humanized name} | The label for the text.                   |
+| name         | true     | string  |                   | The name of the text.                     |
+| value        | false    | string  |                   | The value of the text.                    |
+| visible      | false    | boolean | true              | If the text is visible.                   |
+| wrapper      | false    | boolean | true              | If the text should be wrapped in a label. |
+
+### Example
+
+	<c:text name="firstName" value="Tony" />

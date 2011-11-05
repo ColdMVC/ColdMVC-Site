@@ -1,0 +1,9 @@
+By setting _development_ to _true_, we enable a couple convenience options in our application for working in development mode. First, your application's views, layouts, and tags are re-generated each 
+
+request, allowing you to see your changes immediately. Second, various internal component caches are cleared each request, such as caches for custom event listeners. Finally, debug information will be append 
+
+to the bottom of your view, providing you with access to key information for your request.
+
+Next, we set a _autoReload_ setting to _true_, meaning the application will be automatically reloaded each request. This is very helpful when in development in order to automatically reload your singleton 
+
+components.

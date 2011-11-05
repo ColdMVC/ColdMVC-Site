@@ -1,0 +1,1 @@
+Controllers are located inside your application's _/app/controllers/_ directory.

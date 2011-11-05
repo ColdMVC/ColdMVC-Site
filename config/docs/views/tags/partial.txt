@@ -1,0 +1,12 @@
+Renders a private partial template.
+
+### Parameters
+
+| Name      | Required | Type   | Default | Description                                         |
+|-----------|----------|--------|---------|-----------------------------------------------------|
+| directory | false    | string | views   | The directory of the template ("views", "layouts"). |
+| template  | true     | string |         | The name of the template to include.                |
+
+### Example
+
+	<c:partial template="post/sidebar.cfm" posts="#posts#" />

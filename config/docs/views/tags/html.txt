@@ -1,0 +1,13 @@
+Creates an [html] [1] tag.
+
+[1]: http://www.w3.org/TR/html-markup/html.html
+
+### Parameters
+
+| Name | Required | Type   | Default | Description                                |
+|------|----------|--------|---------|--------------------------------------------|
+| lang | false    | string | en      | Specifies a language code for the content. |
+
+### Example
+
+	<c:html />

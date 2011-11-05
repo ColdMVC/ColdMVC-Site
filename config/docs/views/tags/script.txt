@@ -1,0 +1,14 @@
+Creates a [script] [1] tag.
+
+[1]: http://www.w3.org/TR/html-markup/script.html
+
+### Parameters
+
+| Name      | Required | Type   | Default | Description                                          |
+|-----------|----------|--------|---------|------------------------------------------------------|
+| condition | false    | string |         | A conditional comment to wrap around the script tag. |
+| name      | false    | string |         | The name of the script file.                         |
+
+### Example
+
+	<c:script name="jquery-1.5.1.min.js" />

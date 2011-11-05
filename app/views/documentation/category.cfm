@@ -1,4 +1,4 @@
-<cfset setTitle(category.title()) />
+<cfset setTitle(category.name()) />
 <cfset addBreadcrumb(linkTo("category", {category=category}), category.name()) />
 
 <cfoutput>
@@ -8,8 +8,8 @@
 			<h1>#category.name()#</h1>
 			#category.html()#
 			<ul>
-				<c:each in="#category.chapters()#" do="chapter">
-					<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.title())#</a></li>
+				<c:each in="#category.getActiveChapters()#" do="chapter">
+					<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.name())#</a></li>
 				</c:each>
 			</ul>
 		</div>
@@ -19,8 +19,8 @@
 					<li>
 						<h2>#escape(category.name())#</h2>
 						<ul>
-							<c:each in="#category.chapters()#" do="chapter">
-								<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.title())#</a></li>
+							<c:each in="#category.getActiveChapters()#" do="chapter">
+								<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.name())#</a></li>
 							</c:each>
 						</ul>
 					</li>

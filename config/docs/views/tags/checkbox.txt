@@ -1,0 +1,31 @@
+Creates [checkbox] [1] input fields.
+
+[1]: http://www.w3.org/TR/html-markup/input.checkbox.html
+
+### Parameters
+
+| Name         | Required | Type    | Default           | Description                                                                                                                                         |
+|--------------|----------|---------|-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| align        | false    | string  |                   | The alignment for the checkboxes, either horizontal or vertical. If more than 2 options are present, the default is vertical, otherwise horizontal. |
+| bind         | false    | string  |                   | The key of a param to bind the checkboxes to.                                                                                                       |
+| class        | false    | string  |                   | The class for the checkboxes.                                                                                                                       |
+| id           | false    | string  | ${name}           | The id of the checkboxes.                                                                                                                           |
+| instructions | false    | string  |                   | The instructions for the checkboxes.                                                                                                                |
+| label        | false    | string  | ${humanized name} | The label for the checkboxes.                                                                                                                       |
+| name         | true     | string  |                   | The name of the checkboxes.                                                                                                                         |
+| optionKey    | false    | string  | id                | The key for the option option key.                                                                                                                  |
+| optionKeys   | false    | any     |                   | The option keys.                                                                                                                                    |
+| options      | false    | any     |                   | The options for the select.                                                                                                                         |
+| optionTitle  | false    | string  |                   | The key for the option title.                                                                                                                       |
+| optionTitles | false    | any     |                   | The option titles.                                                                                                                                  |
+| optionValue  | false    | string  | name              | The key for the option value.                                                                                                                       |
+| optionValues | false    | any     |                   | The option values.                                                                                                                                  |
+| style        | false    | string  |                   | The style for the checkboxes.                                                                                                                       |
+| title        | false    | string  | ${label}          | The title for the checkboxes.                                                                                                                       |
+| value        | false    | string  |                   | The value of the checkboxes.                                                                                                                        |
+| visible      | false    | boolean | true              | If the checkboxes are visible.                                                                                                                      |
+| wrapper      | false    | boolean | true              | If the checkboxes should be wrapped in a label.                                                                                                     |
+
+### Example
+
+	<c:checkbox name="sports" value="Baseball,Football" options="Baseball,Basketball,Football,Hockey,Soccer" />

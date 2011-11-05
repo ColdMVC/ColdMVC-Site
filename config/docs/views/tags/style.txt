@@ -1,0 +1,15 @@
+Creates a [style] [1] tag.
+
+[1]: http://www.w3.org/TR/html-markup/style.html
+
+### Parameters
+
+| Name      | Required | Type   | Default | Description                                         |
+|-----------|----------|--------|---------|-----------------------------------------------------|
+| condition | false    | string |         | A conditional comment to wrap around the style tag. |
+| media     | false    | string | all     | The media type for the stylesheet.                  |
+| name      | false    | string |         | The name of the stylesheet.                         |
+
+### Example
+
+	<c:style name="main.css" />

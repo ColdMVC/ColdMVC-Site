@@ -1,0 +1,6 @@
+If you would like your Ajax request to return something other than HTML, like a JSON or XML string, you can have the response automatically serialized into the proper format by adding a _format_ parameter to your Ajax request.
+
+	$('#results').load('#linkTo({controller="index", action="search"})#', {
+		format: 'json',
+		q: $('#q').val()
+	});

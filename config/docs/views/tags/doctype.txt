@@ -1,0 +1,13 @@
+Specifies the [Document Type Definition (DTD)] [1] for the page.
+
+[1]: http://en.wikipedia.org/wiki/Document_Type_Declaration "Document Type Declaration"
+
+### Parameters
+
+| Name | Required | Type   | Default | Description                              |
+|------|----------|--------|---------|------------------------------------------|
+| name | false    | string | HTML    | The name of the the doctype declaration. |
+
+### Example
+
+	<c:doctype name="XHTML 1.0 Strict" />

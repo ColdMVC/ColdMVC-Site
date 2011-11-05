@@ -1,0 +1,5 @@
+Specify a meta tag for the page.
+
+### Example
+
+	<c:meta author="Tony Nelson" />

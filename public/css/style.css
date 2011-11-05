@@ -1,7 +1,7 @@
 html,
 body {
 	font-family: 'Trebuchet MS', Helvetica, sans-serif;
-	color: #222;
+	color: #333;
 	font-size: 14px;
 }
 
@@ -40,10 +40,9 @@ h1,
 h2, 
 h3, 
 h4 {
-	color: #3f3f3f;
 	text-shadow: 1px 1px 0 #ddd;
 	font-weight: bold;
-	line-height: 26px;
+	line-height: 32px;
 	margin: 5px 0;
 }
 
@@ -54,6 +53,11 @@ h1 {
 h2 {
 	font-size: 18px;
 	border-bottom: 1px solid #ccc;
+}
+
+h3 {
+	font-size: 14px;
+	text-shadow: none;
 }
 
 a {
@@ -248,4 +252,8 @@ ul.alert-message {
 .alert-message li {
 	color: #fff;
 	list-style-type: none;
+}
+
+.article {
+	margin-bottom: 25px;
 }

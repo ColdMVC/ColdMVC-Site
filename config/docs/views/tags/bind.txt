@@ -1,0 +1,14 @@
+Allows you to bind form elements to a param variable.
+
+### Parameters
+
+| Name | Required | Type   | Default | Description                     |
+|------|----------|--------|---------|---------------------------------|
+| to   | true     | string |         | The name of a param to bind to. |
+
+### Example
+
+	<c:bind to="user">
+		<c:input name="firstName" />
+		<c:input name="lastName" />
+	</c:bind>

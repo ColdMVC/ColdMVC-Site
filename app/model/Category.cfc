@@ -32,6 +32,7 @@ component {
 	 */
 	property chapters;
 
+	property _Status;
 	property markdownProcessor;
 
 	function preInsert() {
@@ -56,6 +57,34 @@ component {
 	public boolean function hasText() {
 
 		return this.text() != '';
+
+	}
+
+	public array function listActive() {
+
+		return this.findAllWhere({
+			status = _Status.ACTIVE
+		});
+
+	}
+
+	public array function getActiveChapters() {
+
+		var result = [];
+		var chapters = getChapters();
+		var i = "";
+
+		for (i = 1; i <= arrayLen(chapters); i++) {
+
+			var chapter = chapters[i];
+
+			if (chapter.status() == _Status.ACTIVE) {
+				arrayAppend(result, chapter);
+			}
+
+		}
+
+		return result;
 
 	}
 

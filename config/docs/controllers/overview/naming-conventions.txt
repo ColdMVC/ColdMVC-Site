@@ -1,0 +1,1 @@
+In order for a component to be considered a controller, the file must be named using a "Controller" suffix. For example, a _user_ controller would be located at _/app/controllers/UserController.cfc_.

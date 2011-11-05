@@ -1,0 +1,12 @@
+Displays a string with line feed characters replaced with _&lt;br /&gt;_ tags.
+
+### Parameters
+
+| Name    | Required | Type   | Default | Description                                          |
+|---------|----------|--------|---------|------------------------------------------------------|
+| default | false    | string | &nbsp;  | The default value to be displayed for empty strings. |
+| value   | false    | string |         | The value of the string to be display.               |
+
+### Example
+
+	<c:string value="" default="Unknown" />

@@ -1,0 +1,16 @@
+You can define configuration variables for your application inside an [INI file] [1] located at _/config/config.ini_. Each section represents a different environment for your application, with the exception of the _default_ environment, which all other environments inherit settings from.
+
+A typical _config.ini_ file for a blogging application might look like the following:
+
+	[default]
+	controller=blog
+	sesURLs=true
+
+	[development]
+	development=true
+	autoReload=true
+
+	[production]
+	reloadPassword=mySecretPassword
+
+Now let's describe the various parts of this parts of this file.

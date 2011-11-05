@@ -1,0 +1,14 @@
+Creates a link to an [RSS] [1] feed.
+
+[1]: http://en.wikipedia.org/wiki/RSS
+
+### Parameters
+
+| Name  | Required | Type   | Default          | Description                |
+|-------|----------|--------|------------------|----------------------------|
+| title | false    | string |                  | The title of the RSS feed. |
+| url   | false    | string | #linkTo("/rss")# | The URL of the RSS feed.   |
+
+### Example
+
+	<c:rss url="#linkTo('/feeds/rss')#" />

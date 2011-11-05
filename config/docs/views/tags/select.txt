@@ -1,0 +1,45 @@
+Creates a [select] [1] input field.
+
+[1]: http://www.w3.org/TR/html-markup/select.html
+
+### Parameters
+
+| Name         | Required | Type    | Default           | Description                                  |
+|--------------|----------|---------|-------------------|----------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the select to.    |
+| blank        | false    | boolean | true              | If the select should display a blank option. |
+| blankKey     | false    | string  |                   | The key of the blank option.                 |
+| blankTitle   | false    | string  | ${title}          | The title of the blank option.               |
+| blankValue   | false    | string  | - ${title} -      | The text of the blank option.                |
+| class        | false    | string  |                   | The class for the select.                    |
+| disabled     | false    | boolean | false             | If the select is disabled.                   |
+| id           | false    | string  | ${name}           | The id of the select.                        |
+| instructions | false    | string  |                   | The instructions for the select.             |
+| label        | false    | string  | ${humanized name} | The label for the select.                    |
+| name         | true     | string  |                   | The name of the select.                      |
+| onblur       | false    | string  |                   | The onblur event for the select.             |
+| onchange     | false    | string  |                   | The onchange event for the select.           |
+| onclick      | false    | string  |                   | The onclick event for the select.            |
+| ondblclick   | false    | string  |                   | The ondblclick event for the select.         |
+| onfocus      | false    | string  |                   | The onfocus event for the select.            |
+| onkeydown    | false    | string  |                   | The onkeydown event for the select.          |
+| onkeypress   | false    | string  |                   | The onkeypress event for the select.         |
+| onkeyup      | false    | string  |                   | The onkeyup event for the select.            |
+| onsubmit     | false    | string  |                   | The onsubmit event for the select.           |
+| optionKey    | false    | string  |                   | The key for the option option key.           |
+| optionKeys   | false    | any     |                   | The option keys.                             |
+| options      | false    | any     |                   | The options for the select.                  |
+| optionTitle  | false    | string  |                   | The key for the option title.                |
+| optionTitles | false    | any     |                   | The option titles.                           |
+| optionValue  | false    | string  |                   | The key for the option value.                |
+| optionValues | false    | any     |                   | The option values.                           |
+| readonly     | false    | boolean | false             | If the select is read only.                  |
+| style        | false    | string  |                   | The style for the select.                    |
+| title        | false    | string  | ${label}          | The title for the select.                    |
+| value        | false    | string  |                   | The value of the select.                     |
+| visible      | false    | boolean | true              | If the select is visible.                    |
+| wrapper      | false    | boolean | true              | If the select should be wrapped in a label.  |
+
+### Example
+
+	<c:select name="color" value="Blue" options="Red,White,Blue" />

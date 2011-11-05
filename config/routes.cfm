@@ -2,14 +2,14 @@
 
 <cfset add("/documentation/load", "documentation.load") />
 
-<cfset add("/documentation/:category/:chapter", "chapter", "documentation.chapter", {
+<cfset add("/guide/:category/:chapter", "chapter", "documentation.chapter", {
 	toParam = {
 		category = "getSlug",
 		chapter = "getSlug"
 	}
 }) />
 
-<cfset add("/documentation/:category", "category", "documentation.category", {
+<cfset add("/guide/:category", "category", "documentation.category", {
 	toParam = {
 		category = "getSlug"
 	}

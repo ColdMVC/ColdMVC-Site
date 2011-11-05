@@ -1,0 +1,17 @@
+Creates a [fieldset] [1] tag.
+
+[1]: http://www.w3.org/TR/html401/interact/forms.html#h-17.10 "7.10 Adding structure to forms: the FIELDSET and LEGEND elements"
+
+### Parameters
+
+| Name  | Required | Type   | Default           | Description                                                             |
+|-------|----------|--------|-------------------|-------------------------------------------------------------------------|
+| label | false    | string | ${humanized name} | The label for the fieldset. Will be placed inside a &lt;legend&gt; tag. |
+| name  | false    | string |                   | The name of the fieldset. Only used to generate a possible label.       |
+
+### Example
+
+	<c:fieldset label="Personal Information">
+		<c:text name="firstName" value="Tony" />
+		<c:text name="lastName" value="Nelson" />
+	</c:fieldset>

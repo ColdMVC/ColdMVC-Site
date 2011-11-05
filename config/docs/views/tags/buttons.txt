@@ -1,0 +1,12 @@
+Creates a _div_ with a class of _buttons_ that can be used to wrap around buttons for easy styling.
+
+### Parameters
+
+None
+
+### Example
+
+	<c:buttons>
+		<c:submit />
+		<c:button name="cancel" url="#linkTo({action="list"})#" />
+	</c:buttons>

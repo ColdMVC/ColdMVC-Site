@@ -1,0 +1,15 @@
+Images will be located inside your application's _/public/images/_ directory.
+
+There are a few ways to render images. The easiest way is to use the _image_ tag: 
+
+	<c:image name="logo.gif" />
+
+Another method is to use the _renderImage_ view helper:
+
+	#renderImage("logo.gif")#
+
+Finally, you can also use the _linkToImage_ view helper to display just the URL to the image.
+
+	<img src="#linkToImage("logo.gif")# alt="" />
+
+The previous three examples all output equivalent HTML.

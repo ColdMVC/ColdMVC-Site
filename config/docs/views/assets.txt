@@ -1,0 +1,1 @@
+ColdMVC provides an easy way to work with your application's public assets, including images, CSS files, and JavaScript files.

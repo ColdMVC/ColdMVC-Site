@@ -8,8 +8,8 @@
 			<div class="span4">
 				<h2>#escape(category.name())#</h2>
 				<ul>
-					<c:each in="#category.chapters()#" do="chapter">
-						<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.title())#</a></li>
+					<c:each in="#category.getActiveChapters()#" do="chapter">
+						<li><a href="#linkTo('chapter', {category=category, chapter=chapter})#">#escape(chapter.name())#</a></li>
 					</c:each>
 				</ul>
 			</div>

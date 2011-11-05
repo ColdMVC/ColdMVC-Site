@@ -1,0 +1,12 @@
+Facade for the _cfinclude_ tag.
+
+### Parameters
+
+| Name      | Required | Type   | Default | Description                                         |
+|-----------|----------|--------|---------|-----------------------------------------------------|
+| directory | false    | string | views   | The directory of the template ("views", "layouts"). |
+| template  | true     | string |         | The name of the template to include.                |
+
+### Example
+
+	<c:include template="post/sidebar.cfm" />

@@ -1,0 +1,5 @@
+You can pass complex values into your beans by using [JSON] [2] syntax for the value of your config setting. The bean factory will automatically convert the JSON string into a complex object before injecting 
+
+the property into the component. The following example will inject an array into the _setBar_ method on the _fooService_ singleton bean.
+
+	fooService.bar=["boo", "baz"]

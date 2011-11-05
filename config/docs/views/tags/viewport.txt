@@ -1,0 +1,11 @@
+Specifies the desired screen size for the page.
+
+### Parameters
+
+| Name     | Required | Type   | Default                               | Description                           |
+|----------|----------|--------|---------------------------------------|---------------------------------------|
+| viewport | false    | string | width=device-width, initial-scale=1.0 | The desired screen size for the page. |
+
+### Example
+
+	<c:viewport />

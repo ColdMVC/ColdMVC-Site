@@ -1,0 +1,13 @@
+Specifies the [Internet media type] [1] for the page.
+
+[1]: http://en.wikipedia.org/wiki/Internet_media_type "Internet media type"
+
+### Parameters
+
+| Name    | Required | Type   | Default                  | Description                    |
+|---------|----------|--------|--------------------------|--------------------------------|
+| content | false    | string | text/html; charset=utf-8 | The content type for the page. |
+
+### Example
+
+	<c:content_type />

@@ -1,0 +1,37 @@
+Your config settings are available to your application in a couple ways.
+
+First, you can access any config setting by using the _config_ helper.
+
+	var value = $.config.get("key");
+
+Second, you can inject the _config_ bean into your components.
+
+	/**
+	 * @accessors true
+	 * @singleton
+	 */
+	component {
+
+		property config;
+
+		function sendEmail() {
+
+			if (config.get("allowEmails")) {
+				// do stuff
+			}
+
+		}
+
+	}
+
+Third, you can inject your config settings directly into your singleton beans inside by using the the _${key}_ syntax inside your _/config/coldspring.xml_ file.
+
+	<bean id="emailService" class="app.model.EmailService">
+		<property name="allowEmails">
+			<value>${allowEmails}</value>
+		</property>
+	</bean>
+
+Finally, you can inject your config settings into your singleton beans simply by naming your keys using a _{bean}.{method}_ syntax. For example, by specifying a config setting of 
+
+_emailService.allowEmails=true_, the bean factory will automatically call the _setAllowEmails_ method on the _emailService_ bean and pass in a value of _true_ when the bean is first constructed.

@@ -1,0 +1,15 @@
+Cascading stylesheets, or CSS files, will be located inside your application's _/public/css/_ directory.
+
+There are a few ways to render links to CSS files. The easiest way is to use the _style_ tag: 
+
+	<c:style name="style.css" />
+
+Another method is to use the _renderCSS_ view helper:
+
+	#renderCSS("style.css")#
+
+Finally, you can also use the _linkToCSS_ view helper to display just the URL to the CSS file.
+
+	<link href="#linkToCSS("style.css")#" type="text/css" rel="stylesheet" />
+
+The previous three examples all output equivalent HTML.

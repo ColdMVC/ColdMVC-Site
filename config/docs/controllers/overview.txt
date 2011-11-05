@@ -1,0 +1,3 @@
+Controllers are responsible for handling requests, fetching data from the model, and optionally rendering views.
+
+All public methods on a controller are considered actions.

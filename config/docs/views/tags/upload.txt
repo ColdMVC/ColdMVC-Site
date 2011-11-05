@@ -1,0 +1,35 @@
+Creates an [file upload] [1] input field.
+
+[1]: http://www.w3.org/TR/html-markup/input.file.html
+
+### Parameters
+
+| Name         | Required | Type    | Default           | Description                                       |
+|--------------|----------|---------|-------------------|---------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the upload field to.   |
+| class        | false    | string  |                   | The class for the upload field.                   |
+| disabled     | false    | boolean | false             | If the upload field is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the upload field.                       |
+| instructions | false    | string  |                   | The instructions for the upload field.            |
+| label        | false    | string  | ${humanized name} | The label for the upload field.                   |
+| name         | true     | string  |                   | The name of the upload field.                     |
+| onblur       | false    | string  |                   | The onblur event for the upload field.            |
+| onchange     | false    | string  |                   | The onchange event for the upload field.          |
+| onclick      | false    | string  |                   | The onclick event for the upload field.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the upload field.        |
+| onfocus      | false    | string  |                   | The onfocus event for the upload field.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the upload field.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the upload field.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the upload field.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the upload field.          |
+| placeholder  | false    | string  |                   | The placeholder text for the upload field.        |
+| readonly     | false    | boolean | false             | If the upload field is read only.                 |
+| style        | false    | string  |                   | The style for the upload field.                   |
+| title        | false    | string  | ${label}          | The title for the upload field.                   |
+| value        | false    | string  |                   | The value of the upload field.                    |
+| visible      | false    | boolean | true              | If the upload field is visible.                   |
+| wrapper      | false    | boolean | true              | If the upload field should be wrapped in a label. |
+
+### Example
+
+	<c:upload name="photo" instructions="Select a photo to upload to your profile" />

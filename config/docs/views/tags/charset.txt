@@ -1,0 +1,11 @@
+Specifies the character encoding for the page.
+
+### Parameters
+
+| Name    | Required | Type   | Default | Description                          |
+|---------|----------|--------|---------|--------------------------------------|
+| charset | false    | string | utf-8   | The character-encoding for the page. |
+
+### Example
+
+	<c:charset />

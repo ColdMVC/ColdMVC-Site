@@ -1,0 +1,7 @@
+In the _production_ environment, we set a variable called _reloadPassword_ to _mySecretPassword_. The _reloadPassword_ is used when reloading your application through the URL. Be default, you can reload your 
+
+application simply by adding an _init_ variable to your URL without specify a password. By setting the _reloadPassword_ to _mySecretPassword_, you can only reload your application by adding 
+
+_init=mySecretPassword_ to your URL. If you would like to change the _init_ variable to something else, simply add a config setting for _reloadKey_ inside your _config.ini_ file with the value of your 
+
+choice.

@@ -1,0 +1,13 @@
+Creates a link to a [favicon] [1].
+
+[1]: http://en.wikipedia.org/wiki/Favicon "Favicon"
+
+### Parameters
+
+| Name | Required | Type   | Default                      | Description             |
+|------|----------|--------|------------------------------|-------------------------|
+| url  | false    | string | #linkToImage("favicon.ico")# | The URL of the favicon. |
+
+### Example
+
+	<c:favicon url="#linkToImage("favicon.ico")#" />

@@ -38,6 +38,7 @@ component {
 	 */
 	property articles;
 
+	property _Status;
 	property markdownProcessor;
 
 	function preInsert() {
@@ -88,6 +89,26 @@ component {
 		}
 
 		return options;
+
+	}
+
+	public array function getActiveArticles() {
+
+		var result = [];
+		var articles = getArticles();
+		var i = "";
+
+		for (i = 1; i <= arrayLen(articles); i++) {
+
+			var article = articles[i];
+
+			if (article.status() == _Status.ACTIVE) {
+				arrayAppend(result, article);
+			}
+
+		}
+
+		return result;
 
 	}
 

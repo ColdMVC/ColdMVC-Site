@@ -5,17 +5,17 @@ component {
 
 	property _Category;
 	property _Chapter;
-	property documentationService;
+	property _Status;
 
 	function index() {
 
-		params.categories = _Category.list();
+		params.categories = _Category.listActive();
 
 	}
 
 	function category() {
 
-		params.categories = _Category.list();
+		params.categories = _Category.listActive();
 
 		params.category = _Category.findBySlug(params.category);
 
@@ -32,13 +32,7 @@ component {
 
 		params.chapter = query.get();
 
-		params.categories = _Category.list();
-
-	}
-
-	function load() {
-
-		// documentationService.load();
+		params.categories = _Category.listActive();
 
 	}
 

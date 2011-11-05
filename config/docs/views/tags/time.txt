@@ -1,0 +1,35 @@
+Creates a [time] [1] input field.
+
+[1]: http://www.w3.org/TR/html-markup/input.time.html
+
+### Parameters
+
+| Name         | Required | Type    | Default           | Description                                     |
+|--------------|----------|---------|-------------------|-------------------------------------------------|
+| bind         | false    | string  |                   | The key of a param to bind the time field to.   |
+| class        | false    | string  |                   | The class for the time field.                   |
+| disabled     | false    | boolean | false             | If the time field is disabled.                  |
+| id           | false    | string  | ${name}           | The id of the time field.                       |
+| instructions | false    | string  |                   | The instructions for the time field.            |
+| label        | false    | string  | ${humanized name} | The label for the time field.                   |
+| name         | true     | string  |                   | The name of the time field.                     |
+| onblur       | false    | string  |                   | The onblur event for the time field.            |
+| onchange     | false    | string  |                   | The onchange event for the time field.          |
+| onclick      | false    | string  |                   | The onclick event for the time field.           |
+| ondblclick   | false    | string  |                   | The ondblclick event for the time field.        |
+| onfocus      | false    | string  |                   | The onfocus event for the time field.           |
+| onkeydown    | false    | string  |                   | The onkeydown event for the time field.         |
+| onkeypress   | false    | string  |                   | The onkeypress event for the time field.        |
+| onkeyup      | false    | string  |                   | The onkeyup event for the time field.           |
+| onsubmit     | false    | string  |                   | The onsubmit event for the time field.          |
+| placeholder  | false    | string  |                   | The placeholder text for the time field.        |
+| readonly     | false    | boolean | false             | If the time field is read only.                 |
+| style        | false    | string  |                   | The style for the time field.                   |
+| title        | false    | string  | ${label}          | The title for the time field.                   |
+| value        | false    | string  |                   | The value of the time field.                    |
+| visible      | false    | boolean | true              | If the time field is visible.                   |
+| wrapper      | false    | boolean | true              | If the time field should be wrapped in a label. |
+
+### Example
+
+	<c:time name="startTime" value="8:30 am" />

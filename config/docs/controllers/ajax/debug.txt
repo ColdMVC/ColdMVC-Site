@@ -1,0 +1,2 @@
+There is no debug information appended to your request during an Ajax request.
+This is to prevent the Ajax request from returning too much data or breaking the response format.

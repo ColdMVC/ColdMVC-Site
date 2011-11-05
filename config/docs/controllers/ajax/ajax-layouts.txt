@@ -1,0 +1,24 @@
+There is not a layout associated with Ajax requests by default.
+This is because most of the time your Ajax requests will return a small snippet of HTML, or possiblly a JSON or XML string.
+If you would like to wrap your Ajax views inside a layout during Ajax requests, you would add an _@ajaxLayout_ annotation to your controller's actions.
+
+	/**
+	 * @ajaxLayout modal
+	 * /
+	function search() {
+
+		params.results = _Book.findAllByTitleLike(params.q);
+
+	}
+	
+You will also need to allow your action to respond to the format by adding a _@formats_ annotation to the action on your controller.
+By default, all actions only respond to a _html_ and _pdf_ formats.
+
+	/**
+	 * @formats json
+	 * /
+	function results() {
+
+		params.results = _Book.findAllByTitleLike(params.q);
+
+	}

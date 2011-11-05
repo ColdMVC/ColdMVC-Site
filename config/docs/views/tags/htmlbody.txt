@@ -1,0 +1,11 @@
+Stores wrapped content into the request to be displayed right before the closing [body] tag.
+
+[1]: /tags/body
+
+### Example
+
+	<c:htmlbody>
+		<script>
+			$('#foo').hide();
+		</script>
+	</c:htmlbody>
