@@ -1,0 +1,5 @@
+Returns an array of records with matching parameters.
+
+	var books = _Book.findAllWhere({
+		title = "The Da Vinci Code"
+	});

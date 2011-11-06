@@ -1,0 +1,4 @@
+Returns the number of records with matching parameters.
+Uses dynamic finders via _onMissingMethod()_.
+
+	var count = _Book.countByTitle("The Da Vinci Code");

@@ -1,0 +1,7 @@
+Specifies the order for the query.
+
+	var q = _Team.createQuery();
+	
+	q.order("asc");
+	
+	var teams = q.list();

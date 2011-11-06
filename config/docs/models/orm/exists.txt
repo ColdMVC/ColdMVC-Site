@@ -1,0 +1,13 @@
+If called on a singleton model, checks to see if a record exists with a certain ID.
+	
+	if (_Book.exists(12)) {
+		// the book with ID "12" exists in the database
+	}
+	
+If called on an instance of a model, checks to see if the model has already been stored in the database and has an ID.
+
+	var book = _Book.get(12);
+	
+	if (book.exists()) {
+		// the book with ID "12" already exists in the database
+	}

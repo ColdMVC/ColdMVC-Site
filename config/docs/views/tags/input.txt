@@ -1,35 +1,7 @@
 Creates a [text] [1] input field.
 
-[1]: http://www.w3.org/TR/html-markup/input.text.html
-
-### Parameters
-
-| Name         | Required | Type    | Default           | Description                                      |
-|--------------|----------|---------|-------------------|--------------------------------------------------|
-| bind         | false    | string  |                   | The key of a param to bind the input field to.   |
-| class        | false    | string  |                   | The class for the input field.                   |
-| disabled     | false    | boolean | false             | If the input field is disabled.                  |
-| id           | false    | string  | ${name}           | The id of the input field.                       |
-| instructions | false    | string  |                   | The instructions for the input field.            |
-| label        | false    | string  | ${humanized name} | The label for the input field.                   |
-| name         | true     | string  |                   | The name of the input field.                     |
-| onblur       | false    | string  |                   | The onblur event for the input field.            |
-| onchange     | false    | string  |                   | The onchange event for the input field.          |
-| onclick      | false    | string  |                   | The onclick event for the input field.           |
-| ondblclick   | false    | string  |                   | The ondblclick event for the input field.        |
-| onfocus      | false    | string  |                   | The onfocus event for the input field.           |
-| onkeydown    | false    | string  |                   | The onkeydown event for the input field.         |
-| onkeypress   | false    | string  |                   | The onkeypress event for the input field.        |
-| onkeyup      | false    | string  |                   | The onkeyup event for the input field.           |
-| onsubmit     | false    | string  |                   | The onsubmit event for the input field.          |
-| placeholder  | false    | string  |                   | The placeholder text for the input field.        |
-| readonly     | false    | boolean | false             | If the input field is read only.                 |
-| style        | false    | string  |                   | The style for the input field.                   |
-| title        | false    | string  | ${label}          | The title for the input field.                   |
-| value        | false    | string  |                   | The value of the input field.                    |
-| visible      | false    | boolean | true              | If the input field is visible.                   |
-| wrapper      | false    | boolean | true              | If the input field should be wrapped in a label. |
-
 ### Example
 
 	<c:input name="firstName" value="Tony" />
+
+[1]: http://www.w3.org/TR/html-markup/input.text.html

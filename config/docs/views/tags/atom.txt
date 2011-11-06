@@ -1,7 +1,5 @@
 Creates a link to an [Atom] [1] feed.
 
-[1]: http://en.wikipedia.org/wiki/Atom_%28standard%29
-
 ### Parameters
 
 | Name  | Required | Type   | Default           | Description                 |
@@ -12,3 +10,5 @@ Creates a link to an [Atom] [1] feed.
 ### Example
 
 	<c:atom url="#linkTo('/feeds/atom')#" />
+
+[1]: http://en.wikipedia.org/wiki/Atom_%28standard%29

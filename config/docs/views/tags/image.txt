@@ -1,7 +1,5 @@
 Creates an [image] [1] tag.
 
-[1]: http://www.w3.org/TR/html-markup/img.html
-
 ### Parameters
 
 | Name  | Required | Type   | Default | Description                      |
@@ -13,3 +11,5 @@ Creates an [image] [1] tag.
 ### Example
 
 	<c:image name="logo.gif" />
+
+[1]: http://www.w3.org/TR/html-markup/img.html

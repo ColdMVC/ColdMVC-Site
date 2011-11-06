@@ -1,0 +1,7 @@
+Creates a new instance of a model.
+Optionally allows you to populate the result.
+
+	var book = _Book.new({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});

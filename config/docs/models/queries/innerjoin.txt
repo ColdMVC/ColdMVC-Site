@@ -1,0 +1,11 @@
+Adds an _inner join_ to the query.
+
+	var q = _Team.createQuery();
+	
+	q.innerJoin("team.city");
+	
+	q.where(
+		q.eq("city.name", "Minneapolis")
+	);
+	
+	var teams = q.list();

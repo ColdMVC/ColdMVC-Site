@@ -1,0 +1,9 @@
+You can very easily create singleton components and inject them into other components without much hassle.
+
+To create a singleton component, simply add an _@singleton_ annotation to the component.
+
+When ColdMVC first loads, it will scan your application and any registered plugins to find components that have been marked as singletons.
+
+ColdMVC will then add the components to its bean factory, which then manages the dependencies between the objects.
+
+If you want more a granular level of control over dependency injection, you can create a configuration file located at _/config/beans.xml_ and ColdMVC will use the bean definitions within the configuration file to manage your dependencies.

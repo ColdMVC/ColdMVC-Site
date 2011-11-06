@@ -1,0 +1,12 @@
+Executes the query and returns the first result or a new instance of the model if no results are found.
+	
+	var q = _Team.createQuery();
+	
+	q.innerJoin("city");
+	
+	q.where(
+		q.eq("team.name", "Twins"),
+		q.eq("city.name", "Minneapolis")
+	);
+	
+	var team = q.get();

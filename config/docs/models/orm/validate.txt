@@ -1,0 +1,12 @@
+Validates a model and returns a validation result.
+
+	var book = _Book.new({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+	
+	var result = book.validate();
+	
+	if (result.isValid()) {
+		book.save();
+	}

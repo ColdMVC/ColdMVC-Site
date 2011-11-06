@@ -1,0 +1,6 @@
+Returns an array of records.
+
+	var books = _Book.list({
+		sort = "title",
+		order = "asc"
+	});

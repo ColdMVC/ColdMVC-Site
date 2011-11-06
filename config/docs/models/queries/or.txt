@@ -1,0 +1,14 @@
+Appends clauses to a query concatenated by an _or_ disjunction.
+
+	var q = _Team.createQuery();
+	
+	q.innerJoin("city");
+	
+	q.where(
+		q.or(
+			q.eq("team.name", "Twins"),
+			q.eq("city.name", "Minneapolis")
+		)
+	);
+	
+	var teams = q.list();

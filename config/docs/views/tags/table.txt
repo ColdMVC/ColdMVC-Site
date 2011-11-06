@@ -1,7 +1,5 @@
 Creates a [table] [1] tag.
 
-[1]: http://www.w3.org/TR/html-markup/table.html
-
 ### Parameters
 
 | Name        | Required | Type    | Default | Description                                |
@@ -13,7 +11,7 @@ Creates a [table] [1] tag.
 
 ### Example
 
-	<cfset names = "Kobe Bryant,Dwight Howard,Blake Griffin" />
+	<cfset names = "Foo,Bar,Baz" />
 	
 	<c:table>
 		<tr>
@@ -25,3 +23,5 @@ Creates a [table] [1] tag.
 			</c:tr>
 		</c:each>
 	</c:table>
+
+[1]: http://www.w3.org/TR/html-markup/table.html

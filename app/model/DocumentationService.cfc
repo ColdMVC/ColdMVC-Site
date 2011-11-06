@@ -116,6 +116,47 @@ component {
 
 		ormFlush();
 
+		var query = new Query();
+		query.setSQL("
+			update category
+			set status = 'Active';
+
+			update chapter
+			set status = 'Active'
+			where id in (
+				select id
+				from chapter
+				where html is not null
+				or id in (
+					select distinct chapter_id
+					from article
+					where html is not null
+				)
+			);
+
+			update chapter
+			set status = 'Incomplete'
+			where id not in (
+				select id
+				from chapter
+				where html is not null
+				or id in (
+					select distinct chapter_id
+					from article
+					where html is not null
+				)
+			);
+
+			update article
+			set status = 'Active'
+			where html is not null;
+
+			update article
+			set status = 'Incomplete'
+			where html is null;
+		");
+		query.execute();
+
 	}
 
 	private string function getText(required string path) {

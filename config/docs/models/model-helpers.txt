@@ -1,0 +1,3 @@
+Model helpers are custom functions that are available to your models that expose common model-related methods without having to extend a base model.
+
+You can expose any function on a singleton bean or a helper as a model helper by adding an _@modelHelper {name}_ annotation to the function. 

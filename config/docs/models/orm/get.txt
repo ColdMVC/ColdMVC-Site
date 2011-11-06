@@ -1,0 +1,7 @@
+Returns a record with a matching ID or a new instance of a model if no results are found.
+Optionally allows you to populate the result.
+
+	var book = _Book.get(1, {
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});

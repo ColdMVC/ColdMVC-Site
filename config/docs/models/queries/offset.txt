@@ -1,0 +1,7 @@
+Specifies the offset for the query.
+
+	var q = _Team.createQuery();
+	
+	q.offset(20);
+	
+	var teams = q.list();

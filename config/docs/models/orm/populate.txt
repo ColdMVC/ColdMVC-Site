@@ -1,0 +1,9 @@
+Populates an instance of a model.
+Optionally specify a list of valid properties to populate.
+
+	var book = _Book.new();
+	
+	book.populate({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});

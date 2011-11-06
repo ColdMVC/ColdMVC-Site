@@ -1,0 +1,13 @@
+Provides a multi-purpose getter/setter for properties.
+
+If a value is specified, the property is set to the value and the instance of the model is returned.
+	
+	var book = _Book.new();
+	
+	book.prop("title", "The Da Vinci Code"); // setter
+
+If a value is not specified, the current value of the property is returned.
+
+	var book = _Book.get(12);	
+	
+	var title = book.prop("title"); // getter

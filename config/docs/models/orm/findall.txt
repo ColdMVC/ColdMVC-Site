@@ -1,0 +1,5 @@
+Executes a query and returns an array of records.
+
+	var books = _Book.findAll("from Book where book.title like :title", {
+		title = "The Da Vinci Code"
+	});

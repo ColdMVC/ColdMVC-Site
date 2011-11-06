@@ -1,0 +1,9 @@
+Appends clauses to a query concatenated by an _and_ conjunction.
+
+	var q = _Team.createQuery();
+	
+	q.where(
+		q.eq("name", "Twins")
+	);
+	
+	var teams = q.list();

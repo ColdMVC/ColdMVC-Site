@@ -7,6 +7,7 @@
 		<c:style name="style.css" />
 		<c:script name="http://html5shim.googlecode.com/svn/trunk/html5.js" />
 		<c:script name="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" />
+		<c:script name="app.js" />
 	</c:head>
 	<c:body>
 		<div class="topbar">

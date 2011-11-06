@@ -1,0 +1,7 @@
+View helpers are custom functions that are available to your views and layouts that help keep your presentation layer clean.
+
+You can expose any function on a singleton bean or a helper as a view helper by adding a _@viewHelper {name}_ annotation to the function.
+
+When you first create an application using ColdMVC, you'll already have access to a standard set of view helpers. The most prominent view helper is the _linkTo()_ method that builds URLs for your views.
+
+While your views and layouts still have access to all of your application's helpers, it is recommended to use view helpers rather than accessing the helpers directly. Even though they will generate the exact same HTML, _#linkTo({controller="post", action="list"})#_ reads a lot better than _#$.link.to({controller="post", action="list"})#_. 

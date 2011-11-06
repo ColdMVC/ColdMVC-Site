@@ -1,0 +1,7 @@
+Specifies the sort for the query.
+	
+	var q = _Team.createQuery();
+	
+	q.sort("name");
+	
+	var teams = q.list();

@@ -1,6 +1,4 @@
-Stores wrapped content into the request to be displayed right before the closing [body] tag.
-
-[1]: /tags/body
+Stores wrapped content into the request to be displayed right before the closing _&lt;c:body&gt;_ tag.
 
 ### Example
 

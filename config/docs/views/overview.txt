@@ -1,0 +1,3 @@
+The view layer is the presentation layer of your application, in charge of displaying data from the model and providing the user with forms to input new data. Views are located inside your application's _/app/views/_ folder and are chosen based on the incoming request. For example, a request to _/product/list_ would display the view located at _/app/views/product/list.cfm_.
+
+You can change the view associated with an action by adding an _@view_ annotation to to the function.

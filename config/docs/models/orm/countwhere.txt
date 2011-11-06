@@ -1,0 +1,5 @@
+Returns the number of records with matching parameters.
+	
+	var count = _Book.countWhere({
+		title = "The Da Vinci Code"
+	});

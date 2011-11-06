@@ -1,0 +1,5 @@
+Executes the query and returns the number of results.
+
+	var q = _Team.createQuery();
+	
+	var teams = q.count();

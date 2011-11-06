@@ -1,0 +1,5 @@
+Executes a query and returns either the first result or a new instance of a model if no results are found.
+	
+	var book = _Book.find("from Book where book.title = :title", {
+		title = "The Da Vinci Code"
+	});

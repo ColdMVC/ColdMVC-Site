@@ -1,0 +1,5 @@
+Executes the query and returns an array of results.
+
+	var q = _Team.createQuery();
+	
+	var teams = q.list();

@@ -1,0 +1,14 @@
+Appends clauses to a query concatenated by an _and_ conjunction.
+
+	var q = _Team.createQuery();
+	
+	q.innerJoin("city");
+	
+	q.where(
+		q.and(
+			q.eq("team.name", "Twins"),
+			q.eq("city.name", "Minneapolis")
+		)
+	);
+	
+	var teams = q.list();

@@ -1,38 +1,15 @@
 Creates a [number] [1] input field.
 
-[1]: http://www.w3.org/TR/html-markup/input.number.html
-
 ### Parameters
 
-| Name         | Required | Type    | Default           | Description                                                                               |
-|--------------|----------|---------|-------------------|-------------------------------------------------------------------------------------------|
-| bind         | false    | string  |                   | The key of a param to bind the number field to.                                           |
-| class        | false    | string  |                   | The class for the number field.                                                           |
-| disabled     | false    | boolean | false             | If the number field is disabled.                                                          |
-| id           | false    | string  | ${name}           | The id of the number field.                                                               |
-| instructions | false    | string  |                   | The instructions for the number field.                                                    |
-| label        | false    | string  | ${humanized name} | The label for the number field.                                                           |
-| max          | false    | numeric |                   | The maximum acceptable value for the field.                                               |
-| min          | false    | numeric |                   | The minimum acceptable value for the field.                                               |
-| name         | true     | string  |                   | The name of the number field.                                                             |
-| onblur       | false    | string  |                   | The onblur event for the number field.                                                    |
-| onchange     | false    | string  |                   | The onchange event for the number field.                                                  |
-| onclick      | false    | string  |                   | The onclick event for the number field.                                                   |
-| ondblclick   | false    | string  |                   | The ondblclick event for the number field.                                                |
-| onfocus      | false    | string  |                   | The onfocus event for the number field.                                                   |
-| onkeydown    | false    | string  |                   | The onkeydown event for the number field.                                                 |
-| onkeypress   | false    | string  |                   | The onkeypress event for the number field.                                                |
-| onkeyup      | false    | string  |                   | The onkeyup event for the number field.                                                   |
-| onsubmit     | false    | string  |                   | The onsubmit event for the number field.                                                  |
-| placeholder  | false    | string  |                   | The placeholder text for the number field.                                                |
-| readonly     | false    | boolean | false             | If the number field is read only.                                                         |
-| step         | false    | numeric |                   | Combined with the min and max, defines the acceptable numbers in the range for the field. |
-| style        | false    | string  |                   | The style for the number field.                                                           |
-| title        | false    | string  | ${label}          | The title for the number field.                                                           |
-| value        | false    | string  |                   | The value of the number field.                                                            |
-| visible      | false    | boolean | true              | If the number field is visible.                                                           |
-| wrapper      | false    | boolean | true              | If the number field should be wrapped in a label.                                         |
+| Name         | Required | Type    | Default | Description                                                                               |
+|--------------|----------|---------|---------|-------------------------------------------------------------------------------------------|
+| max          | false    | numeric |         | The maximum acceptable value for the field.                                               |
+| min          | false    | numeric |         | The minimum acceptable value for the field.                                               |
+| step         | false    | numeric |         | Combined with the min and max, defines the acceptable numbers in the range for the field. |
 
 ### Example
 
 	<c:number name="amount" value="5" />
+
+[1]: http://www.w3.org/TR/html-markup/input.number.html

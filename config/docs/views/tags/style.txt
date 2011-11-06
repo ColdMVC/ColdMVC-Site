@@ -1,7 +1,5 @@
 Creates a [style] [1] tag.
 
-[1]: http://www.w3.org/TR/html-markup/style.html
-
 ### Parameters
 
 | Name      | Required | Type   | Default | Description                                         |
@@ -13,3 +11,5 @@ Creates a [style] [1] tag.
 ### Example
 
 	<c:style name="main.css" />
+
+[1]: http://www.w3.org/TR/html-markup/style.html

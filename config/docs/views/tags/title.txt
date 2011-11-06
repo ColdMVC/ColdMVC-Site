@@ -1,7 +1,7 @@
 Creates a [title] [1] tag.
 
-[1]: http://www.w3.org/TR/html-markup/title.html
-
 ### Example
 
 	<c:title />
+
+[1]: http://www.w3.org/TR/html-markup/title.html

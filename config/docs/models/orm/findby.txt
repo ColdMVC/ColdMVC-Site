@@ -1,0 +1,4 @@
+Returns a record with matching parameters or a new instance of a model if no results are found.
+Uses dynamic finders via _onMissingMethod()_.
+	
+	var book = _Book.findByTitle("The Da Vinci Code");

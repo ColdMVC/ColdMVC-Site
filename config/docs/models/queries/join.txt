@@ -1,0 +1,11 @@
+Adds a _join_ to the query.
+
+	var q = _Team.createQuery();
+	
+	q.join("city");
+	
+	q.where(
+		q.eq("city.name", "Minneapolis")
+	);
+	
+	var teams = q.list();

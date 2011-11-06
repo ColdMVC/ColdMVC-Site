@@ -1,0 +1,7 @@
+Specifies the _select_ statement for the query. Can be used to execute custom select statements.
+	
+	var q = _Team.createQuery();
+	
+	q.select("select count(team.id)");
+	
+	var teams = q.get();

@@ -15,9 +15,7 @@
 			<article name="Autowiring Settings" />
 		</chapter>
 		<chapter name="Model-View-Controller">
-			<article name="Controllers" />
-			<article name="Models" />
-			<article name="Views" />
+			
 		</chapter>	
 		<chapter name="Directory Structure">
 			
@@ -40,9 +38,6 @@
 		</chapter>
 		<chapter name="Plugins">
 			<article name="Directory Structure" />
-		</chapter>
-		<chapter name="Error Handling">
-			<article name="Overview" />
 		</chapter>
 		<chapter name="Helpers">
 			<article name="Overview" />
@@ -69,6 +64,9 @@
 			<article name="user" />
 			<article name="valid" />
 			<article name="xml" />
+		</chapter>
+		<chapter name="Error Handling">
+			<article name="Overview" />
 		</chapter>
 	</category>
 	<category name="Controllers">
@@ -97,7 +95,7 @@
 			<article name="assertPost" />
 			<article name="createForm" />
 			<article name="createPaginator" />
-			<article name="createTableSorter" />
+			<article name="createSorter" />
 			<article name="escape" />
 			<article name="flashKeyExists" />
 			<article name="getAction" />
@@ -137,16 +135,8 @@
 			<article name="setView" />
 		</chapter>
 		<chapter name="Implicit Event Handlers">
-			<article name="pre" />
-			<article name="pre{Action}" />
-			<article name="post{Action}" />
-			<article name="post" />
 		</chapter>
 		<chapter name="Events">
-			<article name="applicationStart" />
-			<article name="requestStart" />
-			<article name="preAction" />
-			<article name="postAction" />
 		</chapter>
 		<chapter name="Routing">
 			<article name="Routing Requests" />
@@ -167,10 +157,7 @@
 			<article name="Validators" />
 		</chapter>
 		<chapter name="Formats">
-			<article name="HTML" />
-			<article name="JSON" />
-			<article name="PDF" />
-			<article name="XML" />
+			
 		</chapter>
 		<chapter name="Annotations">
 			<article name="@ajaxLayout" />
@@ -210,29 +197,52 @@
 	</category>
 	<category name="Models">
 		<chapter name="Overview">
-			<article name="Directory Structure" />
-			<article name="Naming Conventions" />			
+					
 		</chapter>
 		<chapter name="ORM">
 			<article name="Overview" />
 			<article name="Configuration" />
 			<article name="Default Sort and Order" />
-		</chapter>
-		<chapter name="Basic CRUD">
-			
-		</chapter>
-		<chapter name="Finders">
-			<article name="Static Finders" />
-			<article name="Dynamic Finders" />
+			<article name="count" />
+			<article name="countBy" />
+			<article name="countWhere" />
+			<article name="delete" />
+			<article name="exists" />
+			<article name="find" />
+			<article name="findAll" />
+			<article name="findAllBy" />
+			<article name="findAllWhere" />
+			<article name="findBy" />
+			<article name="findWhere" />
+			<article name="get" />
+			<article name="getAll" />
+			<article name="list" />
+			<article name="new" />
+			<article name="populate" />
+			<article name="prop" />
+			<article name="save" />
+			<article name="validate" />
 		</chapter>
 		<chapter name="Operators">
 			
 		</chapter>
 		<chapter name="Queries">
-			<article name="Joins" />
-			<article name="Criteria" />
-			<article name="Operators" />
-			<article name="Sorting" />
+			<article name="and" />
+			<article name="andWhere" />
+			<article name="count" />
+			<article name="get" />
+			<article name="innerJoin" />
+			<article name="join" />
+			<article name="leftJoin" />
+			<article name="list" />
+			<article name="max" />
+			<article name="offset" />
+			<article name="or" />
+			<article name="order" />
+			<article name="orWhere" />
+			<article name="select" />
+			<article name="sort" />
+			<article name="where" />
 		</chapter>
 		<chapter name="Getters and Setters">
 			
@@ -306,7 +316,6 @@
 			<article name="Layout Controller" />
 		</chapter>
 		<chapter name="View Helpers">
-			<article name="Overview" />
 			<article name="addBreadcrumb" />
 			<article name="assetPath" />
 			<article name="capitalize" />
@@ -353,8 +362,8 @@
 			<article name="urlPath" />
 		</chapter>
 		<chapter name="Tags">
-			<article name="Overview" />
 			<article name="Nested Tag Libraries" />
+			<article name="Common Parameters" />
 			<article name="alert" />
 			<article name="atom" />
 			<article name="bind" />
@@ -463,7 +472,7 @@
 			<article name="Displaying Pagination Links" />
 		</chapter>
 		<chapter name="Sortable Tables">
-			<article name="Creating a Table Sorter" />
+			<article name="Creating a Sorter" />
 			<article name="Displaying Sortable Links" />
 		</chapter>
 		<chapter name="Debug">

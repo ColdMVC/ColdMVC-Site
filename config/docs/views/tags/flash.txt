@@ -1,4 +1,4 @@
-Shortcut for displaying values set inside _flash.message_.
+Shortcut for displaying values set inside the _flash_ scope.
 
 ### Parameters
 

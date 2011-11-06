@@ -1,0 +1,5 @@
+The _flash_ scope is a temporary persistent scope.
+
+Any data that is put into the _flash_ scope is automatically persisted until the next request, where it is available inside the _requestContext_ or using the _flashKeyExists_ and _getFlash_ helpers.
+
+The _flash_ scope is very useful for displaying validation messages to the end user. For example, to notify the user that a record was updated successfully.

@@ -1,0 +1,8 @@
+Saves a record to the database.
+
+	var book = _Book.new({
+		title = "The Da Vinci Code",
+		author = "Dan Brown"
+	});
+	
+	book.save();

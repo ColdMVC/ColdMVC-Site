@@ -1,0 +1,13 @@
+Writing views and layouts can be tedious work, especially if you want to ensure you're using consistent HTML markup around your form fields. To make views a little less painful, it's best to use custom tags to generate the HTML for you. That way, you don't have to worry about small things like radio button markup and instead can focus on more important things, like your application's business logic.
+
+A new installation of ColdMVC will already have a standard library of custom tags available to use inside your views, such as _&lt;c:input /&gt;_, _&lt;c:select /&gt;_, and _&lt;c:textarea /&gt;_. These files are all located within _/coldmvc/tags_.
+
+You can create your own custom tags in a ColdMVC application simply by placing a _.cfm_ file inside your application's _/app/tags/_ folder. For example, if you created a file located at _/app/tags/tony.cfm_, you would then have access to that custom tag inside your views and layouts by using _&lt;c:tony /&gt;_.
+
+When ColdMVC first loads, it will load any custom tags located within your application's _/app/tags/_ folder, then any custom tags inside _/coldmvc/tags/_ folder that haven't been loaded yet. These custom tags will then be available to all of your views and layouts.
+
+Most of the default custom tags inside ColdMVC simply delegate their functionality to a ColdMVC helper component, so extending the default custom tags can be done by extending the helpers. If you would like to completely override a custom tag that ships with ColdMVC, simply create a custom tag with the same file name inside your application's _/app/tags/_ folder, and ColdMVC will load your custom tag rather than ColdMVC's custom tag.
+
+In a typical ColdFusion application, you need to import your custom tags into each ColdFusion template using the _&lt;cfimport /&gt;_ tag. However, you do not have to do this inside a ColdMVC application. For each view and layout in your application, ColdMVC will automatically generate a corresponding _.cfm_ file inside your application's _/.generated/_ folder that contains the content of your template along with the _&lt;cfimport /&gt;_ tag. ColdMVC will import your custom tags using a _c_ prefix.
+
+Most of the templates are generated the first time they are requested, with the exception of files beginning with an underscore, which are considered "private" templates by convention and therefore are generated when the application first loads.

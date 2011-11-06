@@ -1,0 +1,11 @@
+Adds a _left join_ to the query.
+
+	var q = _Team.createQuery();
+	
+	q.leftJoin("team.city", "c");
+	
+	q.where(
+		q.isNull("c.id");
+	);
+	
+	var teams = q.list();

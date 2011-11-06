@@ -1,0 +1,10 @@
+Most of the time you can use ColdMVC's basic ORM methods (_get()_, _list()_, _findAllWhere()_, etc...) for querying your database.
+
+However, sometimes you need to build a complex query and using _findAllWhere()_ won't get the job done.
+
+When this situation occurs, you can use the _find()_ or _findAll()_ methods on your model and write raw HQL.
+While writing HQL is perfectly fine, it can sometimes lead to problems due to Hibernate's case-sensitivity and casting ColdFusion variables to Java data types.
+
+A better option is to use ColdMVC's query builder using the _createQuery()_ method on your models.
+
+In addition to all of the standard ColdMVC operators, the following methods are available when building a query:

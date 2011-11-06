@@ -1,0 +1,7 @@
+Specifies the maximum number of results for the query.
+	
+	var q = _Team.createQuery();
+	
+	q.max(10);
+	
+	var teams = q.list();

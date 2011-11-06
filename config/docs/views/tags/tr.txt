@@ -1,31 +1,14 @@
 Creates a [tr] [1] tag with an _index_ attribute for easy styling.
 
-[1]: http://www.w3.org/TR/html-markup/tr.html
-
 ### Parameters
 
-| Name       | Required | Type    | Default           | Description                      |
-|------------|----------|---------|-------------------|----------------------------------|
-| class      | false    | string  |                   | The class for the tr.            |
-| id         | false    | string  | ${name}           | The id of the tr.                |
-| index      | false    | numeric | 1                 | The current index of the row.    |
-| label      | false    | string  | ${humanized name} | The label for the tr.            |
-| name       | true     | string  |                   | The name of the tr.              |
-| onblur     | false    | string  |                   | The onblur event for the tr.     |
-| onchange   | false    | string  |                   | The onchange event for the tr.   |
-| onclick    | false    | string  |                   | The onclick event for the tr.    |
-| ondblclick | false    | string  |                   | The ondblclick event for the tr. |
-| onfocus    | false    | string  |                   | The onfocus event for the tr.    |
-| onkeydown  | false    | string  |                   | The onkeydown event for the tr.  |
-| onkeypress | false    | string  |                   | The onkeypress event for the tr. |
-| onkeyup    | false    | string  |                   | The onkeyup event for the tr.    |
-| onsubmit   | false    | string  |                   | The onsubmit event for the tr.   |
-| style      | false    | string  |                   | The style for the tr.            |
-| visible    | false    | boolean | true              | If the tr is visible.            |
+| Name  | Required | Type    | Default | Description                   |
+|-------|----------|---------|---------|-------------------------------|
+| index | false    | numeric | 1       | The current index of the row. |
 
 ### Example
 
-	<cfset names = "Kobe Bryant,Dwight Howard,Blake Griffin" />
+	<cfset names = "Foo,Bar,Baz" />
 	
 	<c:table>
 		<tr>
@@ -37,3 +20,5 @@ Creates a [tr] [1] tag with an _index_ attribute for easy styling.
 			</c:tr>
 		</c:each>
 	</c:table>
+
+[1]: http://www.w3.org/TR/html-markup/tr.html

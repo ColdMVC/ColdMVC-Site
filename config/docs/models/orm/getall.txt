@@ -1,0 +1,6 @@
+Returns an array of records within a comma-separated list or array of IDs.
+The results within the array will be in the same order as the IDs that were passed in unless a _sort_ option is specified.
+
+	var books = _Book.getAll("1,2,3");
+	
+	var books = _Book.getAll([1,2,3]);

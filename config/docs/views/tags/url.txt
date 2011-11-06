@@ -1,35 +1,7 @@
 Creates a [url] [1] input field.
 
-[1]: http://www.w3.org/TR/html-markup/input.url.html
-
-### Parameters
-
-| Name         | Required | Type    | Default           | Description                                    |
-|--------------|----------|---------|-------------------|------------------------------------------------|
-| bind         | false    | string  |                   | The key of a param to bind the url field to.   |
-| class        | false    | string  |                   | The class for the url field.                   |
-| disabled     | false    | boolean | false             | If the url field is disabled.                  |
-| id           | false    | string  | ${name}           | The id of the url field.                       |
-| instructions | false    | string  |                   | The instructions for the url field.            |
-| label        | false    | string  | ${humanized name} | The label for the url field.                   |
-| name         | true     | string  |                   | The name of the url field.                     |
-| onblur       | false    | string  |                   | The onblur event for the url field.            |
-| onchange     | false    | string  |                   | The onchange event for the url field.          |
-| onclick      | false    | string  |                   | The onclick event for the url field.           |
-| ondblclick   | false    | string  |                   | The ondblclick event for the url field.        |
-| onfocus      | false    | string  |                   | The onfocus event for the url field.           |
-| onkeydown    | false    | string  |                   | The onkeydown event for the url field.         |
-| onkeypress   | false    | string  |                   | The onkeypress event for the url field.        |
-| onkeyup      | false    | string  |                   | The onkeyup event for the url field.           |
-| onsubmit     | false    | string  |                   | The onsubmit event for the url field.          |
-| placeholder  | false    | string  |                   | The placeholder text for the url field.        |
-| readonly     | false    | boolean | false             | If the url field is read only.                 |
-| style        | false    | string  |                   | The style for the url field.                   |
-| title        | false    | string  | ${label}          | The title for the url field.                   |
-| value        | false    | string  |                   | The value of the url field.                    |
-| visible      | false    | boolean | true              | If the url field is visible.                   |
-| wrapper      | false    | boolean | true              | If the url field should be wrapped in a label. |
-
 ### Example
 
 	<c:url name="website" value="http://www.coldmvc.com/" />
+
+[1]: http://www.w3.org/TR/html-markup/input.url.html

@@ -1,0 +1,3 @@
+Returns an array of records with matching parameters. Uses dynamic finders via _onMissingMethod()_.
+
+	var books = _Book.findAllByTitle("The Da Vinci Code");

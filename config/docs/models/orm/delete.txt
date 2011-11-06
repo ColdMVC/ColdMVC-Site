@@ -1,0 +1,5 @@
+Deletes a record from the database.
+
+	var book = _Book.get(id);
+	
+	book.delete();

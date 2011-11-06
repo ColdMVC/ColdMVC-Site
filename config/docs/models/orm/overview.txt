@@ -1,0 +1,8 @@
+Note: some of the methods listed below can accept an _options_ argument, which can be used for pagination and sorting.
+
+	var books = _Book.list({
+		sort = "title",
+		order = "asc",
+		max = "10",
+		offset = "20"
+	});

@@ -4,27 +4,16 @@ Creates [radio button] [1] input fields.
 
 ### Parameters
 
-| Name         | Required | Type    | Default           | Description                                                                                                                                            |
-|--------------|----------|---------|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| align        | false    | string  |                   | The alignment for the radio buttons, either horizontal or vertical. If more than 2 options are present, the default is vertical, otherwise horizontal. |
-| bind         | false    | string  |                   | The key of a param to bind the radio buttons to.                                                                                                       |
-| class        | false    | string  |                   | The class for the radio buttons.                                                                                                                       |
-| id           | false    | string  | ${name}           | The id of the radio buttons.                                                                                                                           |
-| instructions | false    | string  |                   | The instructions for the radio buttons.                                                                                                                |
-| label        | false    | string  | ${humanized name} | The label for the radio buttons.                                                                                                                       |
-| name         | true     | string  |                   | The name of the radio buttons.                                                                                                                         |
-| optionKey    | false    | string  |                   | The key for the option option key.                                                                                                                     |
-| optionKeys   | false    | any     |                   | The option keys.                                                                                                                                       |
-| options      | false    | any     |                   | The options for the select.                                                                                                                            |
-| optionTitle  | false    | string  |                   | The key for the option title.                                                                                                                          |
-| optionTitles | false    | any     |                   | The option titles.                                                                                                                                     |
-| optionValue  | false    | string  |                   | The key for the option value.                                                                                                                          |
-| optionValues | false    | any     |                   | The option values.                                                                                                                                     |
-| style        | false    | string  |                   | The style for the radio buttons.                                                                                                                       |
-| title        | false    | string  | ${label}          | The title for the radio buttons.                                                                                                                       |
-| value        | false    | string  |                   | The value of the radio buttons.                                                                                                                        |
-| visible      | false    | boolean | true              | If the radio buttons are visible.                                                                                                                      |
-| wrapper      | false    | boolean | true              | If the radio buttons should be wrapped in a label.                                                                                                     |
+| Name         | Required | Type    | Default | Description                                                                                                                                            |
+|--------------|----------|---------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| align        | false    | string  |         | The alignment for the radio buttons, either horizontal or vertical. If more than 2 options are present, the default is vertical, otherwise horizontal. |                                   |
+| optionKey    | false    | string  |         | The key for the option option key.                                                                                                                     |
+| optionKeys   | false    | any     |         | The option keys.                                                                                                                                       |
+| options      | false    | any     |         | The options for the select.                                                                                                                            |
+| optionTitle  | false    | string  |         | The key for the option title.                                                                                                                          |
+| optionTitles | false    | any     |         | The option titles.                                                                                                                                     |
+| optionValue  | false    | string  |         | The key for the option value.                                                                                                                          |
+| optionValues | false    | any     |         | The option values.                                                                                                                                     |                                                                                            |
 
 ### Example
 
