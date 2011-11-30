@@ -19,9 +19,9 @@ component {
 		query.order("asc");
 
 		query.where(
-			query.filter("category.id", "eq", getParam("category")),
-			query.filter("chapter.id", "eq", getParam("chapter")),
-			query.filter("status", "eq", getParam("status"))
+			query.filter("category.id", getParam("category")),
+			query.filter("chapter.id", getParam("chapter")),
+			query.filter("status", getParam("status"))
 		);
 
 		params.articles = query.list();

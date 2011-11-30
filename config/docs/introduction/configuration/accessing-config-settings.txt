@@ -7,10 +7,9 @@ First, you can access any config setting by using the _config_ helper.
 Second, you can inject the _config_ bean into your components.
 
 	/**
-	 * @accessors true
 	 * @singleton
 	 */
-	component {
+	component accessors="true" {
 
 		property config;
 

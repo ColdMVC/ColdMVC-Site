@@ -12,7 +12,7 @@ component {
 
 		var query = _Category.createQuery();
 		query.where(
-			query.filter("status", "eq", getParam("status"))
+			query.filter("status", getParam("status"))
 		);
 
 		params.categories = query.list();

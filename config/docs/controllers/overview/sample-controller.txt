@@ -1,9 +1,6 @@
 Here's an example of a sample _UserController_.
 
-	/**
-	 * @accessors true
-	 */
-	component {
+	component accessors="true" {
 	
 		function create() {
 	

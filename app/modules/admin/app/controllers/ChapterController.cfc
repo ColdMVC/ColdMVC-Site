@@ -17,8 +17,8 @@ component {
 		query.order("asc");
 
 		query.where(
-			query.filter("category.id", "eq", getParam("category")),
-			query.filter("status", "eq", getParam("status"))
+			query.filter("category.id", getParam("category")),
+			query.filter("status", getParam("status"))
 		);
 
 		params.chapters = query.list();
