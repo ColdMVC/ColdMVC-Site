@@ -11,12 +11,9 @@ component {
 		assertAllowed();
 
 		var query = _Category.createQuery();
-
-		if (structKeyExists(params, "status") && params.status != "") {
-			query.where(
-				query.eq("status", params.status)
-			);
-		}
+		query.where(
+			query.filter("status", "eq", getParam("status"))
+		);
 
 		params.categories = query.list();
 		params.statuses = _Status.list();

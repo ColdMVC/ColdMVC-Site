@@ -13,8 +13,8 @@
 	<c:table>
 		<thead>
 			<tr>
-				<th>Chapter</th>
 				<th>Category</th>
+				<th>Chapter</th>
 				<th>Order</th>
 				<th>Name</th>
 				<th>Text</th>

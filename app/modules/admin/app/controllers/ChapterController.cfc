@@ -16,17 +16,10 @@ component {
 		query.sort("category.order");
 		query.order("asc");
 
-		if (structKeyExists(params, "category") && params.category != "") {
-			query.where(
-				query.eq("category.id", params.category)
-			);
-		}
-
-		if (structKeyExists(params, "status") && params.status != "") {
-			query.where(
-				query.eq("status", params.status)
-			);
-		}
+		query.where(
+			query.filter("category.id", "eq", getParam("category")),
+			query.filter("status", "eq", getParam("status"))
+		);
 
 		params.chapters = query.list();
 		params.statuses = _Status.list();
